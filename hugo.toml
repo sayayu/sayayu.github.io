@@ -1,0 +1,34 @@
+baseURL = "https://sayayu.github.io/"
+locale = "ja-JP"
+title = "My Blog"
+
+# 記事一覧のページネーション件数
+pagination.pagerSize = 10
+
+enableRobotsTXT = true
+
+[params]
+  description = "シンプルで読みやすいブログ"
+  author = "Your Name"
+
+[menu]
+  [[menu.main]]
+    name = "ホーム"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "投稿一覧"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
