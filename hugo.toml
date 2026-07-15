@@ -1,6 +1,6 @@
 baseURL = "https://sayayu.github.io/"
 locale = "ja-JP"
-title = "My Blog"
+title = "sayayuの品質管理ノート"
 
 # 記事一覧のページネーション件数
 pagination.pagerSize = 10
