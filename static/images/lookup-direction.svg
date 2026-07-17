@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif">
+  <style>
+    .panelbg { fill: #f7f9fc; stroke: #e5e5e5; stroke-width: 1; }
+    .cell { fill: #ffffff; stroke: #cfd8e3; stroke-width: 1; }
+    .cell-hi { fill: #dce8fa; stroke: #b7cdf0; stroke-width: 1; }
+    .cell-match { fill: #1a5fb4; stroke: #1a5fb4; stroke-width: 1; }
+    .title { fill: #1a1a1a; font-size: 17px; font-weight: 700; text-anchor: middle; }
+    .caption { fill: #6b6b6b; font-size: 12px; text-anchor: middle; }
+    .matchtext { fill: #ffffff; font-size: 11px; font-weight: 700; text-anchor: middle; }
+    .arrowline { stroke: #1a5fb4; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+    .arrowhead-fill { fill: #1a5fb4; }
+    @media (prefers-color-scheme: dark) {
+      .panelbg { fill: #1c1f24; stroke: #2c2f34; }
+      .cell { fill: #20232a; stroke: #3a3f47; }
+      .cell-hi { fill: #22344a; stroke: #2f4a6b; }
+      .cell-match { fill: #7aa9e8; stroke: #7aa9e8; }
+      .title { fill: #e6e6e6; }
+      .caption { fill: #9a9a9a; }
+      .matchtext { fill: #16181c; }
+      .arrowline { stroke: #7aa9e8; }
+      .arrowhead-fill { fill: #7aa9e8; }
+    }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" class="arrowhead-fill" />
+    </marker>
+  </defs>
+
+  <!-- Panel 1: VLOOKUP -->
+  <rect x="10" y="10" width="180" height="270" rx="10" class="panelbg" />
+  <text x="100" y="35" class="title">VLOOKUP</text>
+  <!-- grid: gridX=45, cols c0=45 c1=83 c2=121, rows r0=55 r1=89 r2=123 -->
+  <rect x="45" y="55" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="45" y="89" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="45" y="123" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="83" y="55" width="34" height="30" rx="3" class="cell" />
+  <rect x="83" y="89" width="34" height="30" rx="3" class="cell" />
+  <rect x="83" y="123" width="34" height="30" rx="3" class="cell" />
+  <rect x="121" y="55" width="34" height="30" rx="3" class="cell" />
+  <rect x="121" y="89" width="34" height="30" rx="3" class="cell" />
+  <rect x="121" y="123" width="34" height="30" rx="3" class="cell-match" />
+  <text x="138" y="142" class="matchtext">値</text>
+  <path d="M62,55 L62,99" class="arrowline" />
+  <path d="M79,104 L116,104" class="arrowline" />
+  <text x="100" y="200" class="caption">左端の列を</text>
+  <text x="100" y="218" class="caption">縦方向に検索</text>
+
+  <!-- Panel 2: HLOOKUP -->
+  <rect x="230" y="10" width="180" height="270" rx="10" class="panelbg" />
+  <text x="320" y="35" class="title">HLOOKUP</text>
+  <!-- gridX=265, cols c0=265 c1=303 c2=341, rows r0=55 r1=89 r2=123 -->
+  <rect x="265" y="55" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="303" y="55" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="341" y="55" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="265" y="89" width="34" height="30" rx="3" class="cell" />
+  <rect x="303" y="89" width="34" height="30" rx="3" class="cell" />
+  <rect x="341" y="89" width="34" height="30" rx="3" class="cell" />
+  <rect x="265" y="123" width="34" height="30" rx="3" class="cell" />
+  <rect x="303" y="123" width="34" height="30" rx="3" class="cell-match" />
+  <rect x="341" y="123" width="34" height="30" rx="3" class="cell" />
+  <text x="320" y="142" class="matchtext">値</text>
+  <path d="M265,70 L294,70" class="arrowline" />
+  <path d="M320,85 L320,118" class="arrowline" />
+  <text x="320" y="200" class="caption">上端の行を</text>
+  <text x="320" y="218" class="caption">横方向に検索</text>
+
+  <!-- Panel 3: XLOOKUP -->
+  <rect x="450" y="10" width="180" height="270" rx="10" class="panelbg" />
+  <text x="540" y="35" class="title">XLOOKUP</text>
+  <!-- gridX=485, cols c0=485 c1=523 c2=561, rows r0=55 r1=89 r2=123 -->
+  <rect x="485" y="55" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="523" y="55" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="561" y="55" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="485" y="89" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="523" y="89" width="34" height="30" rx="3" class="cell" />
+  <rect x="561" y="89" width="34" height="30" rx="3" class="cell" />
+  <rect x="485" y="123" width="34" height="30" rx="3" class="cell-hi" />
+  <rect x="523" y="123" width="34" height="30" rx="3" class="cell" />
+  <rect x="561" y="123" width="34" height="30" rx="3" class="cell-match" />
+  <text x="578" y="142" class="matchtext">値</text>
+  <path d="M502,55 L502,150" class="arrowline" />
+  <path d="M485,70 L590,70" class="arrowline" />
+  <text x="540" y="200" class="caption">縦・横どちらの</text>
+  <text x="540" y="218" class="caption">方向にも対応</text>
+</svg>

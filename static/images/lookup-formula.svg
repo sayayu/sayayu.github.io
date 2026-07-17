@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 270" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', Meiryo, sans-serif">
+  <style>
+    .panelbg { fill: #f7f9fc; stroke: #e5e5e5; stroke-width: 1; }
+    .cell { fill: #ffffff; stroke: #cfd8e3; stroke-width: 1; }
+    .keybox { fill: #dce8fa; stroke: #1a5fb4; stroke-width: 1.5; }
+    .cell-match { fill: #1a5fb4; stroke: #1a5fb4; stroke-width: 1; }
+    .celltext { fill: #1a1a1a; font-size: 13px; text-anchor: middle; }
+    .matchtext { fill: #ffffff; font-size: 13px; font-weight: 700; text-anchor: middle; }
+    .keytext { fill: #1a5fb4; font-size: 16px; font-weight: 700; text-anchor: middle; }
+    .title { fill: #1a1a1a; font-size: 14px; font-weight: 700; text-anchor: middle; }
+    .caption { fill: #6b6b6b; font-size: 11px; text-anchor: middle; }
+    .label { fill: #6b6b6b; font-size: 12px; text-anchor: middle; }
+    .formula { fill: #1a1a1a; font-size: 14px; font-weight: 600; text-anchor: middle; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .arrowline { stroke: #1a5fb4; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead); }
+    .arrowhead-fill { fill: #1a5fb4; }
+    @media (prefers-color-scheme: dark) {
+      .panelbg { fill: #1c1f24; stroke: #2c2f34; }
+      .cell { fill: #20232a; stroke: #3a3f47; }
+      .keybox { fill: #22344a; stroke: #7aa9e8; }
+      .cell-match { fill: #7aa9e8; stroke: #7aa9e8; }
+      .celltext { fill: #e6e6e6; }
+      .matchtext { fill: #16181c; }
+      .keytext { fill: #7aa9e8; }
+      .title { fill: #e6e6e6; }
+      .caption { fill: #9a9a9a; }
+      .label { fill: #9a9a9a; }
+      .formula { fill: #e6e6e6; }
+      .arrowline { stroke: #7aa9e8; }
+      .arrowhead-fill { fill: #7aa9e8; }
+    }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" class="arrowhead-fill" />
+    </marker>
+  </defs>
+
+  <rect x="10" y="10" width="660" height="246" rx="12" class="panelbg" />
+
+  <!-- 検索値 box -->
+  <text x="80" y="100" class="label">検索値 (A2)</text>
+  <rect x="20" y="115" width="120" height="40" rx="6" class="keybox" />
+  <text x="80" y="140" class="keytext">1002</text>
+
+  <!-- 検索範囲(社員番号) column -->
+  <text x="270" y="35" class="title">検索範囲</text>
+  <text x="270" y="53" class="caption">(社員番号)</text>
+  <rect x="200" y="75" width="140" height="36" rx="4" class="cell" />
+  <text x="270" y="98" class="celltext">1001</text>
+  <rect x="200" y="117" width="140" height="36" rx="4" class="cell-match" />
+  <text x="270" y="140" class="matchtext">1002</text>
+  <rect x="200" y="159" width="140" height="36" rx="4" class="cell" />
+  <text x="270" y="182" class="celltext">1003</text>
+  <rect x="200" y="201" width="140" height="36" rx="4" class="cell" />
+  <text x="270" y="224" class="celltext">1004</text>
+
+  <!-- 戻り範囲(氏名) column -->
+  <text x="430" y="35" class="title">戻り範囲</text>
+  <text x="430" y="53" class="caption">(氏名)</text>
+  <rect x="360" y="75" width="140" height="36" rx="4" class="cell" />
+  <text x="430" y="98" class="celltext">田中</text>
+  <rect x="360" y="117" width="140" height="36" rx="4" class="cell-match" />
+  <text x="430" y="140" class="matchtext">鈴木</text>
+  <rect x="360" y="159" width="140" height="36" rx="4" class="cell" />
+  <text x="430" y="182" class="celltext">佐藤</text>
+  <rect x="360" y="201" width="140" height="36" rx="4" class="cell" />
+  <text x="430" y="224" class="celltext">高橋</text>
+
+  <!-- 戻り値 box -->
+  <text x="580" y="100" class="label">戻り値</text>
+  <rect x="520" y="115" width="120" height="40" rx="6" class="keybox" />
+  <text x="580" y="140" class="keytext">鈴木</text>
+
+  <!-- flow arrows, all along matched row (y=135) -->
+  <path d="M140,135 L196,135" class="arrowline" />
+  <path d="M340,135 L356,135" class="arrowline" />
+  <path d="M500,135 L516,135" class="arrowline" />
+
+  <text x="340" y="252" class="formula">=XLOOKUP(検索値, 検索範囲, 戻り範囲)</text>
+</svg>
