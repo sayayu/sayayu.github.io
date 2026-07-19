@@ -28,3 +28,29 @@ date: 2026-07-16
 - 注目ポイント: 個々のニュース記事だけでは追いきれないロードマップ全体の動きを俯瞰できる内容で、IT管理者・情報システム部門の担当者が月次アップデートを把握する際の定番参照先として繰り返し引用されている。
 - 出典:
   - [Microsoft 365 Roadmap Updates July 2026 | Level Up M365](https://levelupm365.com/2026/07/01/microsoft-365-roadmap-updates-july-2026/)
+
+## 2026-07-19
+
+### 1. Excelのメモリ情報漏えい脆弱性(CVE-2026-48580)、7月のPatch Tuesdayで修正
+
+- 概要: 2026年7月14日のPatch Tuesdayで、Excelでワークブックを開いた際にメモリ上の内容が読み取られる可能性がある情報漏えい脆弱性CVE-2026-48580が修正された。Office 2016からMicrosoft 365 Appsまで広いバージョンが対象で、今月はExcel関連の修正パッチ数(34件)が例年より多いと報じられている。
+- 注目ポイント: 「ファイルを開くだけ」で影響を受ける読み取り系の脆弱性という点、および今月のパッチがExcelに大きく偏っている点がセキュリティ専門メディアで話題になっている。業務でExcelファイルを日常的にやり取りするユーザーに向けて、即時のパッチ適用を呼びかける記事が相次いだ。
+- 出典:
+  - [Stop That Spreadsheet: Microsoft Fixes Excel's Memory Leak in July 2026 Update | Windows News](https://windowsnews.ai/article/stop-that-spreadsheet-microsoft-fixes-excels-memory-leak-in-july-2026-update.438657)
+  - [July 2026 Patch Tuesday: 570 Fixes and a Critical BitLocker Flaw | Office Watch](https://office-watch.com/2026/july-2026-patch-tuesday/)
+  - [CVE-2026-48580 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48580)
+
+### 2. Excel世界大会の新企画「Landmark Battle」が街中で開催され、SNSで拡散
+
+- 概要: Microsoft Excel World Championship(MEWC)とASUSが共催する新企画「Landmark Battle」が7月10日に開催され、自由の女神やエッフェル塔など世界の名所4か所から選手が同時に30分間・7段階のデータ課題に挑戦した。前王者アイルランドのDiarmuid Earlyが終盤の逆転で優勝し、The Registerなどが7月13日に取り上げた。
+- 注目ポイント: スプレッドシート競技を屋外・観光名所という異例の舞台で開催した点が話題性を生み、選手入場や応援のクリップがTikTokやXで数十万〜100万回規模の再生数を記録するなど拡散した。業務ツールであるExcelがエンタメ・eスポーツ的コンテンツ化していく流れとして注目されている。
+- 出典:
+  - [Excel competition goes extreme, makes spreadsheet geeks compete from the street | The Register](https://www.theregister.com/offbeat/2026/07/13/excel-competition-goes-extreme-makes-spreadsheet-geeks-compete-from-the-street/5270709)
+  - [World Excel Champion Diarmuid Early Stages Last-Minute Comeback to Win First Landmark Battle | ASUS Pressroom](https://press.asus.com/news/press-releases/asus-landmark-battle-diarmuid-early-wins/)
+
+### 3. 週末に試したい、知られざるExcel機能5選(How-To Geek)
+
+- 概要: How-To Geekが7月17〜19日の週末向けに、あまり知られていないExcelの便利機能5選を紹介する記事を公開。数式を一段階ずつ評価・可視化できる「Evaluate Formula」、Excel for the Web限定で入力例からその場で数式を自動生成する「Formula by Example」、選択範囲からグラフや条件付き書式などをその場でプレビューできる「Quick Analysis」などを取り上げている。
+- 注目ポイント: 新機能紹介ではなく「既存だが埋もれている機能の再発掘」という切り口が実務層に刺さりやすく、週末読み物として拡散しやすい構成になっている。特に「Evaluate Formula」は数式デバッグ・レビューの観点で品質管理業務にも応用しやすい機能として目を引く。
+- 出典:
+  - [5 little-known Excel features to try this weekend (July 17-19) | How-To Geek](https://www.howtogeek.com/microsoft-excel-little-known-features-to-try-this-weekend-july-17-19/)
