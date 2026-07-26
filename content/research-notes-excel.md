@@ -54,3 +54,29 @@ date: 2026-07-16
 - 注目ポイント: 新機能紹介ではなく「既存だが埋もれている機能の再発掘」という切り口が実務層に刺さりやすく、週末読み物として拡散しやすい構成になっている。特に「Evaluate Formula」は数式デバッグ・レビューの観点で品質管理業務にも応用しやすい機能として目を引く。
 - 出典:
   - [5 little-known Excel features to try this weekend (July 17-19) | How-To Geek](https://www.howtogeek.com/microsoft-excel-little-known-features-to-try-this-weekend-july-17-19/)
+
+## 2026-07-26
+
+### 1. xAIがExcel向け無料アドイン「Grok for Excel」を投入、Copilotに真っ向勝負
+
+- 概要: 2026年7月20日、xAIがGrok 4.5を組み込んだExcel用アドイン「Grok for Excel」を公開した。Word・PowerPoint向けアドインも同時提供し、Microsoft Marketplaceからインストール可能。サイドバーから自然言語で数式作成・ピボットテーブル構築・データクレンジング・グラフ生成・Web検索結果の取り込みなどを指示でき、分析に使ったセルを明示する「根拠の可視化」が特徴とされる。
+- 注目ポイント: Copilot in Excelと同じ土俵に競合AIが正面から乗り込んだ点が、「AIオフィス戦争」の新局面として海外メディアで大きく取り上げられた。The Registerが「なぜわざわざExcelのプラグインを作ったのか」と皮肉交じりに報じるなど話題性が高く、アドイン自体は無料でも実際の利用にはSuperGrok等の有料プランが必要な点も議論を呼んでいる。
+- 出典:
+  - [Grok muscles into Excel with an AI add-in of its own | The Register](https://www.theregister.com/ai-and-ml/2026/07/22/grok-muscles-into-excel-with-an-ai-add-in-of-its-own/5276138)
+  - [Grok for Excel | xAI](https://x.ai/news/introducing-excel-addin)
+
+### 2. MOS World Championship 2026がアナハイムで開幕、昨年準優勝の高校生の物語も再脚光
+
+- 概要: 2026年7月26日から29日にかけて、Certiport主催の第24回Microsoft Office Specialist(MOS)World Championshipがカリフォルニア州アナハイムのディズニー・グランド・カリフォルニアン・ホテルで開催される。これに合わせ、2025年大会のExcel(Office 2019)部門で世界2位・賞金4,000ドルを獲得したシカゴ出身の高校生Xavier Diebold氏のサクセスストーリーを紹介する記事が公開された。
+- 注目ポイント: 前週(2026-07-19分)で紹介した屋外イベント「Landmark Battle」に続き、Excel競技(スプレッドシート・エスポーツ)への注目がこの週も継続している。学生の等身大のサクセスストーリーは拡散しやすく、Excelスキルが賞金・進学など実利益に直結する事例として教育関係者からも関心を集めている。
+- 出典:
+  - [Excel Skills Earn Chicago Teen $4,000 at World Championship—Here's How to Build Your Own Office Proficiency | Windows News](https://windowsnews.ai/article/excel-skills-earn-chicago-teen-4000-at-world-championshipheres-how-to-build-your-own-office-proficie.440488)
+  - [Excel World Championship: Xavier Diebold Takes Silver, $4,000 Prize | Windows Forum](https://windowsforum.com/windows-news.4/excel-world-championship-xavier-diebold-takes-silver-4-000-prize.440488/)
+
+### 3. How-To Geekが週末企画「時短Excel Tips 5選(7/24-26)」を公開、地味な標準機能を再評価
+
+- 概要: How-To Geekが7月24日、週末に試したい「時短につながるExcel機能5選」を紹介する記事を公開した。名前ボックスを使った高速ナビゲーション、「データの分析」によるピボットテーブル・グラフの自動提案、形式を選択して貼り付け(Ctrl+Shift+V)、「選択オプション」、「新しいウィンドウ」など、目立たないが実務で効く標準機能を取り上げている。
+- 注目ポイント: 前週(7/17-19分)にも同シリーズで「知られざるExcel機能5選」を紹介しており、週末読み物の定番企画として定着しつつある。新機能紹介ではなく「既存機能の使い倒し」に焦点を当てる切り口は、業務効率化・時短をテーマにする読者層から継続的に支持されている。
+- 出典:
+  - [5 time-saving Excel tips to put to the test this weekend (July 24-26) | How-To Geek](https://www.howtogeek.com/microsoft-excel-time-saving-tips-to-try-this-weekend-july-24-26/)
+  - [How-To Geek's Weekend Challenge: 5 Excel Tools That Could Save You Hours Every Week | Windows News](https://windowsnews.ai/article/how-to-geeks-weekend-challenge-5-excel-tools-that-could-save-you-hours-every-week.440442)
