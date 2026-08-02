@@ -80,3 +80,30 @@ date: 2026-07-16
 - 出典:
   - [5 time-saving Excel tips to put to the test this weekend (July 24-26) | How-To Geek](https://www.howtogeek.com/microsoft-excel-time-saving-tips-to-try-this-weekend-july-24-26/)
   - [How-To Geek's Weekend Challenge: 5 Excel Tools That Could Save You Hours Every Week | Windows News](https://windowsnews.ai/article/how-to-geeks-weekend-challenge-5-excel-tools-that-could-save-you-hours-every-week.440442)
+
+## 2026-08-02
+
+### 1. 英国防省のアフガン人情報流出、原因は「隠しシート付きExcelファイル」― 議会報告書が「予見可能な組織的失敗」と断定
+
+- 概要: 英国下院防衛委員会が2026年7月30日に公表した報告書で、2022年に発覚した英国防省(MoD)によるアフガン人協力者の個人情報流出について、担当者が約150人分のデータだと思って外部にメール送信したExcelファイルに、実際には18,500人以上の情報を含む「非表示シート」が隠れていたことが原因だったと指摘した。委員会は、個人のミスではなく「不適切なツール・脆弱な運用手順・不十分な研修・組織の継続性の欠如・データ保護に対する文化の欠如」が重なった「予見可能な組織的失敗」だと結論づけている。
+- 注目ポイント: Slashdotが「Excelの研修不足が招いた破局的な情報漏えい」という刺激的な見出しで取り上げ、SNS上でも「隠しシート・非表示行列の危険性」を巡る議論が広がった。命に関わる機密データをアクセス制御のないExcel+SharePointで管理していたというガバナンスの甘さ、および「非表示=削除・不可視」ではないという初歩的だが見落とされがちな品質管理上の教訓として、本ブログのテーマとも直結する事例。
+- 出典:
+  - [MoD Spreadsheet Exposed 18,500 Afghan Allies to Taliban: No One Will Ever Be Held Accountable For 'Foreseeable Failure' | Tech Times](https://www.techtimes.com/articles/322402/20260731/mod-spreadsheet-exposed-18500-afghan-allies-taliban-no-one-will-ever-held-accountable.htm)
+  - [Catastrophic MoD Data Breach Caused By Lack of Training On Excel | Slashdot](https://yro.slashdot.org/story/26/07/30/1748239/catastrophic-mod-data-breach-caused-by-lack-of-training-on-excel)
+
+### 2. Copilot in Excelの2026年7月アップデートまとめ ― インライン引用・Power BI連携に加え「Claude Opus 5」も選択可能に
+
+- 概要: Neowinが2026年7月28日、Excelに2026年7月中に追加された新機能をまとめた記事を公開。Copilotの回答に出典元へのリンクを表示する「インライン引用」、組織内コンテンツを取り込める「同期済みコネクタ」、Power BIの管理済みデータを分析に利用できる「Power BIグラウンディング」、AutoSaveをオフにしたブックでもCopilotが使えるようになった点などが紹介された。あわせて、Copilotのモデル選択肢にOpenAIのGPT-5.6とAnthropicのClaude Opus 5が追加されたことも大きく取り上げられている。
+- 注目ポイント: Microsoft 365公式Xアカウントも「複雑な多段階の作業や長時間タスクの推論力強化」としてClaude Opus 5の展開を告知し、拡散された。Word・Excel・PowerPoint全体で非OpenAI系フロンティアモデルが標準選択肢になったのは初めてで、「数式・VBAはGPT系、財務モデリングや文章主体のデータ分析はClaude系」といった実務者向けの使い分けガイドが複数メディアで公開されるなど、モデル選択のノウハウそのものが話題になっている。
+- 出典:
+  - [Here are all the new features Microsoft added to Excel in July 2026 | Neowin](https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-excel-in-july-2026/)
+  - [Which Copilot Model Should You Use in Excel? Auto, GPT or Claude | Office Watch](https://office-watch.com/2026/choose-copilot-model-excel/)
+  - [Microsoft 365 on X: announcing Claude Opus 5 rollout to Copilot](https://x.com/Microsoft365/status/2081817680068087898)
+
+### 3. Microsoft Office Specialist世界大会2026、Excel部門の世界王者が確定 ― 前週の話題を引き継ぐ形で決着
+
+- 概要: Certiport(Pearson)主催の第24回Microsoft Office Specialist(MOS)World Championshipがアナハイムで開催され、2026年7月29日に結果が発表された。Excel(Office 2019)部門はマカオのZhong Tin Kin氏が優勝、Excel(Microsoft 365 Apps)部門はベトナムのNguyen Mai Chi氏が優勝するなど、36か国・135名の学生ファイナリストの成績が公表された。
+- 注目ポイント: 前週(2026-07-26分)で紹介した「準優勝の高校生Xavier Diebold氏」の話題の続報にあたり、学生の実務スキル競技という切り口が2週連続で注目を集めた形。Excel World Championship(MEWC)とは別に、学校教育・資格試験の文脈でもExcelスキルが競技化・可視化されている点が、教育関係者やHR担当者の間で引き続き関心を呼んでいる。
+- 出典:
+  - [World Champions Crowned at Pearson's Certiport 2026 Microsoft Office Specialist Competition | GlobeNewswire](https://www.globenewswire.com/news-release/2026/07/29/3335632/0/en/World-Champions-Crowned-at-Pearson-s-Certiport-2026-Microsoft-Office-Specialist-Competition.html)
+  - [Meet the 2026 Microsoft Office Specialist World Champions | Certiport Blog](https://certiport.pearsonvue.com/Blog/2026/July/Meet-the-2026-MOS-World-Championship.aspx)
