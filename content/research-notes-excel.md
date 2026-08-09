@@ -107,3 +107,22 @@ date: 2026-07-16
 - 出典:
   - [World Champions Crowned at Pearson's Certiport 2026 Microsoft Office Specialist Competition | GlobeNewswire](https://www.globenewswire.com/news-release/2026/07/29/3335632/0/en/World-Champions-Crowned-at-Pearson-s-Certiport-2026-Microsoft-Office-Specialist-Competition.html)
   - [Meet the 2026 Microsoft Office Specialist World Champions | Certiport Blog](https://certiport.pearsonvue.com/Blog/2026/July/Meet-the-2026-MOS-World-Championship.aspx)
+
+## 2026-08-09
+
+### 1. ESPN8: The Ocho、10周年記念特番でMicrosoft Excel World Championshipを5年連続放送
+
+- 概要: ESPNの変わり種スポーツ特番「ESPN8: The Ocho」が2026年8月6日〜9日に10周年を迎え、74時間超に及ぶ特別編成を実施した。この中でMicrosoft Excel World Championship(MEWC)が5年連続で取り上げられ、決勝は8月8日午前7時(米国東部時間)からESPN2で放送された。
+- 注目ポイント: 「世界一奇妙なスポーツ特番」として知られるThe Ochoの定番コンテンツの一つとしてExcel競技が定着しつつある点が興味深い。7月の屋外イベント「Landmark Battle」など、ここ数週このブログでも継続的に取り上げてきたExcel eスポーツ人気の流れが、地上波スポーツ専門チャンネルでの毎年恒例放送という形でさらに裏付けられた。業務ツールであるExcelが「観戦されるコンテンツ」として定着している点は、Excelというソフトウェアの社会的な位置づけの変化を示す事例として注目に値する。
+- 出典:
+  - [The Microsoft Excel World Championship is back on ESPN8 The Ocho for the 5th year in a row | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/the-microsoft-excel-world-championship-is-back-on-espn8-the-ocho-for-the-5th-yea/4527282)
+  - [ESPN8: The Ocho returns for its 10th Anniversary August 6-9 | ESPN Press Room](https://espnpressroom.com/press-release/espn8-the-ocho-returns-for-its-10th-anniversary-august-6-9/)
+
+### 2. Excelに深刻なRCE脆弱性「CVE-2026-62870」、CVSS 8.8のUse-After-Free問題が公表
+
+- 概要: 2026年8月4日、Microsoft Excelにおけるメモリ解放後使用(Use-After-Free)に起因するリモートコード実行(RCE)の脆弱性CVE-2026-62870が公表された。CVSSスコアは8.8(高)で、細工されたExcelファイルを開かせることで、攻撃者が被害者の権限でコードを実行できる可能性がある。Microsoft 365 Apps for Enterprise、Excel 2016、Office 2019、Office LTSC 2021/2024など幅広いバージョン(32bit/64bit)が対象。
+- 注目ポイント: 「ファイルを開くだけ」で攻撃が成立しうる典型的なフィッシング媒介型の脆弱性であり、Excelファイルを日常的に社外とやり取りする業務フローのリスクを改めて浮き彫りにした。8月のPatch Tuesday(8月11日予定)を待たずに単独で情報が公開された点も、セキュリティ専門メディアで話題となった一因。修正済みのセキュリティ更新プログラムの速やかな適用が呼びかけられている。
+- 出典:
+  - [CVE-2026-62870 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62870)
+  - [CVE-2026-62870 - Microsoft Excel Remote Code Execution Vulnerability | cvefeed.io](https://cvefeed.io/vuln/detail/CVE-2026-62870)
+  - [Microsoft Excel Use-After-Free RCE (CVE-2026-62870) | TheHackerWire](https://www.thehackerwire.com/microsoft-excel-use-after-free-rce-cve-2026-62870/)
