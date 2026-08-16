@@ -137,3 +137,31 @@ date: 2026-07-15
 - 注目ポイント: 相次ぐ品質不正・リコール報道を背景に、「人手・紙台帳に頼らない品質管理」への関心が高まる中で公開されたデータドリブンなレポートであり、現場の検査工程だけでなく品質保証プロセス全体をDXで裏付ける動きが定量的に示された点が注目されている。なぜなぜ分析など原因究明の高度化にもデータ活用がどう寄与するか、今後の展開が注視される。
 - 出典:
   - [検査自動化から品質データ活用へ──781件の事例から見えた品質DXの最新動向【ものづくり新聞 製造業DX事例分析 vol.10】 | PR TIMES(株式会社パブリカ)](https://prtimes.jp/main/html/rd/p/000000034.000079123.html)
+
+## 2026-08-16
+
+### 1. ISO 9001:2026、発行日が「2026年9月16日」に正式確定
+
+- 概要: 7月15日のFDIS(最終国際規格案)承認を受け、ISO 9001:2026の発行日が2026年9月16日と正式に確定したことが、LRQAなど認証機関から相次いで発表された。発行と同時に3年間の移行期間(〜2029年9月)がスタートする見通し。
+- 注目ポイント: これまで「9月発行見込み」という表現だった各社の解説が、今週は「発行日確定」という具体的な一文に置き換わり、認証機関各社が移行トレーニングやワークショップの告知を強めている。9年ぶりの大規模改訂がいよいよ1か月後に迫り、認証取得企業の間で移行準備の緊急度が一段上がっている。
+- 出典:
+  - [ISO 9001 revision update: Publication date confirmed | LRQA](https://www.lrqa.com/en-ae/latest-news/iso-9001-revision-update-publication-date-confirmed/)
+  - [ISO 9001:2026 to be Published on September 16, 2026 | NSF](https://www.nsf.org/knowledge-library/iso-90012026-published-on-september-16-2026-what-quality-leaders-need-to-know)
+  - [ISO 9001:2026 Publication Date Confirmed | Atlas Certification Limited](https://www.atlascertification.com/iso-90012026-publication-date-confirmed/)
+
+### 2. 日野自動車、トラック・バス4車種1万3471台をリコール ― 燃料配管の設計検討不足で燃料漏れのおそれ
+
+- 概要: 日野自動車は2026年8月3日、『レンジャー』『メルファ』『セレガ』『ブルーリボンハイブリッド』の計4車種(35型式)、1万3471台についてリコールを届け出た。サプライポンプの燃料配管について振動に対する強度検討が不十分で、低温時に燃料フィルタが詰まり圧力変動が増大すると配管が想定以上に共振し、亀裂が生じて燃料漏れに至るおそれがある。
+- 注目ポイント: 7月以降ダイハツ・スズキ・ヒョンデ・ステランティスと続いてきた「基幹部品の耐久設計検討不足」型リコールが今週も途切れず、今回はトラック・バスの燃料系統という商用車特有の領域にまで及んだ。振動・低温という複合的な使用環境条件をどこまでデザインレビュー(DR)・FMEAで想定しきれるかという、設計品質保証の実効性を問う事例として引き続き注目されている。
+- 出典:
+  - [日野のトラックとバス、4車種1万3471台をリコール 燃料漏れのおそれ | レスポンス(Response.jp)](https://response.jp/article/2026/08/12/415185.html)
+  - [＜リコール情報＞日野のトラックとバス、4車種1万3471台をリコール 燃料漏れのおそれ | CAR CARE PLUS](https://carcareplus.jp/article/2026/08/13/15185.html)
+
+### 3. 中国EV電池「バナナ電池」問題、MIITの抜き打ち査察がChery・Nio・JACにも拡大
+
+- 概要: 広汽埃安(GAC AION)の「AION S」シリーズに搭載された中創新航(CALB)製177Ahリン酸鉄リチウムイオン電池セルで、膨張・液漏れ・絶縁不良などの不具合が多発(通称「バナナ電池」問題、影響台数は約21万台規模)。中国工業和信息化部(MIIT)は7月24日にGAC AIONとXPengへ抜き打ち査察を実施した後、7月30〜31日には奇瑞汽車(Chery)・蔚来(Nio)・江淮汽車(JAC)にも対象を拡大し、車両・電池パックのサンプルを直接押収して検査機関に送付する体制を敷いている。CALBは8月上旬、製造工程の全面見直しと品質部門への権限強化を発表した。
+- 注目ポイント: 本ノートで7月に取り上げたIATF新規加盟企業のChery自身が査察対象に含まれるなど、自動車サプライチェーンの品質保証を規制当局が実力行使で検証する動きとして国際的に注目されている。「抜き打ち・サンプル直接押収・遠隔ソフト改変禁止」という手法は、検査データの信頼性そのものを問う踏み込んだ内容であり、なぜなぜ分析でいう「検証可能性の担保」という観点からも品質管理関係者の関心を集めている。
+- 出典:
+  - [Cell maker CALB pushes quality reforms after "banana battery" failures in GAC EVs | CarNewsChina](https://carnewschina.com/2026/08/07/cell-maker-calb-pushes-quality-reforms-after-banana-battery-failures-in-gac-evs/)
+  - [China's EV Crackdown Goes Permanent: Chery, Nio, and JAC Join MIIT's Second Wave of Factory Raids | Tech Times](https://www.techtimes.com/articles/322427/20260731/chinas-ev-crackdown-goes-permanent-chery-nio-jac-join-miits-second-wave-factory-raids.htm)
+  - [中国EV「AION」、電池の膨張・液漏れ相次ぐ 供給元CALBに試練 | 36Kr Japan](https://36kr.jp/500342/)
