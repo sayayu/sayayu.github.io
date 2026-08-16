@@ -126,3 +126,23 @@ date: 2026-07-16
   - [CVE-2026-62870 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62870)
   - [CVE-2026-62870 - Microsoft Excel Remote Code Execution Vulnerability | cvefeed.io](https://cvefeed.io/vuln/detail/CVE-2026-62870)
   - [Microsoft Excel Use-After-Free RCE (CVE-2026-62870) | TheHackerWire](https://www.thehackerwire.com/microsoft-excel-use-after-free-rce-cve-2026-62870/)
+
+## 2026-08-16
+
+### 1. 8月のPatch Tuesdayで、Excelだけで27件の脆弱性を修正 ― 深刻な緊急事態が2週連続に
+
+- 概要: 2026年8月11日のPatch Tuesdayで、MicrosoftはExcel向けに27件のCVEを修正した。このうちCVE-2026-68794・CVE-2026-68804・CVE-2026-68816の3件は、細工したファイルを開かせることでコード実行を許すリモートコード実行(RCE)の脆弱性で、CVSSスコアはいずれも7.8。Office関連のCVEは合計35件にのぼり、Word(17件)と並んでOfficeスイート全体の中でも今月の修正の中心となった。
+- 注目ポイント: 前週(2026-08-09分)で取り上げたCVE-2026-62870に続き、2週連続でExcelのRCE脆弱性が話題になった。Office Watchなどセキュリティ専門メディアは、今月はプレビューウィンドウ経由で発火するOffice関連の脆弱性も複数含まれていた点を強調しており、「ファイルを開くだけ/プレビューするだけ」でリスクが生じる構図が改めて注目を集めている。社外とExcelファイルを頻繁にやり取りする実務担当者にとって、継続的なパッチ適用の重要性を示す事例。
+- 出典:
+  - [August 2026 Patch Tuesday: Office Bugs That Fire From the Preview Pane | Office Watch](https://office-watch.com/2026/august-patch-tuesday-hit-office-hard-and-the-preview-pane-is-a-real-risk-this-month/)
+  - [August 2026 Patch Tuesday: Updates and Analysis | CrowdStrike](https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-august-2026/)
+  - [CVE-2026-68804 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804)
+
+### 2. Copilot in Excel、Power BIの管理済みデータを直接根拠にできる「Power BI Grounding」が一般提供
+
+- 概要: Microsoft 365メッセージセンターの告知(MC1455015、2026年8月15日更新)により、Copilot in ExcelがPower BIレポートを分析の根拠(グラウンディング)として利用できる機能が正式展開(Launched)されたことが伝えられた。ユーザーは「作業コンテンツを追加」からPower BIレポートを添付するだけで、管理者側の追加設定なしにCopilotへ質問できるようになる。行レベルセキュリティ(RLS)を含む既存のPower BI権限がそのまま尊重される点が明記されている。
+- 注目ポイント: 7月に予告されていたPower BI連携機能が8月中旬に実際に展開された形で、CIAOPSなどMicrosoft 365ウォッチャー系メディアの週次まとめでも取り上げられた。「Excelの柔軟さ」と「BI側で管理された信頼できる数値」を両立させる設計思想が、野良Excelによる集計ミスを懸念する情報システム部門・データガバナンス担当者から関心を集めている。
+- 出典:
+  - [MC1455015 Copilot in Excel: Power BI Grounding | pupuweb.com](https://pupuweb.com/mc1455015-copilot-in-excel-power-bi-grounding/)
+  - [Analyze Power BI reports with Copilot in Excel | Microsoft Support](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-power-bi)
+  - [CIA Brief 20260815 | CIAOPS](https://blog.ciaops.com/2026/08/15/cia-brief-20260815/)
