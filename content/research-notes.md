@@ -165,3 +165,29 @@ date: 2026-07-15
   - [Cell maker CALB pushes quality reforms after "banana battery" failures in GAC EVs | CarNewsChina](https://carnewschina.com/2026/08/07/cell-maker-calb-pushes-quality-reforms-after-banana-battery-failures-in-gac-evs/)
   - [China's EV Crackdown Goes Permanent: Chery, Nio, and JAC Join MIIT's Second Wave of Factory Raids | Tech Times](https://www.techtimes.com/articles/322427/20260731/chinas-ev-crackdown-goes-permanent-chery-nio-jac-join-miits-second-wave-factory-raids.htm)
   - [中国EV「AION」、電池の膨張・液漏れ相次ぐ 供給元CALBに試練 | 36Kr Japan](https://36kr.jp/500342/)
+
+## 2026-08-23
+
+### 1. ランドローバー8車種・7799台をリコール ― 補機ベルトガイドローラーの設計検討不足でオイル漏れのおそれ
+
+- 概要: ジャガー・ランドローバー・ジャパンは2026年8月18日、『レンジャーローバー』『レンジャーローバー スポーツ』『ディフェンダー』『ディスカバリー』など8車種、計7,799台についてリコールを届け出た。エンジン補機ベルトのガイドローラーについて位置決めガイドピンの強度検討が不十分で、エンジン振動によりピンが折損し、油圧センサーと干渉してセンサーが損傷、オイル漏れに至るおそれがある。対象は2024年3月3日〜2026年4月7日製造車。
+- 注目ポイント: 7月以降ダイハツ・スズキ・ヒョンデ・ステランティス・日野と本ノートで連続して取り上げてきた「基幹部品の設計検討(デザインレビュー)不足」型リコールに、今週は輸入車のランドローバーも加わった。国・メーカーを問わずパターンが繰り返されており、デザインレビューやFMEAの実効性という論点が業界横断的な関心を集め続けている。
+- 出典:
+  - [ランドローバー 8車種・7799台 リコール、オイル漏れのおそれ | レスポンス(Response.jp)](https://response.jp/article/2026/08/20/415488.html)
+  - [＜リコール情報＞ランドローバー 8車種・7799台 リコール、オイル漏れのおそれ | CAR CARE PLUS](https://carcareplus.jp/article/2026/08/21/15323.html)
+
+### 2. 米ダッジ「デュランゴ」約7.5万台をリコール ― リアスポイラーの位置ズレで脱落のおそれ
+
+- 概要: 米FCA US(ステランティス系)は2026年8月13日、2021〜2023年型『ダッジ・デュランゴ』約74,578台についてNHTSAへリコールを届け出た。リアスポイラーとルーフの位置合わせが不適切で、リフトゲート開閉時にスポイラーが損傷を繰り返すと、走行中に脱落し後続車両などに危害を及ぼすおそれがある。ディーラーへの通知は8月20日付で、恒久的な修理方法は現在開発中。
+- 注目ポイント: 今週はランドローバー(日本)とダッジ(米国)で、それぞれ異なる部品(オイル系統/外装)ながら「組付け・位置決めの検討不足」という共通パターンのリコールが同時に報じられ、設計・工程審査の網羅性という課題が国境を越えて浮き彫りになった週となった。
+- 出典:
+  - [Chrysler recalls 74,578 vehicles over rear spoiler issue | The Detroit News](https://www.detroitnews.com/story/business/autos/chrysler/2026/08/20/chrysler-recalls-74578-vehicles-over-spoiler-detachment-risk/91384771007/)
+  - [August 2026 Dodge Recall for Rear Spoilers That Can Detach, Affecting 74,578 Vehicles | Bizzy Car](https://www.bizzycar.com/blog/august-2026-dodge-recall-for-rear-spoilers-that-can-detach-affecting-74578-vehicles)
+
+### 3. GAC Aion、新型「Ray 7」を成都モーターショーで発表 ― 電池は自社製とCATL製の2本立て、CALB不採用が話題に
+
+- 概要: 広汽埃安(GAC AION)は2026年8月19〜21日開催の成都モーターショーで新シリーズ第1弾『Ray 7』を発表。ファーウェイ製モーターや新チャシー技術を搭載し、電池は自社Inpaiユニット製リン酸鉄リチウムと寧徳時代(CATL)製の2グレード構成となっている。
+- 注目ポイント: 本ノートで7月以降継続的に取り上げてきた「バナナ電池」問題(GAC AIONのAION Sに搭載された中創新航(CALB)製電池セルの膨張・液漏れ)の主要な当事者であるAIONブランドの新型車で、電池サプライヤーにCALBの名が見当たらないことに海外メディア・EV系Xアカウントの関心が集まっている。品質不祥事が調達・サプライヤー選定に与える影響の実例として、今後の動向が注視される。
+- 出典:
+  - [GAC Aion unveils Ray 7, first model with new logo, powered by Huawei drive unit | CnEVPost](https://cnevpost.com/2026/08/20/gac-aion-unveils-ray-7/)
+  - [CALB responds to 'banana battery' fallout with quality overhaul | CnEVPost](https://cnevpost.com/2026/08/06/calb-banana-battery-quality-overhaul/)
