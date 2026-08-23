@@ -146,3 +146,32 @@ date: 2026-07-16
   - [MC1455015 Copilot in Excel: Power BI Grounding | pupuweb.com](https://pupuweb.com/mc1455015-copilot-in-excel-power-bi-grounding/)
   - [Analyze Power BI reports with Copilot in Excel | Microsoft Support](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-power-bi)
   - [CIA Brief 20260815 | CIAOPS](https://blog.ciaops.com/2026/08/15/cia-brief-20260815/)
+
+## 2026-08-23
+
+### 1. Excelの「=COPILOT関数」、正式リリースを待たずに9月14日で廃止へ ― パワーユーザーから反発の声
+
+- 概要: Microsoftは2026年8月17日前後、2025年8月からBeta ChannelおよびFrontierプログラムで試験提供してきたセル内AI関数「=COPILOT()」を、2026年9月14日をもって廃止すると発表した。Microsoft 365ロードマップには「この機能を今後展開しないことを決定した。ご不便をおかけして申し訳ない」との一文が追加され、代替としてはサイドパネル型のCopilotチャットの利用が案内されている。
+- 注目ポイント: 一般提供(GA)される前に、1年足らずで機能そのものが撤回されるという異例の展開がThe Registerをはじめ複数の海外メディアで大きく報じられた。数式としてワークブックに残り、参照セルの変更に応じて再計算・スピルされる「=COPILOT()」と、都度チャットで結果を確認・適用する必要があるサイドパネルとでは使い勝手が異なるとして、パワーユーザーから「Python in Excelとの連携やApp Skillsの代替になっていない」といった反発の声が上がっている点が議論を呼んでいる。AI機能を矢継ぎ早に投入しては引っ込めるMicrosoftの開発姿勢そのものへの不満も、業界アナリストのコメントとして紹介された。
+- 出典:
+  - [Excel's Copilot function is headed for the Recycle Bin | The Register](https://www.theregister.com/ai-and-ml/2026/08/17/excels-copilot-function-is-headed-for-the-recycle-bin/5288327)
+  - [Microsoft is ditching the COPILOT function in Excel before it even launches | Windows Central](https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/microsoft-is-ditching-the-copilot-function-in-excel-before-it-even-launches)
+  - [Microsoft Is Retiring Excel's COPILOT() Function After Just One Year | Windows Report](https://windowsreport.com/microsoft-is-retiring-excels-copilot-function-after-just-one-year/)
+  - [MC1454373 - Frontier =COPILOT function in Excel will no longer be available | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1454373)
+
+### 2. Google Sheets、Excelファイルの取り込み精度を大幅強化 ― テーブル書式・ピボットテーブルもそのまま維持
+
+- 概要: Googleは2026年8月11日から、Google SheetsにおけるExcelファイル(.xlsx)インポート機能の改善を段階展開し始めた。Excel側の「テーブル」がSheets側の「テーブル」としてそのまま取り込まれるようになったほか、テーブル範囲を基にしたExcelのピボットテーブルも正しくインポートできるようになり、これまで発生していた書式崩れ・再構築の手間が大幅に減るとされる。Google Workspaceの法人・個人アカウント双方が対象。
+- 注目ポイント: Microsoft 365とGoogle Workspaceを併用する組織・現場でExcelファイルをやり取りする機会は多く、「.xlsxを開いたら体裁が崩れる」という定番の不満に直接応える改善として、gHacksやChrome Unboxed、Android Authorityなど複数のテック系メディアが好意的に取り上げた。Excel自体のアップデートではないものの、Excelとの相互運用性・データ移行の質が業務効率化に直結するテーマとして、Excel関連ニュースの文脈でも継続的に注目されている。
+- 出典:
+  - [Google Sheets Improves Excel Imports With Native Tables and Adds Connected Sheets Upgrades for BigQuery | gHacks Tech News](https://www.ghacks.net/2026/08/13/google-sheets-improves-excel-imports-with-native-tables-and-adds-connected-sheets-upgrades-for-bigquery/)
+  - [Google Sheets makes it less of a headache to import Excel files | Android Authority](https://www.androidauthority.com/google-sheets-excel-pivot-tables-3697487/)
+  - [Improved file importing in Google Sheets with tables and linked pivot tables | Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/08/improved-file-import-google-sheets-tables.html)
+
+### 3. Copilot in Excelに「テーマデザインスキル」「ブランドキットスキル」が追加 ― 2026年8月のCopilotアップデートまとめ
+
+- 概要: 2026年8月のMicrosoft 365 Copilotアップデートでは、Excel・PowerPoint・Word・Chat・Cowork・管理系を合わせて59件の変更が加えられ、その中でもExcelが最も更新点の多い製品だったと報じられている。Copilot in Excelには、`@theme-design`と呼びかけるだけで配色・グラフ装飾・レイアウトを一括で整える「テーマデザインスキル」、および組織のBrand Kit(承認済みの配色・フォント・ロゴ)をワークブックに一括適用する「ブランドキットスキル」が新たに追加された。
+- 注目ポイント: セルを一つずつ手作業で装飾していた「体裁調整」という地味だが時間のかかる作業をCopilotに一括で任せられるようになった点が、資料作成・レポーティング業務の効率化という観点で注目されている。前週まとめてきたPower BI Grounding機能や、今週の「=COPILOT関数」廃止の話題とあわせて、MicrosoftがExcelのAI機能を「セル内の単発関数」から「ワークブック全体・組織のブランド基準に沿った一括操作」へとシフトさせている流れが見えてくる。
+- 出典:
+  - [What's New in Microsoft 365 Copilot: August 2026 | A Guide to Cloud & AI](https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/)
+  - [Microsoft 365 Copilot Features: August 2026 Updates | Geeky Gadgets](https://www.geeky-gadgets.com/microsoft-365-copilot-features-august-2026/)
