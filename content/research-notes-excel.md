@@ -175,3 +175,32 @@ date: 2026-07-16
 - 出典:
   - [What's New in Microsoft 365 Copilot: August 2026 | A Guide to Cloud & AI](https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/)
   - [Microsoft 365 Copilot Features: August 2026 Updates | Geeky Gadgets](https://www.geeky-gadgets.com/microsoft-365-copilot-features-august-2026/)
+
+## 2026-08-30
+
+### 1. Excelの2026年8月アップデートまとめ ― Copilotに「変更履歴要約」「Pythonスキル」「チャット履歴」を追加
+
+- 概要: Microsoftは2026年8月25日前後、Excel公式ブログで8月の月例アップデートを公開した。Copilot in Excelに、ワークブックの変更履歴を要約し誰が何を編集したかをAIが説明する「Change Historyスキル」、Pythonコードを実行して高度なデータ分析・自動化を行える「Pythonスキル」、過去のチャットを一覧・再開できる「チャット履歴」、グラフ作成を支援する「Chart/PivotTableスキル」などが追加された。
+- 注目ポイント: Neowin・Windows Report・Technobezzなど複数の海外テックメディアが同時に取り上げ、「Excelが8月の全Microsoft 365製品中もっとも更新点が多い製品だった」と報じられている。単発の関数ではなく、変更履歴の可視化やPython連携など「ワークブック運用そのもの」を支援する方向への注力が続いており、先週報じた「=COPILOT()関数の廃止」とあわせて、MicrosoftがAI機能をセル内数式からサイドパネル型のエージェント機能へ本格的に一本化しつつある流れが鮮明になっている。
+- 出典:
+  - [What's New in Excel (August 2026) | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-august-2026/4527283)
+  - [Here are all the new features Microsoft added to Excel in August 2026 | Neowin](https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-excel-in-august-2026/)
+  - [Microsoft Packs Excel's August Update With Copilot Features | Windows Report](https://windowsreport.com/microsoft-packs-excels-august-update-with-copilot-features/)
+  - [Microsoft's August Excel Update Adds Copilot Change History and Python Tools | Technobezz](https://www.technobezz.com/news/microsofts-august-excel-update-adds-copilot-change-history-and-python-tools)
+
+### 2. ExcelのExchangeコネクタが廃止へ ― 「多くのワークブックが壊れる可能性」と海外メディアが一斉警鐘
+
+- 概要: Microsoftは2026年8月25日、Excel(Power Query)のメール・カレンダー取得に使われている旧「Exchangeコネクタ」を廃止し、新しい「Exchange Mail」「Exchange Calendar」コネクタに置き換えると発表した。既存のワークブックは自動移行されず、利用者が手動で参照先を切り替える必要があり、対応しないまま2027年4月の廃止期限を過ぎると該当機能が動作しなくなる。新コネクタはMicrosoft 365および Office 2024以降のみが対象で、買い切り版の旧Officeでは代替手段がない点も指摘されている。
+- 注目ポイント: The Register・Neowin・Techzine・Petri・Windows Reportなど、通常は別々に報じる複数の主要テックメディアがほぼ同日に一斉に取り上げた点が特徴的。Neowinは「多くのワークブックを壊しかねない“大きな変更”」と表現し、IT管理者・ワークブック作成者に早期の棚卸しと移行を促す内容として、企業の情報システム部門を中心に話題になっている。
+- 出典:
+  - [Microsoft warns that transitioning Excel workbooks to new Exchange connectors might not be smooth sailing | The Register](https://www.theregister.com/software/2026/08/25/microsoft-warns-that-transitioning-excel-workbooks-to-new-exchange-connectors-might-not-be-smooth-sailing/5292316)
+  - [Microsoft is making a "major change" in Excel which may break a lot of workbooks | Neowin](https://www.neowin.net/news/microsoft-is-making-a-major-change-in-excel-which-may-break-a-lot-of-workbooks/)
+  - [Microsoft's Excel Exchange Connector Retirement Could Disrupt Power Query Workbooks | Petri](https://petri.com/microsoft-excel-exchange-connector-retirement/)
+  - [Microsoft is discontinuing the Exchange connector in Excel | Techzine Global](https://www.techzine.eu/news/applications/143862/microsoft-is-discontinuing-the-exchange-connector-in-excel/)
+
+### 3. 「Copilotがまた変わった」― 8月のMicrosoft 365 Copilot変更点を一望する非公式まとめ記事が反響
+
+- 概要: Microsoft 365 Copilotの動向を追う非公式ニューズレター「M365 Copilot Connection」が、2026年8月に発表されたCopilot Chat・Word・PowerPoint・Excel・Teams・SharePoint・Notebooksなど全プロダクトの変更点を1本の記事にまとめて公開した。Excel関連では、チャット内で「@Excelエージェント」を直接メンションできる新機能や、前述のPythonスキルなどが取り上げられている。
+- 注目ポイント: 公式リリースノートが製品ごと・月ごとに分散していて追いきれないという実務者の不満を受けた「非公式まとめ」であり、タイトルの「Copilotがまた変わった」という表現自体が、AI機能の変更頻度の高さに対するユーザー側の疲労感を象徴しているとして共感を集めている。1つの記事でExcel単体ではなくOffice全体の変化を俯瞰できる点が、情報収集の効率化を求める読者に評価されている。
+- 出典:
+  - [Copilot just changed again — every August 2026 update, in one place | M365 Copilot Connection (Substack)](https://m365copilotconnection.substack.com/p/copilot-just-changed-again-every)
