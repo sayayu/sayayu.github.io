@@ -204,3 +204,32 @@ date: 2026-07-16
 - 注目ポイント: 公式リリースノートが製品ごと・月ごとに分散していて追いきれないという実務者の不満を受けた「非公式まとめ」であり、タイトルの「Copilotがまた変わった」という表現自体が、AI機能の変更頻度の高さに対するユーザー側の疲労感を象徴しているとして共感を集めている。1つの記事でExcel単体ではなくOffice全体の変化を俯瞰できる点が、情報収集の効率化を求める読者に評価されている。
 - 出典:
   - [Copilot just changed again — every August 2026 update, in one place | M365 Copilot Connection (Substack)](https://m365copilotconnection.substack.com/p/copilot-just-changed-again-every)
+
+## 2026-09-06
+
+### 1. Microsoft、ワークブックを対話で「見える化」する新機能「Excel Canvas」を発表 ― 9月中の本格展開へ
+
+- 概要: Microsoftは2026年9月1日前後、Microsoft 365ロードマップ(アイテム569424)にて、Copilotがワークブックのデータを解釈し、グラフ・指標・インサイトをまとめた1枚のインタラクティブなビューとして自動生成する新機能「Excel Canvas」を発表した。生成後もCopilotとのチャットでレイアウトや内容を調整でき、元データが更新されればCanvas側も自動的に反映される。デスクトップ・Web双方で9月中に広く展開される予定。
+- 注目ポイント: グラフを1つずつ手作業で組み立てる従来のダッシュボード作成に代わり、「会話するだけで完成したダッシュボードが出てくる」という体験の変化が海外テックメディア(Windows Latest、Neowinなど)で相次いで取り上げられた。8月に紹介した「テーマデザインスキル」「ブランドキットスキル」に続き、Excelの役割が「単票計算ツール」から「AIが仕上げるレポーティング基盤」へ移りつつある流れの延長として注目されている。
+- 出典:
+  - [Microsoft is adding an AI-powered Canvas to Excel that turns workbook data into interactive dashboards | Windows Latest](https://www.windowslatest.com/2026/09/05/microsoft-is-adding-an-ai-powered-canvas-to-excel-that-turns-workbook-data-into-interactive-dashboards/)
+  - [Microsoft is working on "Excel canvas," and it sounds pretty sweet | Neowin](https://www.neowin.net/news/microsoft-is-working-on-excel-canvas-and-it-sounds-pretty-sweet/)
+  - [RM569424 - Excel: Excel canvas | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM569424)
+
+### 2. Excelの「=COPILOT()」関数、廃止日(9月14日)が目前に迫り関心が再燃
+
+- 概要: 8月に予告された、セル内でAI応答を数式として返す試験機能「=COPILOT()」の廃止まで残りわずかとなり、窓の杜が改めて解説記事を配信、あわせて同記事が窓の杜のアクセスランキングでも上位に入るなど、廃止直前になって関心が再燃している。9月14日以降は新規の数式作成ができなくなり、既存の数式も動作しなくなる見込みで、代替としてはサイドパネル型のCopilotチャットの利用が案内されている。
+- 注目ポイント: 正式リリース(GA)を迎えないまま1年足らずで姿を消すという異例の展開そのものに加え、「動くうちに使い方を知っておきたい」という駆け込み需要的な関心の高まりが、締め切り直前の記事アクセス増という形で可視化された点が興味深い。AI機能を矢継ぎ早に投入しては撤回するMicrosoftの開発スタイルに対し、実務ユーザー側が振り回されている構図が改めて浮き彫りになっている。
+- 出典:
+  - [「Excel」の「=COPILOT()」関数の廃止に注目が集まる - 記事アクセスランキング | 窓の杜](https://forest.watch.impress.co.jp/docs/serial/accessranking/2134871.html)
+  - [登場から約1年、「Excel」の「=COPILOT()」関数が2026年9月14日で廃止 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2134050.html)
+  - [ExcelのAI関数「=COPILOT」が一般展開されないままお蔵入り | PC Watch](https://pc.watch.impress.co.jp/docs/news/2134594.html)
+
+### 3. ロシア人ハッカーが「マクロ付きExcelファイル」を使った大規模マルウェア攻撃で起訴 ― 8万人規模の被害
+
+- 概要: 米司法省は2026年9月、キプロスから身柄を引き渡されたロシア国籍の男(Searzhudin Tamirlanovich Aktulaev容疑者)を、フリーランス向けプラットフォーム上の約255件の偽アカウントを使い、マクロ入りのExcelファイルを約8万人に送りつけてマルウェア「TVRAT」(別名TeamSpy)に感染させた容疑で起訴したと発表した。受信者がファイル内のマクロを有効化すると、攻撃者が被害者PCへ遠隔アクセス・制御できる仕組みだったとされる。有罪となれば通信詐欺共謀罪だけで最大20年の実刑の可能性がある。
+- 注目ポイント: 「Excelのマクロを有効化させる」という古典的だが今なお有効な攻撃手法が、8万人規模・複数年にわたる大規模キャンペーンとして立件された点がセキュリティ系メディア(The Hacker News、Tom's Hardwareなど)で広く報じられた。AI機能を巡る話題が続く中でも、「不明な送信元のExcelファイルでマクロを有効化しない」という基本的な情報リテラシーの重要性を改めて示す事例として注目されている。
+- 出典:
+  - [Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands | The Hacker News](https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html)
+  - [Russian Hacker Indicted for Using Excel Malware to Target 80,000 Freelancers With TVRAT and DarkVNC | Cyber Security News](https://cybersecuritynews.com/russian-hacker-using-excel-malware/)
+  - [Russian hacker faces up to 20 years in prison, following extradition and indictment over US phishing campaign that allegedly infected 80,000 PCs | Tom's Hardware](https://www.tomshardware.com/tech-industry/cyber-security/russian-hacker-faces-up-to-20-years-in-prison-following-extradition-and-indictment-over-us-phishing-campaign-that-allegedly-infected-80-000-pcs-hacker-stole-victims-data-via-remote-access)
