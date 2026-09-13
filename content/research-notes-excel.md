@@ -233,3 +233,39 @@ date: 2026-07-16
   - [Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands | The Hacker News](https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html)
   - [Russian Hacker Indicted for Using Excel Malware to Target 80,000 Freelancers With TVRAT and DarkVNC | Cyber Security News](https://cybersecuritynews.com/russian-hacker-using-excel-malware/)
   - [Russian hacker faces up to 20 years in prison, following extradition and indictment over US phishing campaign that allegedly infected 80,000 PCs | Tom's Hardware](https://www.tomshardware.com/tech-industry/cyber-security/russian-hacker-faces-up-to-20-years-in-prison-following-extradition-and-indictment-over-us-phishing-campaign-that-allegedly-infected-80-000-pcs-hacker-stole-victims-data-via-remote-access)
+
+## 2026-09-13
+
+### 1. 9月のPatch Tuesdayが過去最大規模の973件に ― Excelには複数の緊急(Critical)級RCEも
+
+- 概要: Microsoftは2026年9月8日、過去最大となる973件の脆弱性を修正するPatch Tuesdayを公開した(これまでの最多記録だった2026年7月の664件を大きく更新)。Office関連だけで111件が対象となり、Excelでは32件の修正のうち、ヒープバッファオーバーフローによるCVE-2026-81948や二重解放によるCVE-2026-81950など複数の緊急(Critical)級リモートコード実行(RCE)脆弱性が含まれていた。細工したファイルを開かせることで攻撃が成立する典型的なパターンとされる。
+- 注目ポイント: 単月の修正件数として過去最大という規模そのものが大きな話題となり、セキュリティ専門メディア各社が一斉に報じた。Excelが毎月のように緊急級RCEの修正対象になっている状況が続いており、社外とファイルをやり取りする実務現場に向けて、迅速なパッチ適用の呼びかけが改めて強まっている。
+- 出典:
+  - [Massive Microsoft Patch Tuesday September 2026 - 973 Vulnerabilities Fixed, Including 2 Zero-Days | Cyber Security News](https://cybersecuritynews.com/microsoft-patch-tuesday-update-september-2026/)
+  - [Microsoft Patch Tuesday for September 2026 — Snort rules and prominent vulnerabilities | Talos Intelligence](https://blog.talosintelligence.com/microsoft-patch-tuesday-for-september-2026/)
+  - [September 2026 Patch Tuesday: Updates and Analysis | CrowdStrike](https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/)
+
+### 2. 皮肉にもセキュリティ更新自体がExcelのコピー&ペーストを破壊 ― KB5002914の副作用に苦情殺到
+
+- 概要: 上記の9月Patch Tuesdayで配信されたセキュリティ更新プログラム「KB5002914」を適用すると、Excel 2016・2019・2021・2024でCtrl+C/Ctrl+Vによるコピー&ペーストや数式のオートフィルが、エラーも警告音も出ないまま無反応で失敗するようになる不具合が多数報告された。RedditやMicrosoft Q&Aフォーラムで報告が相次ぎ、Microsoftはこれを既知の問題として認めたものの、記事執筆時点で正式な修正版は未提供で、原因調査中としている。
+- 注目ポイント: 「脆弱性を塞ぐための更新が、逆に日常業務の基本操作(コピペ)を止めてしまう」という皮肉な展開がBleepingComputerやWindows Report、Office Watchなど幅広いメディアで取り上げられた。回避策として更新プログラムのアンインストールを紹介する記事もあり、セキュリティ対応と業務継続性の両立という、まさに品質管理的な悩ましさを象徴する事例として注目されている。
+- 出典:
+  - [Microsoft Excel KB5002914 update breaks copy and paste for some users | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-excel-kb5002914-update-breaks-copy-and-paste-for-some-users/)
+  - [Microsoft Excel copy and paste isn't working after KB5002914 update, the company confirms | Windows Report](https://windowsreport.com/microsoft-excel-copy-and-paste-isnt-working-after-kb5002914-update-the-company-confirms/)
+  - [Excel Copy and Paste Broken by Microsoft's Own Security Update — How to Fix It | Office Watch](https://office-watch.com/2026/excel-copy-paste-broken-microsoft-update-fix/)
+
+### 3. 「=COPILOT()」関数、いよいよ9月14日で廃止 ― 期限直前に日本でも解説記事が再拡散
+
+- 概要: 8月に予告されていたExcelのセル内AI関数「=COPILOT()」の廃止期限(2026年9月14日)が目前に迫り、窓の杜・PC WatchなどがYahoo!ニュース経由でも改めて拡散されたほか、Qiitaでは自分のブックが影響を受けるかを短時間で判定する方法や、セル内にAIを置く設計がなぜ一般提供に至らなかったのか(応答の非決定性、Copilotライセンス・ネット接続の必要性など)を解説する技術記事も投稿された。
+- 注目ポイント: 正式リリースを経ないまま1年足らずで撤回されるという経緯そのものへの関心に加え、期限直前になって「今のうちに影響を確認しておきたい」という駆け込み需要的なアクセス増が改めて可視化された。単なるニュース紹介にとどまらず、Qiitaのように「なぜセル内AIという設計が表計算と噛み合わなかったのか」を掘り下げる技術者目線の考察記事が出てきた点も今週の特徴といえる。
+- 出典:
+  - [登場から約1年、「Excel」の「=COPILOT()」関数が2026年9月14日で廃止 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2134050.html)
+  - [「Excel」の「=COPILOT()」関数の廃止に注目が集まる - 記事アクセスランキング | 窓の杜](https://forest.watch.impress.co.jp/docs/serial/accessranking/2134871.html)
+  - [=COPILOT()関数が9月14日で廃止｜セル内AIが表計算と噛み合わない理由 | Qiita](https://qiita.com/admini_bi/items/b42b67b4d0db4e1ba72b)
+
+### 4. How-To Geekの週末企画、今度は「10分で作る動的Excelタイムライン」
+
+- 概要: How-To Geekが9月11日、週末企画シリーズの最新回として、折れ線グラフを土台に少しの書式設定を加えるだけで、データの更新に自動追従する「動的タイムライン」を10分程度で作成する手順を紹介する記事を公開した。ガントチャートやPivotTableのタイムラインスライサーなど、これまでも同シリーズで扱ってきた「グラフ・表の可視化テクニック」の延長にある内容。
+- 注目ポイント: 7月以降このノートでも継続的に取り上げてきたHow-To Geekの週末企画が今週も続いており、新機能ではなく既存のグラフ機能の組み合わせ方の工夫で成果物の質を上げるという切り口が定着している。プロジェクト管理やスケジュール共有にそのまま使える実用的な内容で、業務効率化・見える化をテーマにする読者層から継続的に支持されている。
+- 出典:
+  - [I built a dynamic Excel timeline in 10 minutes—you can too this weekend (September 11-13) | How-To Geek](https://www.howtogeek.com/microsoft-excel-build-dynamic-timeline-weekend-project-september-11-13/)
