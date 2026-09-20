@@ -269,3 +269,31 @@ date: 2026-07-16
 - 注目ポイント: 7月以降このノートでも継続的に取り上げてきたHow-To Geekの週末企画が今週も続いており、新機能ではなく既存のグラフ機能の組み合わせ方の工夫で成果物の質を上げるという切り口が定着している。プロジェクト管理やスケジュール共有にそのまま使える実用的な内容で、業務効率化・見える化をテーマにする読者層から継続的に支持されている。
 - 出典:
   - [I built a dynamic Excel timeline in 10 minutes—you can too this weekend (September 11-13) | How-To Geek](https://www.howtogeek.com/microsoft-excel-build-dynamic-timeline-weekend-project-september-11-13/)
+
+## 2026-09-20
+
+### 1. 「コピペが壊れる」騒動の修正版KB5002665が登場も、対象は限定的 ― 依然くすぶるユーザーの不満
+
+- 概要: 前週分で報告したセキュリティ更新KB5002914によるExcelのコピー&ペースト不具合について、Microsoftは2026年9月16日、修正プログラム「KB5002665」を公開した。しかし対象はMSIベースのOffice 2016のみで、Click-to-Run版や2019・2021・2024といった他バージョンは未対応のまま。さらにMSI版でも、条件付き書式を含むブックでは依然として貼り付けが失敗する場合があると案内されている。
+- 注目ポイント: BleepingComputerやReddit上では、更新適用後に「チーム全員がコピペ不能になり業務が止まった」といった生々しい報告が相次いでおり、Microsoftが2026年9月11日に既知の問題として正式に認めるまでの対応の遅さも批判された。今回のKB5002665はあくまで部分的な応急処置にとどまり、「セキュリティパッチが業務の根幹操作を壊す」という品質管理上の教訓が、修正後もなお完全には解消されていない点が続報として注目されている。
+- 出典:
+  - [Microsoft fixes broken copy and paste for Excel 2016 users | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/)
+  - [Microsoft confirms it accidentally broke copy and paste in Excel with a major security update you shouldn't remove | Windows Latest](https://www.windowslatest.com/2026/09/17/microsoft-kb5002914-breaks-copy-and-paste-in-excel-and-it-doesnt-know-how-to-fix-it-right-away/)
+  - [Excel Copy Paste Bug: Is Your Office Version Fixed Yet? | Office Watch](https://office-watch.com/2026/excel-copy-paste-bug-fixed-versions/)
+  - [KB5002665 Fixes Excel 2016 Paste Only on MSI Installs | Windows Forum](https://windowsforum.com/news/kb5002665-fixes-excel-2016-paste-only-on-msi-installs.444958/)
+
+### 2. 「=COPILOT()」関数、ついに廃止 ― Frontierユーザーが試作したブックが現場に残る「置き土産」問題を指摘する声も
+
+- 概要: 8月に予告されていたExcelのセル内AI関数「=COPILOT()」が、予定どおり2026年9月14日付けで廃止された。窓の杜・PC Watch・Yahoo!ニュースなど日本メディアが改めて報じたほか、Qiitaでは廃止後の技術者目線の考察記事が複数投稿された。通常のMicrosoft 365環境では直接の影響はないとされる一方、試験提供期間中に「Frontierプログラム」に参加していた一部社員が試作した数式入りテンプレートが、いつの間にかチームの月次フォーマットとして定着してしまっているケースが現場では起こりうると指摘されている。
+- 注目ポイント: 一般提供(GA)を経ないまま1年足らずで撤回されるという経緯そのものに加え、「試験導入されたAI機能が、正式な棚卸しをされないままブックからブックへ受け継がれてしまう」というガバナンス上の盲点を指摘する声が今週新たに出てきた点が特徴的。単なる機能廃止のニュースを超え、社内で使われているExcelブックの数式を定期的に棚卸しする重要性を示す事例として、品質管理・データガバナンスの観点からも参考になる。
+- 出典:
+  - [登場から約1年、「Excel」の「=COPILOT()」関数が2026年9月14日で廃止 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2134050.html)
+  - [ExcelのAI関数「=COPILOT」が一般展開されないままお蔵入り | PC Watch](https://pc.watch.impress.co.jp/docs/news/2134594.html)
+  - [# Excelの `=COPILOT()` が廃止へ。わずか1年で終了 | Qiita](https://qiita.com/ChisatoMatsunami/items/238175a407743fdbd352)
+
+### 3. How-To Geekの週末企画、今週は「5分で直せるExcelのちょっとした不満5選(9/18-20)」
+
+- 概要: How-To Geekが9月18日、週末企画シリーズの最新回として、日常的に感じる小さなExcelの不満点を5分程度で解消する方法をまとめた記事を公開した。2つのブックを同時に開いているとCtrl+Zが意図しない方のブックを元に戻してしまう問題を「ブックごとに別インスタンスで開く」ことで回避する方法や、「A, B, C, D」のようなアルファベット連続入力にオートフィルが対応しない問題を「ユーザー設定リスト」に登録することで解決する方法などを紹介している。
+- 注目ポイント: 7月以降このノートでも継続的に取り上げてきたHow-To Geekの週末企画が今週も続いており、派手な新機能ではなく「地味に日々イラつく操作」を取り上げる切り口が定着している。KB5002914のコピペ不具合が大きな話題になった週でもあり、「Excelの基本操作まわりの小さなストレス」というテーマが図らずも今週全体の関心と重なった形。
+- 出典:
+  - [5 common Excel annoyances you can fix in 5 minutes this weekend (September 18-20) | How-To Geek](https://www.howtogeek.com/microsoft-excel-common-annoyances-fix-this-weekend-september-18-20/)
