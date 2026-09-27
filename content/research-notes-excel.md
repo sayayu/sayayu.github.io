@@ -297,3 +297,38 @@ date: 2026-07-16
 - 注目ポイント: 7月以降このノートでも継続的に取り上げてきたHow-To Geekの週末企画が今週も続いており、派手な新機能ではなく「地味に日々イラつく操作」を取り上げる切り口が定着している。KB5002914のコピペ不具合が大きな話題になった週でもあり、「Excelの基本操作まわりの小さなストレス」というテーマが図らずも今週全体の関心と重なった形。
 - 出典:
   - [5 common Excel annoyances you can fix in 5 minutes this weekend (September 18-20) | How-To Geek](https://www.howtogeek.com/microsoft-excel-common-annoyances-fix-this-weekend-september-18-20/)
+
+## 2026-09-27
+
+### 1. Excelに40年越しの新機能「単一セル内リスト・配列」登場 ― Slashdotでも大きな話題に
+
+- 概要: MicrosoftはExcel for Windows/MacのBetaチャネル(Insiderプログラム)向けに、1つのセルに複数の値を「リスト」または「配列」として格納できる新機能のプレビュー提供を2026年9月25日前後に開始した。Insert > ListまたはCtrl+Jでリストを作成し、カンマ・セミコロン区切りで値を入力すると、見た目は1セルでも内部的には個々の値が保持され、フィルタ・集計・計算にそのまま利用できる。数式の結果を波かっこ{}で囲むことで、スピル結果を1セルの配列としてそのまま保持することも可能になった。
+- 注目ポイント: 「1セルに1値」という表計算ソフトの根本的な制約に約40年ぶりに手を入れる変更として、Slashdotが「After 40 Years, Microsoft Excel Will Add Single-Cell Lists and Arrays」の見出しで取り上げ、エンジニア・パワーユーザー層で活発な議論を呼んだ。あくまでプレビュー段階の機能であり挙動が変わりうる点、CSV的な運用や他ツールとの互換性への影響を懸念する声も出ており、Excelの基本データモデルに関わる変更として今後の展開が注視されている。
+- 出典:
+  - [Excel now supports multiple values in a single cell | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/excel-now-supports-multiple-values-in-a-single-cell/4549756)
+  - [After 40 Years, Microsoft Excel Will Add Single-Cell Lists and Arrays | Slashdot](https://slashdot.org/story/26/09/26/0227226/after-40-years-microsoft-excel-will-add-single-cell-lists-and-arrays)
+  - [Excel Multiple Values in One Cell: Microsoft 365 Testing | Geeky Gadgets](https://www.geeky-gadgets.com/multiple-values-one-excel-cell/)
+
+### 2. MicrosoftがWord・Excelを「Copilotの中」へ統合する新戦略を発表
+
+- 概要: Microsoftは2026年9月26日、Word・Excel・PowerPointをCopilotアプリの中に直接統合し、アプリを切り替えずにファイルの作成・編集・共有を行えるようにする新戦略を発表した。個人向けMicrosoft 365サブスクライバーおよびテストプログラム参加企業向けに、今後数週間で展開が始まる予定。Copilot担当のJacob Andreou氏(EVP)は「単なる簡易ビューアではなく、フル機能のOffice」と説明している。
+- 注目ポイント: これまで「Excel側にCopilotを組み込む」形で進んできたAI統合の流れが、逆に「Copilotの中にOfficeを取り込む」方向へ転換した点が注目を集めた。TechXploreを皮切りに、The Daily Star・The Peninsula Qatar・Free Malaysia Today・Sharjah24など世界各地のメディアがほぼ同日に配信し、「AIをOfficeスイートの入り口にする」というMicrosoftの製品戦略そのものの大転換として広く報じられている。
+- 出典:
+  - [Microsoft integrates Word and Excel more deeply into Copilot | TechXplore](https://techxplore.com/news/2026-09-microsoft-word-excel-deeply-copilot.html)
+  - [Microsoft integrates Word, Excel deeper into Copilot | The Daily Star](https://www.thedailystar.net/news/technology/news/microsoft-integrates-word-excel-deeper-copilot-4283131)
+
+### 3. 「コピペ破壊」問題、ついに全Office版で修正 ― 3週間越しの騒動に一区切り
+
+- 概要: 9月のセキュリティ更新KB5002914に起因するExcelのコピー&ペースト不具合について、Microsoftは2026年9月23日、Excel 2016のMSI版に限定されていた修正範囲を広げ、Excel 2019・2021・2024およびExcel Online(Office Online Server)を含む全バージョンで問題を修正したと発表した。9月8日のPatch Tuesdayで発生してから、9月16日のKB5002665(Excel 2016 MSI版限定)を経て、ようやく全ユーザー向けの恒久対応にたどり着いた形。
+- 注目ポイント: 本ノートで9月13日・9月20日と2週連続で取り上げてきた「セキュリティ更新が基本操作を壊す」騒動の、事実上の決着編にあたる。BleepingComputerやgHacksが速報し、Redditや日本語圏のブログ・SNSでも「やっと直った」という反応が広がった。3週間にわたり実務に影響を与え続けたことで、パッチ配信後の影響範囲確認と検証の重要性を改めて浮き彫りにした事例として注目されている。
+- 出典:
+  - [Microsoft fixes broken Excel copy and paste for all Office users | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-excel-copy-and-paste-for-all-office-users/)
+  - [Microsoft Fixes Broken Copy and Paste for Excel 2016 After September Update Bug | gHacks Tech News](https://www.ghacks.net/2026/09/21/microsoft-fixes-broken-copy-and-paste-for-excel-2016-after-september-update-bug/)
+
+### 4. Excel世界大会2026、オンライン予選ラウンドが開催 ― ラスベガス本戦への切符をかけ激戦
+
+- 概要: Microsoft Excel World Championship(MEWC)2026シーズンにおいて、2026年9月26日にオンラインの「Qualification Round(予選ラウンド)」が開催された。1月22日から9月24日にかけて実施された9回の月例バトル「Road to Las Vegas」で本戦出場権を得られなかった選手向けの追加ルートで、両ラウンド合わせて140名がグループステージへ進出する。
+- 注目ポイント: 本ノートで7月以降継続して取り上げてきたExcel eスポーツ(Landmark Battle、ESPN8: The Ocho、MOS World Championshipなど)の流れの最新回にあたる。1年がかりのシーズン構成・複数の予選ルートを備えた大会運営が本格的に定着しつつあり、業務ソフトであるExcelを競技として観戦・応援する文化が海外で着実に広がっている様子がうかがえる。
+- 出典:
+  - [MEWC – Microsoft Excel World Championship](https://excel-esports.com/)
+  - [Inside the Excel World Championship's 2026 Season | Refonte Learning](https://www.refontelearning.com/blog/excel-world-championship-business-analyst-skills)
