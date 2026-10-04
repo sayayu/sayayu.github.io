@@ -332,3 +332,47 @@ date: 2026-07-15
 - 注目ポイント: 9月4日の調査報告公表(本ノートでも既報)を受け、今週は「原因の解明」から「具体的にどう作り直すか」という事業再生の実務段階に報道の重心が移った。品証部門の権限強化やグローバル品質監査は、9月13日号の続報で明らかになった「5年で品証人員を半減させていた」過去の体制の裏返しであり、なぜなぜ分析でいう真因(品質保証機能の資源不足・権限不足)に直接対応する打ち手として、他の製造業関係者にとっても参考になる事例と位置付けられている。
 - 出典:
   - [社内論理よりも顧客を第一に考える企業へ ニデックの「再生」に向けた事業施策 | MONOist](https://monoist.itmedia.co.jp/mn/articles/2609/25/news036.html)
+
+## 2026-10-04
+
+### 1. トヨタ・レクサスSUV617台をリコール(米国) ― 鍛造工場で工程を1つ飛ばし、フロントステアリングナックルが破断のおそれ
+
+- 概要: トヨタ自動車は米国で、2026年6月に製造した『グランドハイランダー』『グランドハイランダー ハイブリッド』、レクサス『TX350』『TX500h』『RX350』『RX350h』『RX500h』計617台についてリコールを届け出た。原因は米ノースカロライナ州の鍛造工場で製造工程の1ステップが抜け落ちていたことで、フロントステアリングナックルの強度が不足。段差や縁石への衝突などの衝撃を受けると、ストラット取付部やタイロッド取付部で亀裂・破断し、ステアリング操作ができなくなるおそれがある。11月2日〜16日にかけて所有者へ通知し、ディーラーで点検・交換を行う。
+- 注目ポイント: 「設計」ではなく「工程の抜け」という製造プロセス側の作り込み不備が原因である点が特徴的で、量産工程における工程管理・検査(抜け工程の検出)の実効性を問う事例として海外メディアで広く報じられている。品質保証の王者とされるトヨタ・レクサスブランドでの発生という点も関心を集めており、なぜなぜ分析でいう「なぜ工程の抜けを検査で検出できなかったのか」という流出側の原因分析の好材料になっている。
+- 出典:
+  - [Lexus And Toyota Are The Durability Kings, But They Have A Steering Knuckle Issue | Carscoops](https://www.carscoops.com/2026/10/lexus-toyota-steering-knuckle-recall/)
+  - [Toyota Recalls Grand Highlander, Lexus TX, and RX for Steering Knuckles That May Fail | autoevolution](https://www.autoevolution.com/news/toyota-recalls-grand-highlander-lexus-tx-and-rx-for-steering-knuckles-that-may-fail-276080.html)
+  - [NHTSA Recalls Sept. 28–Oct. 2: Cadillac, Ford, Toyota | Vehicle Service Pros](https://www.vehicleservicepros.com/industry-news/service-repair/article/55409252/national-highway-traffic-safety-administration-nhtsa-nhtsa-recalls-sept-28oct-2-cadillac-ford-toyota)
+
+### 2. キャデラック「OPTIQ」約2万9347台をリコール ― サプライヤー製ソフトのキャリブレーション不良でパワーウインドウの挟み込み防止機能が作動不良
+
+- 概要: GMは、2025〜2027年モデルのキャデラック『OPTIQ』(EV)約29,347台についてリコールを届け出た。キーフォブからのリモート操作でパワーウインドウを閉める際、窓の上端付近(残り13mm以内)で障害物を検知しても停止・反転しない場合がある。原因はサプライヤーKwangjin America製の挟み込み防止システムのソフトウェアキャリブレーションで、作動範囲の上限値が低く設定されすぎていたこと。対策はBCM(ボディ制御モジュール)のOTAによる再プログラミングで、所要時間は約10分。
+- 注目ポイント: 指や子どもの頭などを挟み込む重大な安全機能(アンチピンチ)がサプライヤー供給のソフトウェアパラメータ設定ミスで機能しなくなっていたという事例で、サプライチェーンにおけるソフトウェア検証・妥当性確認(V&V)の実効性が改めて問われている。IATF 16949の次期改訂でソフトウェア品質保証・サプライチェーン管理が優先領域に挙げられている中、まさにその論点を具現化する事例として注目されている。
+- 出典:
+  - [29,347 Cadillac Optiqs Recalled Over Power Window Injury Risk | Autoblog](https://www.autoblog.com/news/29347-cadillac-optiqs-recalled-over-power-window-injury-risk)
+  - [GM's Cadillac Division Recalls Optiq EV for Remote Window Safety Concern | autoevolution](https://www.autoevolution.com/news/gm-s-cadillac-division-recalls-optiq-ev-for-remote-window-safety-concern-276379.html)
+  - [GM Recalls 29,347 Cadillac Optiq EVs Over Window Pinch Protection Flaw | eletric-vehicles.com](https://eletric-vehicles.com/general-motors/cadillac/gm-recalls-29347-cadillac-optiq-evs-over-window-pinch-protection-flaw/)
+
+### 3. ヤマハ『トレーサー9 GT+ Y-AMT』など1289台をリコール ― シフトシャフトの強度検討不足で走行不能のおそれ
+
+- 概要: ヤマハ発動機は2026年9月29日、電子制御MT「Y-AMT」搭載の『トレーサー9 GT+ Y-AMT』(686台)と『MT-09 S』を含む計1289台について国土交通省にリコールを届け出た(開始日9月30日)。変速機のシフトシャフトについて強度検討が不十分で、変速を繰り返すことでシフトシャフトが破損する場合がある。これによりエンジン警告灯が点灯し、最悪の場合Y-AMTが停止して変速操作ができなくなり走行不能となるおそれがある。不具合は40件確認されているが事故は発生していない。対策は全車両のシフトシャフトを対策品へ交換。
+- 注目ポイント: 本ノートで7月以降継続的に取り上げてきた「基幹部品の設計検討(デザインレビュー)不足」型リコールが、四輪に加え二輪(新機構の電子制御MT)にも及んだ事例。新しい駆動機構(Y-AMT)の耐久性評価がどこまで十分だったかという観点で、新技術領域でのFMEA・デザインレビューの網羅性を考える題材として引き続き関心を集めている。
+- 出典:
+  - [ヤマハ『トレーサー9 GT+ Y-AMT』と『MT-09 S』の1289台をリコール、走行不能に | レスポンス(Response.jp)](https://response.jp/article/2026/10/01/417216.html)
+  - [報道発表資料：リコールの届出について（ヤマハ TRACER9 GT+ Y-AMT 他） | 国土交通省](https://www.mlit.go.jp/report/press/jidosha08_hh_005844.html)
+
+### 4. IATF 16949「第2版」改訂作業、10月22日に正式着手へ ― ソフトウェア品質・サプライチェーン管理が優先領域に
+
+- 概要: IATF(国際自動車タスクフォース)は、次期規格IATF 16949「第2版」の改訂作業を2026年10月22日に正式着手する予定であることを、2025年のAIAG品質サミットなどで案内している。8月時点の報道(本ノート2026-08-30号既報)同様、優先領域として簡素化・ソフトウェア品質保証・サプライチェーン管理・ローンチマネジメント・顧客固有要求事項の5点が挙げられ、発行は2027年半ば、移行期間はISO 9001:2026の移行期間終了(2029年9月)に合わせる方向で検討されている。
+- 注目ポイント: 今週本ノートで取り上げたキャデラックOPTIQ(サプライヤー製ソフトのキャリブレーション不良)のような事例が、まさに次期IATF 16949が重点化しようとしている「ソフトウェア品質保証」「サプライチェーン管理」の論点そのものであり、改訂の方向性の妥当性を裏付ける形になっている。改訂着手が目前に迫ったことで、自動車サプライヤーの間で早期準備への関心が高まっている。
+- 出典:
+  - [IATF 16949 Second Edition: 2026 Update Explained | Smithers](https://www.smithers.com/resources/2026/august/iatf-16949-second-edition-update)
+  - [The Next Wave of Quality & Management System Changes: ISO 9001 and the 5-Year Outlook | simpleQuE](https://www.simpleque.com/the-next-wave-of-quality-management-system-changes-iso-9001-and-the-5-year-outlook/)
+
+### 5. 国内品質カンファレンス・シーズン開幕 ― 「品質カチ取る！2026」(10/5)、「標準化と品質管理全国大会2026」(10/13)が相次ぎ開催予定
+
+- 概要: バルテスグループ主催のソフトウェア品質カンファレンス「品質カチ取る！2026」が2026年10月5日、「AI時代の"品質"に向き合う、ソフトウェアの『これから』を問い直す一日」をテーマに開催予定。続いて日本規格協会主催の「標準化と品質管理全国大会2026」が10月13日に東京・永田町で、「持続可能な未来社会をデザインする－現場の知恵とデジタルの融合で実現する確かな品質と戦略的標準化」をテーマに開催され、北海道・東北・中部など地区大会も10月中に各地で予定されている。
+- 注目ポイント: ISO 9001:2026の発行(9月16日)直後というタイミングでの開催となり、AI・ソフトウェア品質とQMS改訂への実務対応という2つの関心軸が同時に盛り上がっている。本ノートで追ってきたニデックの品質不正問題や相次ぐリコール事例を踏まえ、現場の品質管理関係者がどのような議論を交わすかが注目される。
+- 出典:
+  - [バルテスグループ、品質カンファレンス「品質カチ取る！2026」を10月5日に開催 | PR TIMES](https://prtimes.jp/main/html/rd/p/000000422.000030691.html)
+  - [標準化と品質管理全国大会2026 | PR TIMES](https://prtimes.jp/main/html/rd/p/000000599.000004052.html)
