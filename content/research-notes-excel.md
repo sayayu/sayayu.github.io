@@ -332,3 +332,38 @@ date: 2026-07-16
 - 出典:
   - [MEWC – Microsoft Excel World Championship](https://excel-esports.com/)
   - [Inside the Excel World Championship's 2026 Season | Refonte Learning](https://www.refontelearning.com/blog/excel-world-championship-business-analyst-skills)
+
+## 2026-10-04
+
+### 1. 「Excel Canvas」が本格展開開始 ― Copilotがデータ更新に追従する1枚レポートを自動生成
+
+- 概要: 9月に発表されていたCopilot機能「Excel Canvas」が、2026年10月2〜4日にかけて本格的にロールアウトされ始めた。ワークブックのデータをCopilotが解釈し、グラフ・指標・インサイトをまとめた1枚のインタラクティブなビューを自動生成する機能で、元データが更新されるとレポート側も自動的に追従する。
+- 注目ポイント: The Registerが「あなたのワークブックを上司向け次期レポートに変えてくれる」と紹介するなど、海外テックメディアが相次いで取り上げた。グラフを手作業で組み立てる従来のダッシュボード作成から「会話するだけで完成形が出てくる」体験への移行が、8月の「テーマデザインスキル」「ブランドキットスキル」に続く形で現実のものとなった点が注目されている。
+- 出典:
+  - [Excel Canvas offers to turn your workbook into the boss's next report | The Register](https://www.theregister.com/software/2026/10/02/excel_canvas_offers_to_turn_your_workbooks_into_the_bosss_next_report/5300812)
+  - [Microsoft Rolls Out Excel Canvas, a Copilot Report View That Refreshes as Workbook Data Changes | gHacks Tech News](https://www.ghacks.net/2026/10/04/microsoft-rolls-out-excel-canvas-a-copilot-report-view-that-refreshes-as-workbook-data-changes/)
+
+### 2. 「1セル1値」撤廃の詳細が判明 ― FLATTEN・HAS・HASANY・HASALLの新関数4種が同時導入
+
+- 概要: 前週(2026-09-27分)で取り上げた、1つのセルに複数の値を「リスト」「セル内配列」として格納できる新機能について、対応する新関数の内容が明らかになった。入れ子配列を展開する「FLATTEN」、配列内に指定した値が存在するかを判定する「HAS」「HASANY」「HASALL」の4関数が同時に追加され、現在はMicrosoft 365 InsiderのBetaチャネル限定で、Microsoftは重要なブックでの使用を推奨していないと案内されている。
+- 注目ポイント: 窓の杜・マイナビニュース・Gizmodo Japanなど日本の複数メディアが相次いで詳報し、「カンマ区切りで“ごまかしていた”運用がようやく正式機能になる」といった反応がSNSでも広がった。表計算ソフトの根幹である「1セル1値」ルールに手を入れる変更だけに、既存の数式・他ツールとの互換性への影響を懸念する声も技術者コミュニティで続いている。
+- 出典:
+  - [「Excel」の2026年9月更新、"1セルに複数データ"以外にもちょっとした新機能2種 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2144914.html)
+  - [Excel、1セルに複数の値を格納可能に リストと配列の提供開始 | マイナビニュース](https://news.mynavi.jp/techplus/article/20260928-5040589/)
+  - [Excelのセルに40年ぶり大改革！カンマで区切ってごまかしてた人がやっと報われる… | Gizmodo Japan](https://www.gizmodo.jp/article/excel-multiple-values-one-cell/)
+
+### 3. 2026年10月は「Office史上最悪の月」 ― Office 2021サポート終了・Windows 10機能フリーズ拡大・Publisher終了が重なる
+
+- 概要: Office Watchが、2026年10月13日にOffice 2021(LTSC含む)が全面サポート終了を迎えるのに加え、Microsoft 365の新機能・リボン変更がWindows 11版のみに限定される「機能フリーズ」の対象企業が拡大すること、長年の定番アプリPublisherが提供終了することなど、複数の節目が1か月に集中している状況を指摘する記事を公開した。
+- 注目ポイント: 「ここ数年で最悪の月」という強い見出しで、Office 2021とWindows 10を組み合わせて使う現場ほど影響が大きくなる点を具体的な日付とともに整理しており、情報システム部門の間で棚卸し・移行計画の見直しを促す記事として関心を集めている。Excelそのものの新機能ではないが、サポート切れによる脆弱性放置のリスクという観点で、本ブログの品質管理テーマとも重なる話題。
+- 出典:
+  - [October 2026 is the worst month Office users have had in years | Office Watch](https://office-watch.com/2026/october-2026-is-the-worst-month-office-users-have-had-in-years/)
+  - [October 2026 Microsoft 365 Office Changes You Need to Know | Office Watch](https://office-watch.com/2026/october-2026-office-changes/)
+
+### 4. CopilotにGPT-6.1 SolとClaude Sonnet 5.5が追加 ― Excelでも段階展開が開始
+
+- 概要: Microsoftは2026年9月30日、新モデル「GPT-6.1 Sol」と「Claude Sonnet 5.5」をCopilotに追加し、Cowork・Copilot StudioのほかWord・Excel・PowerPoint・Chatにも今後1週間程度で段階的に展開すると発表した(メッセージセンター告知MC1483844)。Microsoft 365 Copilotのユーザーサブスクリプションライセンス(USL)の範囲内で利用可能で、上限に近づくとAuto等への切り替えが案内される。
+- 注目ポイント: 8月のClaude Opus 5追加以降、本ノートでも継続的に取り上げてきた「ExcelのCopilotで選べるAIモデルが増え続ける」流れの最新回にあたる。Office Watchが早速「GPT-6.1 SolとClaude Sonnet 5.5、どちらをいつ選ぶべきか」という比較ガイド記事を公開するなど、モデル選択のノウハウそのものが実務者の関心を集め続けている。
+- 出典:
+  - [MC1483844 - Microsoft Copilot: GPT 6.1 Sol and Claude Sonnet 5.5 beginning to roll out today | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1483844)
+  - [GPT 6.1 Sol and Claude Sonnet 5.5 in Copilot: What to Pick and When | Office Watch](https://office-watch.com/2026/gpt-6-1-sol-vs-claude-sonnet-5-5-copilot/)
