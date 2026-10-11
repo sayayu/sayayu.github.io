@@ -367,3 +367,30 @@ date: 2026-07-16
 - 出典:
   - [MC1483844 - Microsoft Copilot: GPT 6.1 Sol and Claude Sonnet 5.5 beginning to roll out today | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1483844)
   - [GPT 6.1 Sol and Claude Sonnet 5.5 in Copilot: What to Pick and When | Office Watch](https://office-watch.com/2026/gpt-6-1-sol-vs-claude-sonnet-5-5-copilot/)
+
+## 2026-10-11
+
+### 1. Office 2021のサポート終了(10月13日)がいよいよ目前に ― 「移行先」を巡る議論が各所で再燃
+
+- 概要: Office 2021(LTSC版含む)の全面サポート終了日(米国時間2026年10月13日)が目前に迫り、延長セキュリティ更新の提供もないことが改めて各メディアで確認・報道された。終了後はExcelを含む各アプリ自体は動作し続けるものの、新たに見つかった脆弱性へのセキュリティ修正・技術サポートが一切提供されなくなる。買い切り版の後継である「Office 2024」(サポートは2029年10月9日まで)への移行か、Microsoft 365への切り替えかという選択を迫られる利用者が多い。
+- 注目ポイント: 前週分(2026-10-04)で紹介した「Office史上最悪の月」という大きな枠組みの記事に続き、期限が文字通り今週に迫ったことで、個人・企業双方で「このまま使い続けるか」「Office 2024を買うか」「Microsoft 365に乗り換えるか」という具体的な意思決定を迫られる声がコミュニティサイトの掲示板などで活発化している。サポート切れ環境でExcelファイルを社外とやり取りし続けるリスクは、品質管理・情報セキュリティの観点からも軽視できないテーマ。
+- 出典:
+  - [End of support for Office 2021 | Microsoft Support](https://support.microsoft.com/en-us/office/system-requirements/end-of-support-for-office-2021)
+  - [Microsoft Office 2021 Support Ends October 2026 | Canopytech](https://canopytech.ca/blog/microsoft-office-2021-support-ends-october-2026/)
+
+### 2. 「1セルに複数値」機能、海外メディア・コミュニティで反響が継続 ― 「40年来のルールを破った」と評価が拡散
+
+- 概要: 9月下旬にプレビュー提供が始まった「1セルに複数の値(リスト・配列)を格納できる」新機能について、TechRadarやTechRepublic(英語版・ドイツ語版・フランス語版・スペイン語版など多言語展開)、Techspotのコミュニティフォーラムなどが相次いで取り上げ、反響が尾を引く形となっている。あくまでMicrosoft 365 Insider Betaチャネル限定のプレビュー機能で、PivotTableの集計元データや、Power Queryでの読み込み・出力、グラフのデータ系列化には対応していない点も改めて注意喚起されている。
+- 注目ポイント: TechRadarが「Excelの達人たちよ、あなたの祈りはついに届いた」という見出しで紹介するなど、表計算ソフトの根幹である「1セル=1つの値」という制約への変更が、技術者コミュニティのフォーラムでも活発な意見交換を呼んでいる。本ノートで9月27日・10月4日と2週続けて取り上げてきた話題だが、英語圏の反応記事が後追いで次々に出ている点から、関心の持続力が高いテーマであることがうかがえる。
+- 出典:
+  - [Microsoft Excel gurus, your prayers have been answered: more than one value can now be in a single cell | TechRadar Pro](https://www.techradar.com/pro/microsoft-excel-gurus-your-prayers-have-been-answered-more-than-one-value-can-now-be-in-a-single-cell-as-a-new-era-of-spreadsheets-dawns)
+  - [Excel Breaks a 40-Year Rule: Microsoft Lets One Cell Hold Multiple Values | TechRepublic](https://www.techrepublic.com/article/news-excel-multiple-values-one-cell-lists-arrays/)
+  - [After 40 years, Excel is breaking one of its oldest rules: one cell, one value | Techspot (community discussion)](https://www.techspot.com/community/topics/after-40-years-excel-is-breaking-one-of-its-oldest-rules-one-cell-one-value.298954/)
+
+### 3. Excelの「Copilot」エントリーポイント統合、GCC/GCC High/DoD向けに10月展開開始
+
+- 概要: Microsoft 365メッセージセンターの告知(MC1282571)によると、Excel上に点在していたCopilotの呼び出し口(セル選択時の表示や右クリックメニューなど)を整理し、右側のサイドペイン「Excel Agent」とExcel内の固定位置に表示される単一のCopilotボタンに一本化する変更について、一般向け(ワールドワイド)では2026年4〜6月に展開済みだったのに対し、米国政府機関向けクラウド環境(GCC・GCC High・DoD)では2026年10月初旬から展開が始まり、10月下旬までに完了する予定であることが伝えられた。ライセンス要件や管理者側のポリシーに変更はなく、対象ユーザーには既定で有効になる。
+- 注目ポイント: 一般ユーザー向けには半年近く前に展開済みだった変更が、セキュリティ要件の厳しい政府機関向け環境ではワンテンポ遅れて今まさに展開中という点が、IT管理者向けの情報源(Message Center購読者向けサイト)で取り上げられている。Copilotのエントリーポイントが「セル単位の個別機能」から「サイドペインへの一本化」へ向かう流れは、本ノートで継続的に追ってきたExcelのAI機能統合トレンドの一環として位置づけられる。
+- 出典:
+  - [MC1282571 - Copilot entry point changes in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1282571)
+  - [Copilot entry point changes in Excel | Itelio](https://www.itelio.com/en/microsoft-message-center/MC1282571)
