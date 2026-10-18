@@ -394,3 +394,31 @@ date: 2026-07-16
 - 出典:
   - [MC1282571 - Copilot entry point changes in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1282571)
   - [Copilot entry point changes in Excel | Itelio](https://www.itelio.com/en/microsoft-message-center/MC1282571)
+
+## 2026-10-18
+
+### 1. 「Excel Canvas」がついに本格展開 ― MVPによる「24時間使ってみたレビュー」に賛否両論
+
+- 概要: Microsoft 365メッセージセンターの告知(MC1485411)により、Copilotがワークブックデータを解釈してグラフ・指標・インサイトをまとめた1枚のインタラクティブなレポートを自動生成する「Excel Canvas」が、2026年10月中旬から本格展開を開始し、10月末までに全世界で利用可能になる予定であることが伝えられた。ドイツ語圏(borncity.com)・イタリア語圏(smartworld.it)のテックメディアもほぼ同時期に取り上げ、多言語で紹介記事が広がっている。
+- 注目ポイント: Microsoft MVPのWyn Hopkins氏が10月16日に公開した「24時間使ってみたレビュー」が特に話題を呼んだ。ツールチップやクロスフィルタ、テーマの自動切り替え、複数テーブルの自動結合・重複キーの検出といった強みを評価する一方、計算結果がハードコードされてしまう点・たまにクラッシュする点・同じ指示を出し直すと結果が変わる点・元の数式まで遡れる監査性の弱さなど、具体的な弱点を率直に指摘した点が実務者層の関心を集めた。「AIが仕上げるレポーティング基盤」路線の集大成とされる機能だけに、品質管理・監査可能性の観点からも注視したいテーマ。
+- 出典:
+  - [MC1485411 - Microsoft Excel: Excel canvas | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1485411)
+  - [Canvas in Excel: 24-Hour Verdict | HubSite 365](https://www.hubsite365.com/en-ww/crm-pages/canvas-in-excel-heres-what-i-found-24-hours-later.htm)
+  - [Excel Copilot: Interactive Canvas macht aus Tabellen dynamische Berichte | Born's Tech and Windows World](https://borncity.com/news/excel-copilot-interactive-canvas-macht-aus-tabellen-dynamische-berichte/)
+
+### 2. 10月のPatch TuesdayでExcelだけで69件を修正 ― Office 2021にとって「最後の更新」と重なる
+
+- 概要: Office Watchが2026年10月13日のPatch Tuesdayについて報じた記事によると、今回はOffice関連だけで173件の脆弱性(うちCritical級26件)が修正され、Excel単体でも69件の修正が含まれていた。悪用が確認されたゼロデイはOffice側にはなく、修正の優先度としてはまずOutlookから適用すべきだと案内している。あわせてこの10月13日は、2021年10月にリリースされた買い切り版「Office 2021」(LTSC含む)にとって正式サポート終了日と重なり、これが同製品にとって最後のセキュリティ更新になったことも報じられた。
+- 注目ポイント: 毎月のようにExcelの脆弱性修正が話題に上る中、今回は件数の多さ(Office全体で173件)に加え、「セキュリティ更新と製品ライフサイクルの区切りが同じ日に重なった」という巡り合わせそのものが注目を集めた。Office Watchは「Microsoftの最近のパッチ品質問題を踏まえ、1〜2週間は適用を見送るのも一案」と異例の注意喚起をしており、パッチ適用の判断そのものが品質管理上の悩ましいテーマとして議論を呼んでいる。
+- 出典:
+  - [October 2026 Patch Tuesday: 173 Office Fixes, 26 Critical Flaws, and Office 2021's Final Update | Office Watch](https://office-watch.com/?p=77946)
+  - [Microsoft Fixes Record 1,413 Vulnerabilities in October 2026 Patch Tuesday | Guru3D](https://www.guru3d.com/story/microsoft-fixes-record-1413-vulnerabilities-in-october-2026-patch-tuesday/)
+
+### 3. Office 2021のサポートが正式終了 ― 「サブスクへの誘導では」と買い切り派から反発の声
+
+- 概要: 延長サポートを持たない買い切り版「Office 2021」(Excel含む)が、2026年10月13日(米国時間)をもって正式にサポート終了となった。今後はMicrosoft Update経由の更新プログラム提供・不具合修正・セキュリティ修正・技術サポートのいずれも提供されなくなり、アプリ自体は動作し続けるもののネットに接続した状態での利用はリスクが高まると各メディアが注意喚起している。移行先としては買い切り版「Office 2024」(サポートは2029年10月まで)か、Microsoft 365への切り替えが案内されている。
+- 注目ポイント: 本ノートで10月4日・10月11日と2週連続で「目前に迫る期限」として取り上げてきた話題が、今週ついに現実のものとなった。Windows Latestが「Microsoftは10月にOffice 2021を葬り去り、あなたをMicrosoft 365へ押し込もうとしている」と評するなど、買い切り版を長年愛用してきたユーザー層からサブスクリプションへの誘導ではないかという反発の声が改めて広がっている点が、海外・日本語圏双方のメディアで共通して取り上げられている。
+- 出典:
+  - [Office 2021 Support Ends October 13: Your 5 Options Before the Deadline | Office Watch](https://office-watch.com/2026/office-2021-end-of-support-october-2026/)
+  - [Office 2021のサポートが10月13日で終了。継続利用はセキュリティリスクが高まるので早めの移行を | がるまっくす](https://garumax.com/?p=274289)
+  - [Microsoft is killing Office 2021 in October to push you onto Microsoft 365 | Windows Latest](https://windowslatest.com/2026/06/20/microsoft-is-killing-office-2021-in-october-to-push-you-onto-microsoft-365-how-to-fight-back)
