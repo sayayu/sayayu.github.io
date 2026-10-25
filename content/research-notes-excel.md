@@ -422,3 +422,22 @@ date: 2026-07-16
   - [Office 2021 Support Ends October 13: Your 5 Options Before the Deadline | Office Watch](https://office-watch.com/2026/office-2021-end-of-support-october-2026/)
   - [Office 2021のサポートが10月13日で終了。継続利用はセキュリティリスクが高まるので早めの移行を | がるまっくす](https://garumax.com/?p=274289)
   - [Microsoft is killing Office 2021 in October to push you onto Microsoft 365 | Windows Latest](https://windowslatest.com/2026/06/20/microsoft-is-killing-office-2021-in-october-to-push-you-onto-microsoft-365-how-to-fight-back)
+
+## 2026-10-25
+
+### 1. Copilot in Excelに新機能5つ ― 「Interactive Canvas」本格展開に加え「Skill Builder」「Skill Recorder」「Get Data」「Clean Data」が相次ぎ発表
+
+- 概要: Microsoftは2026年10月中旬、Copilot in Excel向けに5つの新機能を発表した。自然言語の指示でワークブックのデータをレポート・ダッシュボード化する「Interactive Canvas」(10月中に全世界展開)に加え、文章・過去の操作例・サンプル出力からスキルを作成する「Skill Builder」(10月から通常版で段階展開)、実際の操作をそのまま記録してスキル化する「Skill Recorder」(10月末からInsider向け)、会話形式でデータを取り込める「Get Data」、表記揺れや重複を検出・修正提案する「Clean Data」が含まれる。台湾の中央社(cna.com.tw)による10月17日の報道を起点に、英語圏だけでなくドイツ語・イタリア語・スペイン語圏のテックメディアもほぼ同時期に取り上げた。
+- 注目ポイント: 「操作を記録してスキル化する」Skill Recorderについて、Microsoft自身が「元データの列構成が変わる(割引・通貨列の追加など)と、記録済みの手順が不完全な結果を返すことがある」と注意喚起している点が、品質管理・業務プロセスの観点から見逃せない。手作業の自動化がそのまま「ブラックボックス化したマクロ」の再来にならないよう、生成されたスキルの検証・棚卸しの重要性を示す事例としても読める。
+- 出典:
+  - [Microsoft brings five new Copilot features to Excel | iTechGuides](https://www.itechguides.com/microsoft-brings-five-new-copilot-features-to-excel/)
+  - [Excel-Automatisierung: Copilot zeichnet Arbeitsschritte direkt auf | Born's Tech and Windows World](https://borncity.com/news/excel-automatisierung-copilot-zeichnet-arbeitsschritte-direkt-auf/)
+  - [Excel con Copilot crea report interattivi che si aggiornano da soli | Punto Informatico](https://www.punto-informatico.it/excel-copilot-crea-report-interattivi-si-aggiornano-da-soli/)
+
+### 2. SCSK、ノーコード開発「CELF」にClaude Code活用の「AI開発エージェント」β版 ― 日本のExcel依存企業のDXを後押し
+
+- 概要: SCSKは2026年10月15日、ノーコード開発サービス「CELF」の新機能として、AnthropicのAIコーディングエージェント「Claude Code」(Amazon Bedrock経由)を活用した「CELF AI開発エージェント(仮称)」のβ版を発表した。10月14日から参加企業の募集を開始し、10月23日より先着30社に約1か月間無償提供する(別途Claude Codeの利用料が必要)。チャットでの自然言語指示だけで、CELFアプリの画面・テーブル・業務ロジックの設計から実装・テスト・保守までを進められるのが特徴で、CPN(CELFパートナー制度)加盟のパートナー4社によるα版での実証では、従来開発に比べ画面あたり300~800%の生産性向上が確認されたとしている。
+- 注目ポイント: 調査会社Futurum Groupは、ERP(基幹システム)導入企業の82.6%が周辺業務を依然Excelで処理しているという調査結果を引用し、本サービスを「日本のExcel依存企業をエージェント型AIで突破する試み」と位置づけて報じた。基幹システム導入後も現場に「野良Excel」が残り続けるという、このブログでも繰り返し取り上げてきた構造的課題に対し、生成AIコーディングエージェントで克服を図る動きとして、日本企業のDX動向の観点から注目される。2027年春には市民開発者向けサービスの提供も予定されている。
+- 出典:
+  - [SCSK、生成AIとの対話でExcel業務のアプリ化を推進する「CELF AI開発エージェント」β版を提供 | Impress Cloud Watch](https://cloud.watch.impress.co.jp/docs/news/2147980.html)
+  - [SCSK Bets on Agentic AI to Digitize Japan's Excel-Dependent Enterprises | Futurum Group](https://futurumgroup.com/insights/scsk-bets-on-agentic-ai-to-digitize-japans-excel-dependent-enterprises/)
