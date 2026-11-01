@@ -441,3 +441,22 @@ date: 2026-07-16
 - 出典:
   - [SCSK、生成AIとの対話でExcel業務のアプリ化を推進する「CELF AI開発エージェント」β版を提供 | Impress Cloud Watch](https://cloud.watch.impress.co.jp/docs/news/2147980.html)
   - [SCSK Bets on Agentic AI to Digitize Japan's Excel-Dependent Enterprises | Futurum Group](https://futurumgroup.com/insights/scsk-bets-on-agentic-ai-to-digitize-japans-excel-dependent-enterprises/)
+
+## 2026-11-01
+
+### 1. Microsoft公式「Excelの10月更新」まとめが登場 ― 先週報じられたCopilot新機能5つを正式確認、テーブル命名機能も通常提供へ
+
+- 概要: Microsoftは2026年10月27日前後、Excel公式ブログで10月の月例アップデートをまとめた記事を公開した。前週(2026-10-25分)で台湾メディア発として紹介した「Interactive Canvas」「Skill Builder」「Skill Recorder」「Get Data」「Clean Data」というCopilotの5つの新機能について、Microsoft自身が改めて概要・提供状況を確認。あわせて、これまでInsiderプレビュー限定だった「テーブル作成時にその場で名前を付けられる」機能が、Excel for Windowsの通常チャネルでも利用可能になったことが明らかになった。Neowin・Windows Reportなど複数のテックメディアがこの公式まとめを受けて追随記事を公開している。
+- 注目ポイント: 1週間前に二次メディア経由で先行報道されていた内容を、Microsoft自身が公式ブログで追認・補足した形。地味な「テーブル名をダイアログ内で直接指定できる」という機能は見出しを飾りにくいが、従来「Table1」のまま放置され後から命名規則が崩れるという、まさに品質管理・保守性の観点で地味に効く改善であり、派手なAI機能の陰に隠れがちな基本機能の着実な改善として注目したい。
+- 出典:
+  - [What's New in Excel (October 2026) | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/ExcelBlog/whats-new-in-excel-october-2026/4549758)
+  - [Microsoft Excel October 2026 Update Brings 5 New Copilot Features and Smarter Data Tools | Windows Report](https://windowsreport.com/microsoft-excel-october-2026-update-brings-5-new-copilot-features-and-smarter-data-tools/)
+
+### 2. Excel for the Webに「Get Data」スキルが展開開始 ― 自然言語の指示でPower Queryのデータ取得・変換を代行
+
+- 概要: MicrosoftはExcel for the Web向けに、Copilotが自然言語の指示を解釈してデータの取得・変換・読み込み(Power Query相当の処理)を代行する新スキル「Get Data」の展開を開始した。利用者が「欲しいデータ」と「どう加工したいか」を文章で伝えるだけで、Power Queryのクエリを手作業で組み立てずに済むようになる。ウェブ版ではExcelワークブック・テキスト/CSVファイル・XML・JSON・SQL Serverデータベース・SharePoint Onlineリストなど複数のデータソースに対応するとされる。
+- 注目ポイント: 前週まとめ記事でも触れられていた機能だが、実際のロールアウト開始を伝える単独記事としてNeowinが「AI対応志向のユーザーが気に入る新機能」と評して取り上げた。Power Queryは強力な反面、変換ステップの組み立てに習熟が必要なツールであり、その「入口」を自然言語化する動きは、データクレンジング・前処理の属人化を減らす方向性として、業務効率化・品質管理の両面から継続的に注視したいテーマ。
+- 出典:
+  - [Excel for web gets new feature that AI-ready users will love | Neowin](https://www.neowin.net/news/excel-for-web-gets-new-feature-that-ai-ready-users-will-love/)
+  - [Microsoft Brings AI-Powered Get Data Feature to Excel for the Web | Windows Report](https://windowsreport.com/microsoft-brings-ai-powered-get-data-feature-to-excel-for-the-web/)
+  - [RM577745 - Excel: Get and transform data with Copilot in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM577745)
