@@ -460,3 +460,22 @@ date: 2026-07-16
   - [Excel for web gets new feature that AI-ready users will love | Neowin](https://www.neowin.net/news/excel-for-web-gets-new-feature-that-ai-ready-users-will-love/)
   - [Microsoft Brings AI-Powered Get Data Feature to Excel for the Web | Windows Report](https://windowsreport.com/microsoft-brings-ai-powered-get-data-feature-to-excel-for-the-web/)
   - [RM577745 - Excel: Get and transform data with Copilot in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM577745)
+
+## 2026-11-08
+
+### 1. Copilot in Excel・Cowork向け新「会計スキル」、Frontier登録不要の世界一般提供が11月13日に ― 会計士からは歓迎と慎重論が両方
+
+- 概要: Microsoftは2026年10月末、Microsoft 365メッセージセンターの告知(MC1536053)で、Copilot in ExcelおよびCopilot Cowork向けに、口座照合(リコンサイル)・仕訳入力・分析・予算管理・コンプライアンス対応を支援する新しい「会計スキル」を発表した。取引間の差異の特定や消込項目の作成、増加・減少・振替・逆仕訳・定期仕訳のドラフト作成などをCopilotが支援し、必須項目のチェックや仕訳のバランス確認も行う。これまでFrontierプログラムへの参加とCopilotライセンスが必要だったが、2026年11月13日の世界一般提供(GA)開始以降はFrontier登録が不要になる(ライセンスは引き続き必要)。オプトインで、Copilotが「何を・なぜ変更したか」をチャット履歴に記録する監査証跡(オーディットトレイル)機能も用意されている。
+- 注目ポイント: Accounting Today・CPA Practice Advisorなど会計専門メディアが広く報じ、Microsoftは限定的なInsiderトライアルの7日間で8,000人超のユニークユーザーが会計スキルを44,000回以上呼び出したという利用実績を公表している。一方でReddit上の会計士コミュニティなどからは「Copilotは幻覚(ハルシネーション)が多く、会計は本質的に“考える”仕事だ」といった慎重論も出ており、仕訳や消込のような“数字が合えば正解”に見えやすい業務ほど、AIの出力をそのまま信用せず人間がレビューする体制が欠かせないという、品質管理の観点からも示唆的な事例になっている。オプトインの監査証跡機能も、AIによる変更をあとから検証可能にするという意味で注目に値する。
+- 出典:
+  - [MC1536053 - Microsoft 365 Copilot: New accounting capabilities in Excel and Cowork | mc.merill.net](https://mc.merill.net/message/MC1536053)
+  - [MC1536053 New accounting capabilities in Excel and Cowork | pupuweb.com](https://pupuweb.com/mc1536053-new-accounting-capabilities-in-excel-and-cowork/)
+  - [Microsoft announces Copilot capacities for audit, tax, compliance & more | Accounting Today](https://www.accountingtoday.com/news/microsoft-announces-copilot-capacities-for-audit-tax-compliance-more)
+
+### 2. Google Sheets、ピボットテーブルの「コンパクト形式」インポートと箱ひげ図の互換性を改善 ― Excelとの往来時の体裁崩れがまた一歩解消
+
+- 概要: Googleは2026年10月28日、Google Sheetsの公式更新情報ブログ(Google Workspace Updates)で、ピボットテーブルの「コンパクト形式」レイアウトへの対応を発表した。これまでコンパクト形式で作られたExcelのピボットテーブルをSheetsに取り込むと自動的に「アウトライン形式」に変換されてしまっていたが、今回の更新で元のレイアウトを保持したままインポート・エクスポートできるようになる。あわせて、Excelの箱ひげ図(Box and Whisker Chart)を含むファイルをインポートするとグラフ自体が消えてしまう不具合も修正され、参照・計算・書式を保ったままExcelへ再エクスポートできるようになった。Rapid Release向けには10月22日から、Scheduled Release(予定リリース)向けには11月6日から展開が始まっている。
+- 注目ポイント: 2026年8月分(本ノート8月23日付)で紹介した「テーブル・ピボットテーブルのインポート精度向上」の直接の続報であり、Microsoft 365とGoogle Workspaceを併用する組織における「.xlsxを開いたら体裁が崩れる/グラフが消える」という定番の不満が、地味ながら着実に解消されていく様子が見て取れる。派手な新機能ではないものの、ファイル往来時の表現保持はデータの信頼性・再現性に直結するテーマであり、品質管理・データガバナンスの観点からも継続して追いたい動き。
+- 出典:
+  - [Apply compact form layout for pivot tables in Google Sheets | Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/10/apply-compact-form-layout-for-pivot-tables-in-Google-Sheets.html)
+  - [Google Sheets Gets Smarter With New Charts and Excel Support | Windows Report](https://windowsreport.com/?p=1513124)
