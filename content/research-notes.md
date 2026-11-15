@@ -493,3 +493,37 @@ date: 2026-07-15
 - 出典:
   - [NTSB states cracked part in crashed UPS Douglas MD-11 was identified in 2011 | GlobalAir.com](https://www.globalair.com/articles/ntsb-states-cracked-part-in-crashed-ups-douglas-md-11-was-identified-in-2011/11790)
   - [NTSB Probes Boeing MD-11 Bearing Flaw After UPS Cargo Crash Kills 14 | Pulse](https://www.pulse.bot/aerospace/news/ntsb-probes-boeing-md11-bearing-flaw-after-ups-cargo-crash-kills-14-303286bf-9932-4841-8746-3333b3cb22d1/)
+
+## 2026-11-15
+
+### 1. GM「eBoost」ブレーキアシスト不具合、NHTSA調査が約116万台規模に拡大 ― GMの回答期限は11月13日
+
+- 概要: 米NHTSAは、GM車(2023〜2026年モデル)とホンダ・プロローグ、アキュラZDXを含む約116万4,820台を対象に、電子制御ブレーキブースター「eBoost」の不具合について技術分析(EA26006)を進めている。これまでに所有者からの227件の訴えとGM報告の531件を合わせ、重複除外後745件の事象(衝突21件、負傷6件を含む)が確認されており、GMは10月16日に2週間の延長を得て、主要な質問事項への回答期限が11月13日に設定された。
+- 注目ポイント: 単一のソフトウェア不具合(ブレーキアシストの一時的喪失)が、当初の2023年モデルCadillac Lyriqのオーナー苦情(2024年4月に調査開始)から他メーカー・他モデルを含む100万台超規模へ際限なく広がっている点が、品質管理関係者の間で「ソフトウェア品質不具合の波及範囲の見積りの難しさ」を示す事例として注目されている。回答期限を過ぎてもリコール発表には至っていない「調査継続中」の段階そのものが、是正措置の意思決定プロセスの長さを考える材料になっている。
+- 出典:
+  - [GM Gets Deadline Extension For NHTSA Brake Module Investigation | GM Authority](https://gmauthority.com/blog/2026/11/gm-gets-deadline-extension-for-nhtsa-brake-module-investigation/)
+  - [1.16 Million Vehicles Now Under Probe For GM Brake Failure | Motor1](https://www.motor1.com/news/805955/gm-eboost-brake-failure-probe/)
+
+### 2. 「なぜなぜ分析研修〔2〕」、さいたま市で開催 ― 公的産業支援機関による演習型講座が定着
+
+- 概要: 埼玉県産業振興公社(中小機構)は2026年11月13日、さいたま市大宮区のソニックシティビル内研修室で「なぜなぜ分析研修〔2〕」を開催した。個人・グループ演習を交えて「なぜ」を的確に掘り下げる進め方を体系的に学ぶ内容で、定員30名の講座だった。
+- 注目ポイント: 前週(11/8号)にも同研修の開催案内を取り上げたが、実際の開催を経てなお、同様の品質管理基礎講座(本庄早稲田「品質管理基礎研修」11月19日、ポリテクセンター千葉「QC7つ道具」研修11月19・20日など)が続々と予定されている。「なぜなぜ分析」という基礎手法への実務者の関心が一時的な話題ではなく、継続的な研修需要として定着していることがうかがえる。
+- 出典:
+  - [なぜなぜ分析研修〔2〕 | 埼玉県産業振興公社(j-net21)](https://j-net21.smrj.go.jp/snavi2/articles/192337)
+  - [品質管理基礎研修 | 本庄早稲田国際リサーチパーク(j-net21)](https://j-net21.smrj.go.jp/snavi2/articles/192497)
+
+### 3. ISO 9001:2026、各国語版の展開と実務説明会が11月も継続 ― ドイツ語版は11月公開予定
+
+- 概要: 2026年9月16日発行のISO 9001:2026について、DQSはドイツ語翻訳版が2026年11月に公開される見通しと案内しており、フランスでもAFNORが11月5日に「ISO 9001/14001:2026改訂の影響」をテーマにした説明会を開催するなど、発行後2カ月を経ても各国語版展開・実務説明会が続いている。
+- 注目ポイント: 規格そのものの解説フェーズを終え、各国の認証機関・産業団体が自国語対応や移行スケジュールの周知に軸を移している段階にあることを示す動き。日本国内の移行実務セミナー(前号まで既報)と合わせて、グローバルで同時並行的に移行準備が進んでいる構図が見える。
+- 出典:
+  - [ISO 9001 Revision 2026 | DQS](https://www.dqsglobal.com/en/explore/focus-area/iso-9001-revision-at-a-glance)
+  - [ISO 9001 and 14001: the impacts of the 2026 revision | AFNOR](https://www.afnor.org/en/events/quality/iso-9001-and-14001-the-impacts-of-the-2026-revision/)
+
+### 4. IATF16949、アフターマーケット部品を適用範囲に含める解釈を発行 ― 強制対応期限は2028年1月1日
+
+- 概要: IATFは、OEM向けとアフターマーケット向けの部品を同一拠点で製造している組織について、アフターマーケット向けの活動も認証範囲に含めることを求める解釈(sanctioned interpretation)を発行した。強制的な対応期限は2028年1月1日とされ、認証機関各社がこの解釈を解説する記事を相次いで公開している。あわせてIATF16949の第2版(Second Edition)改訂も進行中で、公表時期は2027年半ば頃と見込まれている。
+- 注目ポイント: 認証範囲の見直しという実務対応に直結する変更が、約1年強の準備期間付きで示された点が自動車部品メーカーの品質保証担当者の関心を集めている。IATF16949第2版の開発も並行して進んでおり、ISO9001:2026の発行から1年〜1年半後に続く形で自動車業界の品質マネジメント規格全体が刷新期に入っていることが、業界メディアで繰り返し取り上げられている。
+- 出典:
+  - [IATF Update: Aftermarket Parts Included in Scope | LRQA](https://www.lrqa.com/ko-kr/latest-news/iatf-update-aftermarket-parts-included-in-scope/)
+  - [IATF 16949 Second Edition: What the 2026 Update Means for You | Smithers](https://www.smithers.com/resources/2026/august/iatf-16949-second-edition-update)
