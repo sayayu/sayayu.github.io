@@ -479,3 +479,30 @@ date: 2026-07-16
 - 出典:
   - [Apply compact form layout for pivot tables in Google Sheets | Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/10/apply-compact-form-layout-for-pivot-tables-in-Google-Sheets.html)
   - [Google Sheets Gets Smarter With New Charts and Excel Support | Windows Report](https://windowsreport.com/?p=1513124)
+
+## 2026-11-15
+
+### 1. 11月のPatch Tuesdayが過去最大規模に ― Excelには緊急(Critical)級RCEが12件
+
+- 概要: Microsoftは2026年11月10日、Office関連を含め1,000件超(報道により1,093件〜1,252件と幅がある)という過去最大規模の脆弱性を修正するPatch Tuesdayを公開した。Excel単体ではCVE-2026-118292をはじめとする12件の緊急(Critical)級リモートコード実行(RCE)脆弱性が含まれ、CVSSスコアはいずれも8.8。悪用が確認された唯一のゼロデイはOutlookのなりすまし脆弱性(CVE-2026-124194、深刻度は中程度)で、Excel自体に悪用済みの脆弱性は確認されていない。
+- 注目ポイント: 単月の修正件数として過去最大規模という点そのものが、BleepingComputerやZero Day Initiative(ZDI)など複数のセキュリティ専門メディアで大きく報じられた。本ノートで繰り返し取り上げてきた「Excelは毎月のように緊急級RCEの修正対象になる」という傾向が今月も続いており、細工ファイルを開かせる古典的な攻撃パターンへの警戒が改めて呼びかけられている。
+- 出典:
+  - [Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/)
+  - [Zero Day Initiative — The November 2026 Security Update Review | ZDI](https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review)
+  - [November 2026 Patch Tuesday: Outlook zero-day leads 1,094 CVEs | Splashtop](https://www.splashtop.com/blog/patch-tuesday-november-2026)
+
+### 2. Copilot in Excelの「会計スキル」、予告どおり11月13日に一般提供(GA)開始
+
+- 概要: 前週(2026-11-08)分で紹介した、口座照合・仕訳入力・分析・予算管理・監査・税務・コンプライアンス対応をCopilotが支援する「会計スキル」について、Microsoft 365メッセージセンターの更新通知により、2026年11月13日から正式に一般提供(GA)が開始されたことが確認された。これによりFrontierプログラムへの事前登録が不要になり、Copilotライセンスのみで利用可能になる。展開は11月末までに全世界で完了する予定で、ユーザーがオプトインできる監査証跡(オーディットトレイル)機能も引き続き提供される。
+- 注目ポイント: 前週時点では「11月GA予定」という未確定情報だったものが、今週に入り実際の開始日が確定・実行された続報である点が注目される。CPA Practice Advisor・CFO Diveなど会計・財務専門メディアが相次いで取り上げており、AIが会計業務に本格的に組み込まれていく動きとして、仕訳・消込のような「数字が合えば正解に見えやすい」業務ほど人間のレビュー体制が欠かせないという、品質管理・内部統制の観点からも引き続き注視したいテーマ。
+- 出典:
+  - [Microsoft Touts New Accounting Capabilities for Copilot | CPA Practice Advisor](https://cpapracticeadvisor.com/2026/10/30/microsoft-touts-new-accounting-capabilities-in-copilot/192906)
+  - [Microsoft boosts Copilot Excel-based finance workflows | CFO Dive](https://www.cfodive.com/news/microsoft-boosts-copilot-excel-based-finance-workflows/823933/)
+  - [RM578864 - Microsoft 365 Copilot: Accounting skills | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM578864)
+
+### 3. 「Excel Canvas」、11月に入り世界的な展開が進行中と報道 ― 公式な完了発表はまだ
+
+- 概要: 2026年9月に発表され10月中旬から本格展開が始まった「Excel Canvas」(Copilotがワークブックデータを解釈し、グラフ・指標・インサイトをまとめたインタラクティブなレポートを自動生成する機能)について、2026年11月9日更新のhashout.jpの記事が、Windows Insider向けの先行展開に続き、11月に入ってから世界的な展開が進められていると報じた。ただしMicrosoftの公式ブログやMessage Centerで「世界展開完了」を明確に確認できる発表は、今回の調査時点では見つかっていない。
+- 注目ポイント: 本ノートで10月18日・10月25日・11月1日と継続的に追ってきたExcel Canvasの展開状況について、一部メディアが「今月で世界展開が進行中」とする続報を伝えた形。10月時点でMVPのWyn Hopkins氏が指摘していた「計算結果のハードコード」「監査性の弱さ」といった懸念が、より広いユーザー層に展開される中でどう扱われるかは、品質管理・監査可能性の観点から引き続き注視したい。
+- 出典:
+  - [Interactive Canvasの世界展開に関する報道 | hashout.jp](https://hashout.jp/?p=14076)
