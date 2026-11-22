@@ -1,9 +1,30 @@
 ---
 title: "Excel週次リサーチノート"
-date: 2026-11-15
+date: 2026-11-22
 ---
 
 このページは、Excel・XLOOKUP・Excel関数・Excel業務効率化などのキーワードを軸に、週次で自動収集した注目記事・話題をまとめたリサーチノートです。
+
+## 2026-11-22
+
+### 1. Microsoft Ignite 2026で「Office in Copilot」が一般提供開始 ― Word・Excel・PowerPointがCopilotアプリに統合、単体の「エージェント」機能は統合先に移行
+
+- 概要: Microsoftは2026年11月17日、Ignite 2026においてWord・Excel・PowerPointをCopilotアプリ内で直接開いて編集できる「Office in Copilot」を一般提供(GA)開始したと発表した。Copilotの会話からそのままExcelブックを作成・編集でき、作成したファイルはOneDriveに保存され、既存の権限や機密ラベルを保持したまま通常のExcelアプリでも開ける。これに合わせて、これまで個別に提供されていたWord・Excel・PowerPoint向けのスタンドアロン「エージェント」機能は、Copilot Chatとエージェントモードへ統合され、終了する方向であることも報じられている。あわせて、LSEG・Ramp・Rogo・Venaなどのパートナー企業がMicrosoft Marketplace経由で自社製の「スキル」を提供する計画も明らかになった。
+- 注目ポイント: 本ノートで継続的に追ってきた「Excel機能のCopilotへの統合」路線の節目となる発表で、TechRepublic・The Next Web・Digital Trends・windowsreport.comなど欧米テックメディアが一斉に報じた。Windows Blog Japanも11月19日付でこの内容を紹介している。Excel単体アプリの立ち位置が今後どう変わるか、組織のライセンス・アクセス制御次第で実質的な使い勝手が左右される点は、業務効率化・ガバナンスの観点から注視したいテーマ。一方で過去にはCopilotの強制的なUI変更(フローティングボタンなど)に対する利用者の反発も起きており、「標準提供=歓迎」とは限らない点にも留意したい。
+- 出典:
+  - [Microsoft Brings Word, Excel, and PowerPoint Into Copilot — Here's What's New | TechRepublic](https://techrepublic.com/article/news-microsoft-office-inside-copilot/)
+  - [Microsoft puts Word, Excel and PowerPoint inside Copilot at Ignite | The Next Web](https://thenextweb.com/news/microsoft-office-in-copilot-nadella-ignite-agi-pilled)
+  - [Microsoft Office Is Becoming an AI-Powered Workspace, Major Copilot Upgrades Unveiled at Ignite 2026 | Windows Report](https://windowsreport.com/?p=1516251)
+  - [2026年11月19日付記事 | Windows Blog Japan](https://blogs.windows.com/japan/?p=47815)
+
+### 2. 11月12日の大規模障害の余波続く ― Excel Online含むMicrosoft 365で週明け以降も断続的な不具合報告
+
+- 概要: 2026年11月12日に発生したOutlook・Teams・Copilot・OneDrive/SharePointなど広範囲に及ぶMicrosoft 365の大規模障害(Word・Excel・PowerPointのWeb版の共同編集やファイルの開閉・保存にも影響)は11月14日に復旧が発表されたが、その後も週明けの11月17日前後に「Microsoft 365が再び落ちているのでは」とする利用者からの新たな不具合報告がDowndetector上で相次いだ。Microsoftは当初、これが先週の障害の後遺症か、新規の問題かを明確にしていなかった。
+- 注目ポイント: Excel Online・OneDrive共同編集など、クラウド版Excelに依存する業務フローの脆弱性が改めて浮き彫りになった形。IBTimes AUが「先週の大規模障害から1週間後に再び問題が」という形で続報を出しており、ローカルインストール版のExcelは比較的影響を受けにくかったとする報道もある。クラウド前提の業務効率化が進む中、オフライン保存やバックアップ運用の重要性を再認識させる事例として、品質管理・業務継続性の観点からも注目したい。
+- 出典:
+  - [Massive Microsoft 365 outage disrupts Outlook, Teams, Copilot worldwide | BleepingComputer](https://bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-disrupts-outlook-teams-copilot-worldwide)
+  - [Microsoft 365 Down Again? Users Report Fresh Outlook, Excel and Login Problems as Workweek Begins After Outage | IBTimes AU](https://www.ibtimes.com.au/microsoft-365-users-report-fresh-issues-after-outage-1878681)
+  - [Microsoft 365 Down Again? Users Report Problems a Week After Massive Global Outage Knocked Out Outlook, Teams | IBTimes AU](https://www.ibtimes.com.au/microsoft-365-users-report-new-problems-after-global-outage-1878965)
 
 ## 2026-11-15
 
