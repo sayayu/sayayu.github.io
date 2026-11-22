@@ -1,238 +1,245 @@
 ---
 title: "Excel週次リサーチノート"
-date: 2026-07-16
+date: 2026-11-15
 ---
 
 このページは、Excel・XLOOKUP・Excel関数・Excel業務効率化などのキーワードを軸に、週次で自動収集した注目記事・話題をまとめたリサーチノートです。
 
-## 2026-07-16
+## 2026-11-15
 
-### 1. Copilot in Excelに「マルチエージェントWeb検索」機能、2026年7月ロールアウトへ
+### 1. 11月のPatch Tuesdayが過去最大規模に ― Excelには緊急(Critical)級RCEが12件
 
-- 概要: Microsoftは2026年7月、Copilot in Excelに複数のAIエージェントが協調して動作する新しいWeb検索機能を導入する。Conductor(統括)・Searcher(検索)・Verifier(検証)・Synthesizer(統合)・Auditor(監査)という役割の異なるサブエージェントが並行してリサーチを行い、各回答には出典の裏付け状況を示す「Trust Score」(信頼度バッジ)が表示される仕組み。
-- 注目ポイント: 単なる機能追加ではなく、AIが生成した情報を複数ソースで相互検証し、根拠のない情報には「未検証」のフラグを立てるという設計思想が特徴。品質管理・データ検証の観点からも、生成AIの出力をどう「品質保証」するかという業界的関心と重なるテーマとして注目されている。
+- 概要: Microsoftは2026年11月10日、Office関連を含め1,000件超(報道により1,093件〜1,252件と幅がある)という過去最大規模の脆弱性を修正するPatch Tuesdayを公開した。Excel単体ではCVE-2026-118292をはじめとする12件の緊急(Critical)級リモートコード実行(RCE)脆弱性が含まれ、CVSSスコアはいずれも8.8。悪用が確認された唯一のゼロデイはOutlookのなりすまし脆弱性(CVE-2026-124194、深刻度は中程度)で、Excel自体に悪用済みの脆弱性は確認されていない。
+- 注目ポイント: 単月の修正件数として過去最大規模という点そのものが、BleepingComputerやZero Day Initiative(ZDI)など複数のセキュリティ専門メディアで大きく報じられた。本ノートで繰り返し取り上げてきた「Excelは毎月のように緊急級RCEの修正対象になる」という傾向が今月も続いており、細工ファイルを開かせる古典的な攻撃パターンへの警戒が改めて呼びかけられている。
 - 出典:
-  - [Excel Copilot gains multi-agent web search with source citations in July 2026 | Windows News](https://windowsnews.ai/article/excel-copilot-gains-multi-agent-web-search-with-source-citations-in-july-2026.433269)
-  - [Copilot in Excel is getting improved web search this month | Neowin](https://www.neowin.net/news/copilot-in-excel-is-getting-improved-web-search-this-month/)
+  - [Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/)
+  - [Zero Day Initiative — The November 2026 Security Update Review | ZDI](https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review)
+  - [November 2026 Patch Tuesday: Outlook zero-day leads 1,094 CVEs | Splashtop](https://www.splashtop.com/blog/patch-tuesday-november-2026)
 
-### 2. Copilot in Excelでどのモデルを選ぶべきか ― Office Watchが実践ガイドを公開
+### 2. Copilot in Excelの「会計スキル」、予告どおり11月13日に一般提供(GA)開始
 
-- 概要: Office Watchが、Excel上のCopilotで選択可能になったAIモデル(GPT系、Claude Opus系など)の使い分けについて解説する記事を公開。長い数式チェーンの説明や矛盾点の洗い出しなど「深い推論」が必要な作業にはClaude Opus系、雑然とした指示からVBA/Office Scriptを組み立てるような作業にはGPT系が向くといった具体的な使い分けを紹介している。
-- 注目ポイント: Excel Copilotのモデル選択肢が急速に増える中、「どれを選べば良いか分からない」という実務担当者の悩みに応える内容で、Microsoft 365利用企業のCopilot活用担当者を中心に関心を集めている。
+- 概要: 前週(2026-11-08)分で紹介した、口座照合・仕訳入力・分析・予算管理・監査・税務・コンプライアンス対応をCopilotが支援する「会計スキル」について、Microsoft 365メッセージセンターの更新通知により、2026年11月13日から正式に一般提供(GA)が開始されたことが確認された。これによりFrontierプログラムへの事前登録が不要になり、Copilotライセンスのみで利用可能になる。展開は11月末までに全世界で完了する予定で、ユーザーがオプトインできる監査証跡(オーディットトレイル)機能も引き続き提供される。
+- 注目ポイント: 前週時点では「11月GA予定」という未確定情報だったものが、今週に入り実際の開始日が確定・実行された続報である点が注目される。CPA Practice Advisor・CFO Diveなど会計・財務専門メディアが相次いで取り上げており、AIが会計業務に本格的に組み込まれていく動きとして、仕訳・消込のような「数字が合えば正解に見えやすい」業務ほど人間のレビュー体制が欠かせないという、品質管理・内部統制の観点からも引き続き注視したいテーマ。
 - 出典:
-  - [Best Copilot AI Model for Excel: A Plain English Guide | Office Watch](https://office-watch.com/2026/copilot-ai-model-for-excel/)
+  - [Microsoft Touts New Accounting Capabilities for Copilot | CPA Practice Advisor](https://cpapracticeadvisor.com/2026/10/30/microsoft-touts-new-accounting-capabilities-in-copilot/192906)
+  - [Microsoft boosts Copilot Excel-based finance workflows | CFO Dive](https://www.cfodive.com/news/microsoft-boosts-copilot-excel-based-finance-workflows/823933/)
+  - [RM578864 - Microsoft 365 Copilot: Accounting skills | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM578864)
 
-### 3. Microsoft 365ロードマップ2026年7月版 ― Copilot in Excelの「Skills」機能などを整理
+### 3. 「Excel Canvas」、11月に入り世界的な展開が進行中と報道 ― 公式な完了発表はまだ
 
-- 概要: Level Up M365が、2026年7月分のMicrosoft 365ロードマップ更新をまとめた記事を公開。Copilot in Excelでは、繰り返し行う分析・モデリング・レポート作業を再利用可能な指示として登録できる「Skills」機能や、ワークブックごとにルールを定義できる「Workbook Rules」などが取り上げられている。
-- 注目ポイント: 個々のニュース記事だけでは追いきれないロードマップ全体の動きを俯瞰できる内容で、IT管理者・情報システム部門の担当者が月次アップデートを把握する際の定番参照先として繰り返し引用されている。
+- 概要: 2026年9月に発表され10月中旬から本格展開が始まった「Excel Canvas」(Copilotがワークブックデータを解釈し、グラフ・指標・インサイトをまとめたインタラクティブなレポートを自動生成する機能)について、2026年11月9日更新のhashout.jpの記事が、Windows Insider向けの先行展開に続き、11月に入ってから世界的な展開が進められていると報じた。ただしMicrosoftの公式ブログやMessage Centerで「世界展開完了」を明確に確認できる発表は、今回の調査時点では見つかっていない。
+- 注目ポイント: 本ノートで10月18日・10月25日・11月1日と継続的に追ってきたExcel Canvasの展開状況について、一部メディアが「今月で世界展開が進行中」とする続報を伝えた形。10月時点でMVPのWyn Hopkins氏が指摘していた「計算結果のハードコード」「監査性の弱さ」といった懸念が、より広いユーザー層に展開される中でどう扱われるかは、品質管理・監査可能性の観点から引き続き注視したい。
 - 出典:
-  - [Microsoft 365 Roadmap Updates July 2026 | Level Up M365](https://levelupm365.com/2026/07/01/microsoft-365-roadmap-updates-july-2026/)
+  - [Interactive Canvasの世界展開に関する報道 | hashout.jp](https://hashout.jp/?p=14076)
+## 2026-11-08
 
-## 2026-07-19
+### 1. Copilot in Excel・Cowork向け新「会計スキル」、Frontier登録不要の世界一般提供が11月13日に ― 会計士からは歓迎と慎重論が両方
 
-### 1. Excelのメモリ情報漏えい脆弱性(CVE-2026-48580)、7月のPatch Tuesdayで修正
-
-- 概要: 2026年7月14日のPatch Tuesdayで、Excelでワークブックを開いた際にメモリ上の内容が読み取られる可能性がある情報漏えい脆弱性CVE-2026-48580が修正された。Office 2016からMicrosoft 365 Appsまで広いバージョンが対象で、今月はExcel関連の修正パッチ数(34件)が例年より多いと報じられている。
-- 注目ポイント: 「ファイルを開くだけ」で影響を受ける読み取り系の脆弱性という点、および今月のパッチがExcelに大きく偏っている点がセキュリティ専門メディアで話題になっている。業務でExcelファイルを日常的にやり取りするユーザーに向けて、即時のパッチ適用を呼びかける記事が相次いだ。
+- 概要: Microsoftは2026年10月末、Microsoft 365メッセージセンターの告知(MC1536053)で、Copilot in ExcelおよびCopilot Cowork向けに、口座照合(リコンサイル)・仕訳入力・分析・予算管理・コンプライアンス対応を支援する新しい「会計スキル」を発表した。取引間の差異の特定や消込項目の作成、増加・減少・振替・逆仕訳・定期仕訳のドラフト作成などをCopilotが支援し、必須項目のチェックや仕訳のバランス確認も行う。これまでFrontierプログラムへの参加とCopilotライセンスが必要だったが、2026年11月13日の世界一般提供(GA)開始以降はFrontier登録が不要になる(ライセンスは引き続き必要)。オプトインで、Copilotが「何を・なぜ変更したか」をチャット履歴に記録する監査証跡(オーディットトレイル)機能も用意されている。
+- 注目ポイント: Accounting Today・CPA Practice Advisorなど会計専門メディアが広く報じ、Microsoftは限定的なInsiderトライアルの7日間で8,000人超のユニークユーザーが会計スキルを44,000回以上呼び出したという利用実績を公表している。一方でReddit上の会計士コミュニティなどからは「Copilotは幻覚(ハルシネーション)が多く、会計は本質的に“考える”仕事だ」といった慎重論も出ており、仕訳や消込のような“数字が合えば正解”に見えやすい業務ほど、AIの出力をそのまま信用せず人間がレビューする体制が欠かせないという、品質管理の観点からも示唆的な事例になっている。オプトインの監査証跡機能も、AIによる変更をあとから検証可能にするという意味で注目に値する。
 - 出典:
-  - [Stop That Spreadsheet: Microsoft Fixes Excel's Memory Leak in July 2026 Update | Windows News](https://windowsnews.ai/article/stop-that-spreadsheet-microsoft-fixes-excels-memory-leak-in-july-2026-update.438657)
-  - [July 2026 Patch Tuesday: 570 Fixes and a Critical BitLocker Flaw | Office Watch](https://office-watch.com/2026/july-2026-patch-tuesday/)
-  - [CVE-2026-48580 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48580)
+  - [MC1536053 - Microsoft 365 Copilot: New accounting capabilities in Excel and Cowork | mc.merill.net](https://mc.merill.net/message/MC1536053)
+  - [MC1536053 New accounting capabilities in Excel and Cowork | pupuweb.com](https://pupuweb.com/mc1536053-new-accounting-capabilities-in-excel-and-cowork/)
+  - [Microsoft announces Copilot capacities for audit, tax, compliance & more | Accounting Today](https://www.accountingtoday.com/news/microsoft-announces-copilot-capacities-for-audit-tax-compliance-more)
 
-### 2. Excel世界大会の新企画「Landmark Battle」が街中で開催され、SNSで拡散
+### 2. Google Sheets、ピボットテーブルの「コンパクト形式」インポートと箱ひげ図の互換性を改善 ― Excelとの往来時の体裁崩れがまた一歩解消
 
-- 概要: Microsoft Excel World Championship(MEWC)とASUSが共催する新企画「Landmark Battle」が7月10日に開催され、自由の女神やエッフェル塔など世界の名所4か所から選手が同時に30分間・7段階のデータ課題に挑戦した。前王者アイルランドのDiarmuid Earlyが終盤の逆転で優勝し、The Registerなどが7月13日に取り上げた。
-- 注目ポイント: スプレッドシート競技を屋外・観光名所という異例の舞台で開催した点が話題性を生み、選手入場や応援のクリップがTikTokやXで数十万〜100万回規模の再生数を記録するなど拡散した。業務ツールであるExcelがエンタメ・eスポーツ的コンテンツ化していく流れとして注目されている。
+- 概要: Googleは2026年10月28日、Google Sheetsの公式更新情報ブログ(Google Workspace Updates)で、ピボットテーブルの「コンパクト形式」レイアウトへの対応を発表した。これまでコンパクト形式で作られたExcelのピボットテーブルをSheetsに取り込むと自動的に「アウトライン形式」に変換されてしまっていたが、今回の更新で元のレイアウトを保持したままインポート・エクスポートできるようになる。あわせて、Excelの箱ひげ図(Box and Whisker Chart)を含むファイルをインポートするとグラフ自体が消えてしまう不具合も修正され、参照・計算・書式を保ったままExcelへ再エクスポートできるようになった。Rapid Release向けには10月22日から、Scheduled Release(予定リリース)向けには11月6日から展開が始まっている。
+- 注目ポイント: 2026年8月分(本ノート8月23日付)で紹介した「テーブル・ピボットテーブルのインポート精度向上」の直接の続報であり、Microsoft 365とGoogle Workspaceを併用する組織における「.xlsxを開いたら体裁が崩れる/グラフが消える」という定番の不満が、地味ながら着実に解消されていく様子が見て取れる。派手な新機能ではないものの、ファイル往来時の表現保持はデータの信頼性・再現性に直結するテーマであり、品質管理・データガバナンスの観点からも継続して追いたい動き。
 - 出典:
-  - [Excel competition goes extreme, makes spreadsheet geeks compete from the street | The Register](https://www.theregister.com/offbeat/2026/07/13/excel-competition-goes-extreme-makes-spreadsheet-geeks-compete-from-the-street/5270709)
-  - [World Excel Champion Diarmuid Early Stages Last-Minute Comeback to Win First Landmark Battle | ASUS Pressroom](https://press.asus.com/news/press-releases/asus-landmark-battle-diarmuid-early-wins/)
+  - [Apply compact form layout for pivot tables in Google Sheets | Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/10/apply-compact-form-layout-for-pivot-tables-in-Google-Sheets.html)
+  - [Google Sheets Gets Smarter With New Charts and Excel Support | Windows Report](https://windowsreport.com/?p=1513124)
 
-### 3. 週末に試したい、知られざるExcel機能5選(How-To Geek)
+## 2026-11-01
 
-- 概要: How-To Geekが7月17〜19日の週末向けに、あまり知られていないExcelの便利機能5選を紹介する記事を公開。数式を一段階ずつ評価・可視化できる「Evaluate Formula」、Excel for the Web限定で入力例からその場で数式を自動生成する「Formula by Example」、選択範囲からグラフや条件付き書式などをその場でプレビューできる「Quick Analysis」などを取り上げている。
-- 注目ポイント: 新機能紹介ではなく「既存だが埋もれている機能の再発掘」という切り口が実務層に刺さりやすく、週末読み物として拡散しやすい構成になっている。特に「Evaluate Formula」は数式デバッグ・レビューの観点で品質管理業務にも応用しやすい機能として目を引く。
+### 1. Microsoft公式「Excelの10月更新」まとめが登場 ― 先週報じられたCopilot新機能5つを正式確認、テーブル命名機能も通常提供へ
+
+- 概要: Microsoftは2026年10月27日前後、Excel公式ブログで10月の月例アップデートをまとめた記事を公開した。前週(2026-10-25分)で台湾メディア発として紹介した「Interactive Canvas」「Skill Builder」「Skill Recorder」「Get Data」「Clean Data」というCopilotの5つの新機能について、Microsoft自身が改めて概要・提供状況を確認。あわせて、これまでInsiderプレビュー限定だった「テーブル作成時にその場で名前を付けられる」機能が、Excel for Windowsの通常チャネルでも利用可能になったことが明らかになった。Neowin・Windows Reportなど複数のテックメディアがこの公式まとめを受けて追随記事を公開している。
+- 注目ポイント: 1週間前に二次メディア経由で先行報道されていた内容を、Microsoft自身が公式ブログで追認・補足した形。地味な「テーブル名をダイアログ内で直接指定できる」という機能は見出しを飾りにくいが、従来「Table1」のまま放置され後から命名規則が崩れるという、まさに品質管理・保守性の観点で地味に効く改善であり、派手なAI機能の陰に隠れがちな基本機能の着実な改善として注目したい。
 - 出典:
-  - [5 little-known Excel features to try this weekend (July 17-19) | How-To Geek](https://www.howtogeek.com/microsoft-excel-little-known-features-to-try-this-weekend-july-17-19/)
+  - [What's New in Excel (October 2026) | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/ExcelBlog/whats-new-in-excel-october-2026/4549758)
+  - [Microsoft Excel October 2026 Update Brings 5 New Copilot Features and Smarter Data Tools | Windows Report](https://windowsreport.com/microsoft-excel-october-2026-update-brings-5-new-copilot-features-and-smarter-data-tools/)
 
-## 2026-07-26
+### 2. Excel for the Webに「Get Data」スキルが展開開始 ― 自然言語の指示でPower Queryのデータ取得・変換を代行
 
-### 1. xAIがExcel向け無料アドイン「Grok for Excel」を投入、Copilotに真っ向勝負
-
-- 概要: 2026年7月20日、xAIがGrok 4.5を組み込んだExcel用アドイン「Grok for Excel」を公開した。Word・PowerPoint向けアドインも同時提供し、Microsoft Marketplaceからインストール可能。サイドバーから自然言語で数式作成・ピボットテーブル構築・データクレンジング・グラフ生成・Web検索結果の取り込みなどを指示でき、分析に使ったセルを明示する「根拠の可視化」が特徴とされる。
-- 注目ポイント: Copilot in Excelと同じ土俵に競合AIが正面から乗り込んだ点が、「AIオフィス戦争」の新局面として海外メディアで大きく取り上げられた。The Registerが「なぜわざわざExcelのプラグインを作ったのか」と皮肉交じりに報じるなど話題性が高く、アドイン自体は無料でも実際の利用にはSuperGrok等の有料プランが必要な点も議論を呼んでいる。
+- 概要: MicrosoftはExcel for the Web向けに、Copilotが自然言語の指示を解釈してデータの取得・変換・読み込み(Power Query相当の処理)を代行する新スキル「Get Data」の展開を開始した。利用者が「欲しいデータ」と「どう加工したいか」を文章で伝えるだけで、Power Queryのクエリを手作業で組み立てずに済むようになる。ウェブ版ではExcelワークブック・テキスト/CSVファイル・XML・JSON・SQL Serverデータベース・SharePoint Onlineリストなど複数のデータソースに対応するとされる。
+- 注目ポイント: 前週まとめ記事でも触れられていた機能だが、実際のロールアウト開始を伝える単独記事としてNeowinが「AI対応志向のユーザーが気に入る新機能」と評して取り上げた。Power Queryは強力な反面、変換ステップの組み立てに習熟が必要なツールであり、その「入口」を自然言語化する動きは、データクレンジング・前処理の属人化を減らす方向性として、業務効率化・品質管理の両面から継続的に注視したいテーマ。
 - 出典:
-  - [Grok muscles into Excel with an AI add-in of its own | The Register](https://www.theregister.com/ai-and-ml/2026/07/22/grok-muscles-into-excel-with-an-ai-add-in-of-its-own/5276138)
-  - [Grok for Excel | xAI](https://x.ai/news/introducing-excel-addin)
+  - [Excel for web gets new feature that AI-ready users will love | Neowin](https://www.neowin.net/news/excel-for-web-gets-new-feature-that-ai-ready-users-will-love/)
+  - [Microsoft Brings AI-Powered Get Data Feature to Excel for the Web | Windows Report](https://windowsreport.com/microsoft-brings-ai-powered-get-data-feature-to-excel-for-the-web/)
+  - [RM577745 - Excel: Get and transform data with Copilot in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM577745)
 
-### 2. MOS World Championship 2026がアナハイムで開幕、昨年準優勝の高校生の物語も再脚光
+## 2026-10-25
 
-- 概要: 2026年7月26日から29日にかけて、Certiport主催の第24回Microsoft Office Specialist(MOS)World Championshipがカリフォルニア州アナハイムのディズニー・グランド・カリフォルニアン・ホテルで開催される。これに合わせ、2025年大会のExcel(Office 2019)部門で世界2位・賞金4,000ドルを獲得したシカゴ出身の高校生Xavier Diebold氏のサクセスストーリーを紹介する記事が公開された。
-- 注目ポイント: 前週(2026-07-19分)で紹介した屋外イベント「Landmark Battle」に続き、Excel競技(スプレッドシート・エスポーツ)への注目がこの週も継続している。学生の等身大のサクセスストーリーは拡散しやすく、Excelスキルが賞金・進学など実利益に直結する事例として教育関係者からも関心を集めている。
+### 1. Copilot in Excelに新機能5つ ― 「Interactive Canvas」本格展開に加え「Skill Builder」「Skill Recorder」「Get Data」「Clean Data」が相次ぎ発表
+
+- 概要: Microsoftは2026年10月中旬、Copilot in Excel向けに5つの新機能を発表した。自然言語の指示でワークブックのデータをレポート・ダッシュボード化する「Interactive Canvas」(10月中に全世界展開)に加え、文章・過去の操作例・サンプル出力からスキルを作成する「Skill Builder」(10月から通常版で段階展開)、実際の操作をそのまま記録してスキル化する「Skill Recorder」(10月末からInsider向け)、会話形式でデータを取り込める「Get Data」、表記揺れや重複を検出・修正提案する「Clean Data」が含まれる。台湾の中央社(cna.com.tw)による10月17日の報道を起点に、英語圏だけでなくドイツ語・イタリア語・スペイン語圏のテックメディアもほぼ同時期に取り上げた。
+- 注目ポイント: 「操作を記録してスキル化する」Skill Recorderについて、Microsoft自身が「元データの列構成が変わる(割引・通貨列の追加など)と、記録済みの手順が不完全な結果を返すことがある」と注意喚起している点が、品質管理・業務プロセスの観点から見逃せない。手作業の自動化がそのまま「ブラックボックス化したマクロ」の再来にならないよう、生成されたスキルの検証・棚卸しの重要性を示す事例としても読める。
 - 出典:
-  - [Excel Skills Earn Chicago Teen $4,000 at World Championship—Here's How to Build Your Own Office Proficiency | Windows News](https://windowsnews.ai/article/excel-skills-earn-chicago-teen-4000-at-world-championshipheres-how-to-build-your-own-office-proficie.440488)
-  - [Excel World Championship: Xavier Diebold Takes Silver, $4,000 Prize | Windows Forum](https://windowsforum.com/windows-news.4/excel-world-championship-xavier-diebold-takes-silver-4-000-prize.440488/)
+  - [Microsoft brings five new Copilot features to Excel | iTechGuides](https://www.itechguides.com/microsoft-brings-five-new-copilot-features-to-excel/)
+  - [Excel-Automatisierung: Copilot zeichnet Arbeitsschritte direkt auf | Born's Tech and Windows World](https://borncity.com/news/excel-automatisierung-copilot-zeichnet-arbeitsschritte-direkt-auf/)
+  - [Excel con Copilot crea report interattivi che si aggiornano da soli | Punto Informatico](https://www.punto-informatico.it/excel-copilot-crea-report-interattivi-si-aggiornano-da-soli/)
 
-### 3. How-To Geekが週末企画「時短Excel Tips 5選(7/24-26)」を公開、地味な標準機能を再評価
+### 2. SCSK、ノーコード開発「CELF」にClaude Code活用の「AI開発エージェント」β版 ― 日本のExcel依存企業のDXを後押し
 
-- 概要: How-To Geekが7月24日、週末に試したい「時短につながるExcel機能5選」を紹介する記事を公開した。名前ボックスを使った高速ナビゲーション、「データの分析」によるピボットテーブル・グラフの自動提案、形式を選択して貼り付け(Ctrl+Shift+V)、「選択オプション」、「新しいウィンドウ」など、目立たないが実務で効く標準機能を取り上げている。
-- 注目ポイント: 前週(7/17-19分)にも同シリーズで「知られざるExcel機能5選」を紹介しており、週末読み物の定番企画として定着しつつある。新機能紹介ではなく「既存機能の使い倒し」に焦点を当てる切り口は、業務効率化・時短をテーマにする読者層から継続的に支持されている。
+- 概要: SCSKは2026年10月15日、ノーコード開発サービス「CELF」の新機能として、AnthropicのAIコーディングエージェント「Claude Code」(Amazon Bedrock経由)を活用した「CELF AI開発エージェント(仮称)」のβ版を発表した。10月14日から参加企業の募集を開始し、10月23日より先着30社に約1か月間無償提供する(別途Claude Codeの利用料が必要)。チャットでの自然言語指示だけで、CELFアプリの画面・テーブル・業務ロジックの設計から実装・テスト・保守までを進められるのが特徴で、CPN(CELFパートナー制度)加盟のパートナー4社によるα版での実証では、従来開発に比べ画面あたり300~800%の生産性向上が確認されたとしている。
+- 注目ポイント: 調査会社Futurum Groupは、ERP(基幹システム)導入企業の82.6%が周辺業務を依然Excelで処理しているという調査結果を引用し、本サービスを「日本のExcel依存企業をエージェント型AIで突破する試み」と位置づけて報じた。基幹システム導入後も現場に「野良Excel」が残り続けるという、このブログでも繰り返し取り上げてきた構造的課題に対し、生成AIコーディングエージェントで克服を図る動きとして、日本企業のDX動向の観点から注目される。2027年春には市民開発者向けサービスの提供も予定されている。
 - 出典:
-  - [5 time-saving Excel tips to put to the test this weekend (July 24-26) | How-To Geek](https://www.howtogeek.com/microsoft-excel-time-saving-tips-to-try-this-weekend-july-24-26/)
-  - [How-To Geek's Weekend Challenge: 5 Excel Tools That Could Save You Hours Every Week | Windows News](https://windowsnews.ai/article/how-to-geeks-weekend-challenge-5-excel-tools-that-could-save-you-hours-every-week.440442)
+  - [SCSK、生成AIとの対話でExcel業務のアプリ化を推進する「CELF AI開発エージェント」β版を提供 | Impress Cloud Watch](https://cloud.watch.impress.co.jp/docs/news/2147980.html)
+  - [SCSK Bets on Agentic AI to Digitize Japan's Excel-Dependent Enterprises | Futurum Group](https://futurumgroup.com/insights/scsk-bets-on-agentic-ai-to-digitize-japans-excel-dependent-enterprises/)
 
-## 2026-08-02
+## 2026-10-18
 
-### 1. 英国防省のアフガン人情報流出、原因は「隠しシート付きExcelファイル」― 議会報告書が「予見可能な組織的失敗」と断定
+### 1. 「Excel Canvas」がついに本格展開 ― MVPによる「24時間使ってみたレビュー」に賛否両論
 
-- 概要: 英国下院防衛委員会が2026年7月30日に公表した報告書で、2022年に発覚した英国防省(MoD)によるアフガン人協力者の個人情報流出について、担当者が約150人分のデータだと思って外部にメール送信したExcelファイルに、実際には18,500人以上の情報を含む「非表示シート」が隠れていたことが原因だったと指摘した。委員会は、個人のミスではなく「不適切なツール・脆弱な運用手順・不十分な研修・組織の継続性の欠如・データ保護に対する文化の欠如」が重なった「予見可能な組織的失敗」だと結論づけている。
-- 注目ポイント: Slashdotが「Excelの研修不足が招いた破局的な情報漏えい」という刺激的な見出しで取り上げ、SNS上でも「隠しシート・非表示行列の危険性」を巡る議論が広がった。命に関わる機密データをアクセス制御のないExcel+SharePointで管理していたというガバナンスの甘さ、および「非表示=削除・不可視」ではないという初歩的だが見落とされがちな品質管理上の教訓として、本ブログのテーマとも直結する事例。
+- 概要: Microsoft 365メッセージセンターの告知(MC1485411)により、Copilotがワークブックデータを解釈してグラフ・指標・インサイトをまとめた1枚のインタラクティブなレポートを自動生成する「Excel Canvas」が、2026年10月中旬から本格展開を開始し、10月末までに全世界で利用可能になる予定であることが伝えられた。ドイツ語圏(borncity.com)・イタリア語圏(smartworld.it)のテックメディアもほぼ同時期に取り上げ、多言語で紹介記事が広がっている。
+- 注目ポイント: Microsoft MVPのWyn Hopkins氏が10月16日に公開した「24時間使ってみたレビュー」が特に話題を呼んだ。ツールチップやクロスフィルタ、テーマの自動切り替え、複数テーブルの自動結合・重複キーの検出といった強みを評価する一方、計算結果がハードコードされてしまう点・たまにクラッシュする点・同じ指示を出し直すと結果が変わる点・元の数式まで遡れる監査性の弱さなど、具体的な弱点を率直に指摘した点が実務者層の関心を集めた。「AIが仕上げるレポーティング基盤」路線の集大成とされる機能だけに、品質管理・監査可能性の観点からも注視したいテーマ。
 - 出典:
-  - [MoD Spreadsheet Exposed 18,500 Afghan Allies to Taliban: No One Will Ever Be Held Accountable For 'Foreseeable Failure' | Tech Times](https://www.techtimes.com/articles/322402/20260731/mod-spreadsheet-exposed-18500-afghan-allies-taliban-no-one-will-ever-held-accountable.htm)
-  - [Catastrophic MoD Data Breach Caused By Lack of Training On Excel | Slashdot](https://yro.slashdot.org/story/26/07/30/1748239/catastrophic-mod-data-breach-caused-by-lack-of-training-on-excel)
+  - [MC1485411 - Microsoft Excel: Excel canvas | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1485411)
+  - [Canvas in Excel: 24-Hour Verdict | HubSite 365](https://www.hubsite365.com/en-ww/crm-pages/canvas-in-excel-heres-what-i-found-24-hours-later.htm)
+  - [Excel Copilot: Interactive Canvas macht aus Tabellen dynamische Berichte | Born's Tech and Windows World](https://borncity.com/news/excel-copilot-interactive-canvas-macht-aus-tabellen-dynamische-berichte/)
 
-### 2. Copilot in Excelの2026年7月アップデートまとめ ― インライン引用・Power BI連携に加え「Claude Opus 5」も選択可能に
+### 2. 10月のPatch TuesdayでExcelだけで69件を修正 ― Office 2021にとって「最後の更新」と重なる
 
-- 概要: Neowinが2026年7月28日、Excelに2026年7月中に追加された新機能をまとめた記事を公開。Copilotの回答に出典元へのリンクを表示する「インライン引用」、組織内コンテンツを取り込める「同期済みコネクタ」、Power BIの管理済みデータを分析に利用できる「Power BIグラウンディング」、AutoSaveをオフにしたブックでもCopilotが使えるようになった点などが紹介された。あわせて、Copilotのモデル選択肢にOpenAIのGPT-5.6とAnthropicのClaude Opus 5が追加されたことも大きく取り上げられている。
-- 注目ポイント: Microsoft 365公式Xアカウントも「複雑な多段階の作業や長時間タスクの推論力強化」としてClaude Opus 5の展開を告知し、拡散された。Word・Excel・PowerPoint全体で非OpenAI系フロンティアモデルが標準選択肢になったのは初めてで、「数式・VBAはGPT系、財務モデリングや文章主体のデータ分析はClaude系」といった実務者向けの使い分けガイドが複数メディアで公開されるなど、モデル選択のノウハウそのものが話題になっている。
+- 概要: Office Watchが2026年10月13日のPatch Tuesdayについて報じた記事によると、今回はOffice関連だけで173件の脆弱性(うちCritical級26件)が修正され、Excel単体でも69件の修正が含まれていた。悪用が確認されたゼロデイはOffice側にはなく、修正の優先度としてはまずOutlookから適用すべきだと案内している。あわせてこの10月13日は、2021年10月にリリースされた買い切り版「Office 2021」(LTSC含む)にとって正式サポート終了日と重なり、これが同製品にとって最後のセキュリティ更新になったことも報じられた。
+- 注目ポイント: 毎月のようにExcelの脆弱性修正が話題に上る中、今回は件数の多さ(Office全体で173件)に加え、「セキュリティ更新と製品ライフサイクルの区切りが同じ日に重なった」という巡り合わせそのものが注目を集めた。Office Watchは「Microsoftの最近のパッチ品質問題を踏まえ、1〜2週間は適用を見送るのも一案」と異例の注意喚起をしており、パッチ適用の判断そのものが品質管理上の悩ましいテーマとして議論を呼んでいる。
 - 出典:
-  - [Here are all the new features Microsoft added to Excel in July 2026 | Neowin](https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-excel-in-july-2026/)
-  - [Which Copilot Model Should You Use in Excel? Auto, GPT or Claude | Office Watch](https://office-watch.com/2026/choose-copilot-model-excel/)
-  - [Microsoft 365 on X: announcing Claude Opus 5 rollout to Copilot](https://x.com/Microsoft365/status/2081817680068087898)
+  - [October 2026 Patch Tuesday: 173 Office Fixes, 26 Critical Flaws, and Office 2021's Final Update | Office Watch](https://office-watch.com/?p=77946)
+  - [Microsoft Fixes Record 1,413 Vulnerabilities in October 2026 Patch Tuesday | Guru3D](https://www.guru3d.com/story/microsoft-fixes-record-1413-vulnerabilities-in-october-2026-patch-tuesday/)
 
-### 3. Microsoft Office Specialist世界大会2026、Excel部門の世界王者が確定 ― 前週の話題を引き継ぐ形で決着
+### 3. Office 2021のサポートが正式終了 ― 「サブスクへの誘導では」と買い切り派から反発の声
 
-- 概要: Certiport(Pearson)主催の第24回Microsoft Office Specialist(MOS)World Championshipがアナハイムで開催され、2026年7月29日に結果が発表された。Excel(Office 2019)部門はマカオのZhong Tin Kin氏が優勝、Excel(Microsoft 365 Apps)部門はベトナムのNguyen Mai Chi氏が優勝するなど、36か国・135名の学生ファイナリストの成績が公表された。
-- 注目ポイント: 前週(2026-07-26分)で紹介した「準優勝の高校生Xavier Diebold氏」の話題の続報にあたり、学生の実務スキル競技という切り口が2週連続で注目を集めた形。Excel World Championship(MEWC)とは別に、学校教育・資格試験の文脈でもExcelスキルが競技化・可視化されている点が、教育関係者やHR担当者の間で引き続き関心を呼んでいる。
+- 概要: 延長サポートを持たない買い切り版「Office 2021」(Excel含む)が、2026年10月13日(米国時間)をもって正式にサポート終了となった。今後はMicrosoft Update経由の更新プログラム提供・不具合修正・セキュリティ修正・技術サポートのいずれも提供されなくなり、アプリ自体は動作し続けるもののネットに接続した状態での利用はリスクが高まると各メディアが注意喚起している。移行先としては買い切り版「Office 2024」(サポートは2029年10月まで)か、Microsoft 365への切り替えが案内されている。
+- 注目ポイント: 本ノートで10月4日・10月11日と2週連続で「目前に迫る期限」として取り上げてきた話題が、今週ついに現実のものとなった。Windows Latestが「Microsoftは10月にOffice 2021を葬り去り、あなたをMicrosoft 365へ押し込もうとしている」と評するなど、買い切り版を長年愛用してきたユーザー層からサブスクリプションへの誘導ではないかという反発の声が改めて広がっている点が、海外・日本語圏双方のメディアで共通して取り上げられている。
 - 出典:
-  - [World Champions Crowned at Pearson's Certiport 2026 Microsoft Office Specialist Competition | GlobeNewswire](https://www.globenewswire.com/news-release/2026/07/29/3335632/0/en/World-Champions-Crowned-at-Pearson-s-Certiport-2026-Microsoft-Office-Specialist-Competition.html)
-  - [Meet the 2026 Microsoft Office Specialist World Champions | Certiport Blog](https://certiport.pearsonvue.com/Blog/2026/July/Meet-the-2026-MOS-World-Championship.aspx)
+  - [Office 2021 Support Ends October 13: Your 5 Options Before the Deadline | Office Watch](https://office-watch.com/2026/office-2021-end-of-support-october-2026/)
+  - [Office 2021のサポートが10月13日で終了。継続利用はセキュリティリスクが高まるので早めの移行を | がるまっくす](https://garumax.com/?p=274289)
+  - [Microsoft is killing Office 2021 in October to push you onto Microsoft 365 | Windows Latest](https://windowslatest.com/2026/06/20/microsoft-is-killing-office-2021-in-october-to-push-you-onto-microsoft-365-how-to-fight-back)
 
-## 2026-08-09
+## 2026-10-11
 
-### 1. ESPN8: The Ocho、10周年記念特番でMicrosoft Excel World Championshipを5年連続放送
+### 1. Office 2021のサポート終了(10月13日)がいよいよ目前に ― 「移行先」を巡る議論が各所で再燃
 
-- 概要: ESPNの変わり種スポーツ特番「ESPN8: The Ocho」が2026年8月6日〜9日に10周年を迎え、74時間超に及ぶ特別編成を実施した。この中でMicrosoft Excel World Championship(MEWC)が5年連続で取り上げられ、決勝は8月8日午前7時(米国東部時間)からESPN2で放送された。
-- 注目ポイント: 「世界一奇妙なスポーツ特番」として知られるThe Ochoの定番コンテンツの一つとしてExcel競技が定着しつつある点が興味深い。7月の屋外イベント「Landmark Battle」など、ここ数週このブログでも継続的に取り上げてきたExcel eスポーツ人気の流れが、地上波スポーツ専門チャンネルでの毎年恒例放送という形でさらに裏付けられた。業務ツールであるExcelが「観戦されるコンテンツ」として定着している点は、Excelというソフトウェアの社会的な位置づけの変化を示す事例として注目に値する。
+- 概要: Office 2021(LTSC版含む)の全面サポート終了日(米国時間2026年10月13日)が目前に迫り、延長セキュリティ更新の提供もないことが改めて各メディアで確認・報道された。終了後はExcelを含む各アプリ自体は動作し続けるものの、新たに見つかった脆弱性へのセキュリティ修正・技術サポートが一切提供されなくなる。買い切り版の後継である「Office 2024」(サポートは2029年10月9日まで)への移行か、Microsoft 365への切り替えかという選択を迫られる利用者が多い。
+- 注目ポイント: 前週分(2026-10-04)で紹介した「Office史上最悪の月」という大きな枠組みの記事に続き、期限が文字通り今週に迫ったことで、個人・企業双方で「このまま使い続けるか」「Office 2024を買うか」「Microsoft 365に乗り換えるか」という具体的な意思決定を迫られる声がコミュニティサイトの掲示板などで活発化している。サポート切れ環境でExcelファイルを社外とやり取りし続けるリスクは、品質管理・情報セキュリティの観点からも軽視できないテーマ。
 - 出典:
-  - [The Microsoft Excel World Championship is back on ESPN8 The Ocho for the 5th year in a row | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/the-microsoft-excel-world-championship-is-back-on-espn8-the-ocho-for-the-5th-yea/4527282)
-  - [ESPN8: The Ocho returns for its 10th Anniversary August 6-9 | ESPN Press Room](https://espnpressroom.com/press-release/espn8-the-ocho-returns-for-its-10th-anniversary-august-6-9/)
+  - [End of support for Office 2021 | Microsoft Support](https://support.microsoft.com/en-us/office/system-requirements/end-of-support-for-office-2021)
+  - [Microsoft Office 2021 Support Ends October 2026 | Canopytech](https://canopytech.ca/blog/microsoft-office-2021-support-ends-october-2026/)
 
-### 2. Excelに深刻なRCE脆弱性「CVE-2026-62870」、CVSS 8.8のUse-After-Free問題が公表
+### 2. 「1セルに複数値」機能、海外メディア・コミュニティで反響が継続 ― 「40年来のルールを破った」と評価が拡散
 
-- 概要: 2026年8月4日、Microsoft Excelにおけるメモリ解放後使用(Use-After-Free)に起因するリモートコード実行(RCE)の脆弱性CVE-2026-62870が公表された。CVSSスコアは8.8(高)で、細工されたExcelファイルを開かせることで、攻撃者が被害者の権限でコードを実行できる可能性がある。Microsoft 365 Apps for Enterprise、Excel 2016、Office 2019、Office LTSC 2021/2024など幅広いバージョン(32bit/64bit)が対象。
-- 注目ポイント: 「ファイルを開くだけ」で攻撃が成立しうる典型的なフィッシング媒介型の脆弱性であり、Excelファイルを日常的に社外とやり取りする業務フローのリスクを改めて浮き彫りにした。8月のPatch Tuesday(8月11日予定)を待たずに単独で情報が公開された点も、セキュリティ専門メディアで話題となった一因。修正済みのセキュリティ更新プログラムの速やかな適用が呼びかけられている。
+- 概要: 9月下旬にプレビュー提供が始まった「1セルに複数の値(リスト・配列)を格納できる」新機能について、TechRadarやTechRepublic(英語版・ドイツ語版・フランス語版・スペイン語版など多言語展開)、Techspotのコミュニティフォーラムなどが相次いで取り上げ、反響が尾を引く形となっている。あくまでMicrosoft 365 Insider Betaチャネル限定のプレビュー機能で、PivotTableの集計元データや、Power Queryでの読み込み・出力、グラフのデータ系列化には対応していない点も改めて注意喚起されている。
+- 注目ポイント: TechRadarが「Excelの達人たちよ、あなたの祈りはついに届いた」という見出しで紹介するなど、表計算ソフトの根幹である「1セル=1つの値」という制約への変更が、技術者コミュニティのフォーラムでも活発な意見交換を呼んでいる。本ノートで9月27日・10月4日と2週続けて取り上げてきた話題だが、英語圏の反応記事が後追いで次々に出ている点から、関心の持続力が高いテーマであることがうかがえる。
 - 出典:
-  - [CVE-2026-62870 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62870)
-  - [CVE-2026-62870 - Microsoft Excel Remote Code Execution Vulnerability | cvefeed.io](https://cvefeed.io/vuln/detail/CVE-2026-62870)
-  - [Microsoft Excel Use-After-Free RCE (CVE-2026-62870) | TheHackerWire](https://www.thehackerwire.com/microsoft-excel-use-after-free-rce-cve-2026-62870/)
+  - [Microsoft Excel gurus, your prayers have been answered: more than one value can now be in a single cell | TechRadar Pro](https://www.techradar.com/pro/microsoft-excel-gurus-your-prayers-have-been-answered-more-than-one-value-can-now-be-in-a-single-cell-as-a-new-era-of-spreadsheets-dawns)
+  - [Excel Breaks a 40-Year Rule: Microsoft Lets One Cell Hold Multiple Values | TechRepublic](https://www.techrepublic.com/article/news-excel-multiple-values-one-cell-lists-arrays/)
+  - [After 40 years, Excel is breaking one of its oldest rules: one cell, one value | Techspot (community discussion)](https://www.techspot.com/community/topics/after-40-years-excel-is-breaking-one-of-its-oldest-rules-one-cell-one-value.298954/)
 
-## 2026-08-16
+### 3. Excelの「Copilot」エントリーポイント統合、GCC/GCC High/DoD向けに10月展開開始
 
-### 1. 8月のPatch Tuesdayで、Excelだけで27件の脆弱性を修正 ― 深刻な緊急事態が2週連続に
-
-- 概要: 2026年8月11日のPatch Tuesdayで、MicrosoftはExcel向けに27件のCVEを修正した。このうちCVE-2026-68794・CVE-2026-68804・CVE-2026-68816の3件は、細工したファイルを開かせることでコード実行を許すリモートコード実行(RCE)の脆弱性で、CVSSスコアはいずれも7.8。Office関連のCVEは合計35件にのぼり、Word(17件)と並んでOfficeスイート全体の中でも今月の修正の中心となった。
-- 注目ポイント: 前週(2026-08-09分)で取り上げたCVE-2026-62870に続き、2週連続でExcelのRCE脆弱性が話題になった。Office Watchなどセキュリティ専門メディアは、今月はプレビューウィンドウ経由で発火するOffice関連の脆弱性も複数含まれていた点を強調しており、「ファイルを開くだけ/プレビューするだけ」でリスクが生じる構図が改めて注目を集めている。社外とExcelファイルを頻繁にやり取りする実務担当者にとって、継続的なパッチ適用の重要性を示す事例。
+- 概要: Microsoft 365メッセージセンターの告知(MC1282571)によると、Excel上に点在していたCopilotの呼び出し口(セル選択時の表示や右クリックメニューなど)を整理し、右側のサイドペイン「Excel Agent」とExcel内の固定位置に表示される単一のCopilotボタンに一本化する変更について、一般向け(ワールドワイド)では2026年4〜6月に展開済みだったのに対し、米国政府機関向けクラウド環境(GCC・GCC High・DoD)では2026年10月初旬から展開が始まり、10月下旬までに完了する予定であることが伝えられた。ライセンス要件や管理者側のポリシーに変更はなく、対象ユーザーには既定で有効になる。
+- 注目ポイント: 一般ユーザー向けには半年近く前に展開済みだった変更が、セキュリティ要件の厳しい政府機関向け環境ではワンテンポ遅れて今まさに展開中という点が、IT管理者向けの情報源(Message Center購読者向けサイト)で取り上げられている。Copilotのエントリーポイントが「セル単位の個別機能」から「サイドペインへの一本化」へ向かう流れは、本ノートで継続的に追ってきたExcelのAI機能統合トレンドの一環として位置づけられる。
 - 出典:
-  - [August 2026 Patch Tuesday: Office Bugs That Fire From the Preview Pane | Office Watch](https://office-watch.com/2026/august-patch-tuesday-hit-office-hard-and-the-preview-pane-is-a-real-risk-this-month/)
-  - [August 2026 Patch Tuesday: Updates and Analysis | CrowdStrike](https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-august-2026/)
-  - [CVE-2026-68804 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804)
+  - [MC1282571 - Copilot entry point changes in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1282571)
+  - [Copilot entry point changes in Excel | Itelio](https://www.itelio.com/en/microsoft-message-center/MC1282571)
 
-### 2. Copilot in Excel、Power BIの管理済みデータを直接根拠にできる「Power BI Grounding」が一般提供
+## 2026-10-04
 
-- 概要: Microsoft 365メッセージセンターの告知(MC1455015、2026年8月15日更新)により、Copilot in ExcelがPower BIレポートを分析の根拠(グラウンディング)として利用できる機能が正式展開(Launched)されたことが伝えられた。ユーザーは「作業コンテンツを追加」からPower BIレポートを添付するだけで、管理者側の追加設定なしにCopilotへ質問できるようになる。行レベルセキュリティ(RLS)を含む既存のPower BI権限がそのまま尊重される点が明記されている。
-- 注目ポイント: 7月に予告されていたPower BI連携機能が8月中旬に実際に展開された形で、CIAOPSなどMicrosoft 365ウォッチャー系メディアの週次まとめでも取り上げられた。「Excelの柔軟さ」と「BI側で管理された信頼できる数値」を両立させる設計思想が、野良Excelによる集計ミスを懸念する情報システム部門・データガバナンス担当者から関心を集めている。
+### 1. 「Excel Canvas」が本格展開開始 ― Copilotがデータ更新に追従する1枚レポートを自動生成
+
+- 概要: 9月に発表されていたCopilot機能「Excel Canvas」が、2026年10月2〜4日にかけて本格的にロールアウトされ始めた。ワークブックのデータをCopilotが解釈し、グラフ・指標・インサイトをまとめた1枚のインタラクティブなビューを自動生成する機能で、元データが更新されるとレポート側も自動的に追従する。
+- 注目ポイント: The Registerが「あなたのワークブックを上司向け次期レポートに変えてくれる」と紹介するなど、海外テックメディアが相次いで取り上げた。グラフを手作業で組み立てる従来のダッシュボード作成から「会話するだけで完成形が出てくる」体験への移行が、8月の「テーマデザインスキル」「ブランドキットスキル」に続く形で現実のものとなった点が注目されている。
 - 出典:
-  - [MC1455015 Copilot in Excel: Power BI Grounding | pupuweb.com](https://pupuweb.com/mc1455015-copilot-in-excel-power-bi-grounding/)
-  - [Analyze Power BI reports with Copilot in Excel | Microsoft Support](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-power-bi)
-  - [CIA Brief 20260815 | CIAOPS](https://blog.ciaops.com/2026/08/15/cia-brief-20260815/)
+  - [Excel Canvas offers to turn your workbook into the boss's next report | The Register](https://www.theregister.com/software/2026/10/02/excel_canvas_offers_to_turn_your_workbooks_into_the_bosss_next_report/5300812)
+  - [Microsoft Rolls Out Excel Canvas, a Copilot Report View That Refreshes as Workbook Data Changes | gHacks Tech News](https://www.ghacks.net/2026/10/04/microsoft-rolls-out-excel-canvas-a-copilot-report-view-that-refreshes-as-workbook-data-changes/)
 
-## 2026-08-23
+### 2. 「1セル1値」撤廃の詳細が判明 ― FLATTEN・HAS・HASANY・HASALLの新関数4種が同時導入
 
-### 1. Excelの「=COPILOT関数」、正式リリースを待たずに9月14日で廃止へ ― パワーユーザーから反発の声
-
-- 概要: Microsoftは2026年8月17日前後、2025年8月からBeta ChannelおよびFrontierプログラムで試験提供してきたセル内AI関数「=COPILOT()」を、2026年9月14日をもって廃止すると発表した。Microsoft 365ロードマップには「この機能を今後展開しないことを決定した。ご不便をおかけして申し訳ない」との一文が追加され、代替としてはサイドパネル型のCopilotチャットの利用が案内されている。
-- 注目ポイント: 一般提供(GA)される前に、1年足らずで機能そのものが撤回されるという異例の展開がThe Registerをはじめ複数の海外メディアで大きく報じられた。数式としてワークブックに残り、参照セルの変更に応じて再計算・スピルされる「=COPILOT()」と、都度チャットで結果を確認・適用する必要があるサイドパネルとでは使い勝手が異なるとして、パワーユーザーから「Python in Excelとの連携やApp Skillsの代替になっていない」といった反発の声が上がっている点が議論を呼んでいる。AI機能を矢継ぎ早に投入しては引っ込めるMicrosoftの開発姿勢そのものへの不満も、業界アナリストのコメントとして紹介された。
+- 概要: 前週(2026-09-27分)で取り上げた、1つのセルに複数の値を「リスト」「セル内配列」として格納できる新機能について、対応する新関数の内容が明らかになった。入れ子配列を展開する「FLATTEN」、配列内に指定した値が存在するかを判定する「HAS」「HASANY」「HASALL」の4関数が同時に追加され、現在はMicrosoft 365 InsiderのBetaチャネル限定で、Microsoftは重要なブックでの使用を推奨していないと案内されている。
+- 注目ポイント: 窓の杜・マイナビニュース・Gizmodo Japanなど日本の複数メディアが相次いで詳報し、「カンマ区切りで“ごまかしていた”運用がようやく正式機能になる」といった反応がSNSでも広がった。表計算ソフトの根幹である「1セル1値」ルールに手を入れる変更だけに、既存の数式・他ツールとの互換性への影響を懸念する声も技術者コミュニティで続いている。
 - 出典:
-  - [Excel's Copilot function is headed for the Recycle Bin | The Register](https://www.theregister.com/ai-and-ml/2026/08/17/excels-copilot-function-is-headed-for-the-recycle-bin/5288327)
-  - [Microsoft is ditching the COPILOT function in Excel before it even launches | Windows Central](https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/microsoft-is-ditching-the-copilot-function-in-excel-before-it-even-launches)
-  - [Microsoft Is Retiring Excel's COPILOT() Function After Just One Year | Windows Report](https://windowsreport.com/microsoft-is-retiring-excels-copilot-function-after-just-one-year/)
-  - [MC1454373 - Frontier =COPILOT function in Excel will no longer be available | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1454373)
+  - [「Excel」の2026年9月更新、"1セルに複数データ"以外にもちょっとした新機能2種 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2144914.html)
+  - [Excel、1セルに複数の値を格納可能に リストと配列の提供開始 | マイナビニュース](https://news.mynavi.jp/techplus/article/20260928-5040589/)
+  - [Excelのセルに40年ぶり大改革！カンマで区切ってごまかしてた人がやっと報われる… | Gizmodo Japan](https://www.gizmodo.jp/article/excel-multiple-values-one-cell/)
 
-### 2. Google Sheets、Excelファイルの取り込み精度を大幅強化 ― テーブル書式・ピボットテーブルもそのまま維持
+### 3. 2026年10月は「Office史上最悪の月」 ― Office 2021サポート終了・Windows 10機能フリーズ拡大・Publisher終了が重なる
 
-- 概要: Googleは2026年8月11日から、Google SheetsにおけるExcelファイル(.xlsx)インポート機能の改善を段階展開し始めた。Excel側の「テーブル」がSheets側の「テーブル」としてそのまま取り込まれるようになったほか、テーブル範囲を基にしたExcelのピボットテーブルも正しくインポートできるようになり、これまで発生していた書式崩れ・再構築の手間が大幅に減るとされる。Google Workspaceの法人・個人アカウント双方が対象。
-- 注目ポイント: Microsoft 365とGoogle Workspaceを併用する組織・現場でExcelファイルをやり取りする機会は多く、「.xlsxを開いたら体裁が崩れる」という定番の不満に直接応える改善として、gHacksやChrome Unboxed、Android Authorityなど複数のテック系メディアが好意的に取り上げた。Excel自体のアップデートではないものの、Excelとの相互運用性・データ移行の質が業務効率化に直結するテーマとして、Excel関連ニュースの文脈でも継続的に注目されている。
+- 概要: Office Watchが、2026年10月13日にOffice 2021(LTSC含む)が全面サポート終了を迎えるのに加え、Microsoft 365の新機能・リボン変更がWindows 11版のみに限定される「機能フリーズ」の対象企業が拡大すること、長年の定番アプリPublisherが提供終了することなど、複数の節目が1か月に集中している状況を指摘する記事を公開した。
+- 注目ポイント: 「ここ数年で最悪の月」という強い見出しで、Office 2021とWindows 10を組み合わせて使う現場ほど影響が大きくなる点を具体的な日付とともに整理しており、情報システム部門の間で棚卸し・移行計画の見直しを促す記事として関心を集めている。Excelそのものの新機能ではないが、サポート切れによる脆弱性放置のリスクという観点で、本ブログの品質管理テーマとも重なる話題。
 - 出典:
-  - [Google Sheets Improves Excel Imports With Native Tables and Adds Connected Sheets Upgrades for BigQuery | gHacks Tech News](https://www.ghacks.net/2026/08/13/google-sheets-improves-excel-imports-with-native-tables-and-adds-connected-sheets-upgrades-for-bigquery/)
-  - [Google Sheets makes it less of a headache to import Excel files | Android Authority](https://www.androidauthority.com/google-sheets-excel-pivot-tables-3697487/)
-  - [Improved file importing in Google Sheets with tables and linked pivot tables | Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/08/improved-file-import-google-sheets-tables.html)
+  - [October 2026 is the worst month Office users have had in years | Office Watch](https://office-watch.com/2026/october-2026-is-the-worst-month-office-users-have-had-in-years/)
+  - [October 2026 Microsoft 365 Office Changes You Need to Know | Office Watch](https://office-watch.com/2026/october-2026-office-changes/)
 
-### 3. Copilot in Excelに「テーマデザインスキル」「ブランドキットスキル」が追加 ― 2026年8月のCopilotアップデートまとめ
+### 4. CopilotにGPT-6.1 SolとClaude Sonnet 5.5が追加 ― Excelでも段階展開が開始
 
-- 概要: 2026年8月のMicrosoft 365 Copilotアップデートでは、Excel・PowerPoint・Word・Chat・Cowork・管理系を合わせて59件の変更が加えられ、その中でもExcelが最も更新点の多い製品だったと報じられている。Copilot in Excelには、`@theme-design`と呼びかけるだけで配色・グラフ装飾・レイアウトを一括で整える「テーマデザインスキル」、および組織のBrand Kit(承認済みの配色・フォント・ロゴ)をワークブックに一括適用する「ブランドキットスキル」が新たに追加された。
-- 注目ポイント: セルを一つずつ手作業で装飾していた「体裁調整」という地味だが時間のかかる作業をCopilotに一括で任せられるようになった点が、資料作成・レポーティング業務の効率化という観点で注目されている。前週まとめてきたPower BI Grounding機能や、今週の「=COPILOT関数」廃止の話題とあわせて、MicrosoftがExcelのAI機能を「セル内の単発関数」から「ワークブック全体・組織のブランド基準に沿った一括操作」へとシフトさせている流れが見えてくる。
+- 概要: Microsoftは2026年9月30日、新モデル「GPT-6.1 Sol」と「Claude Sonnet 5.5」をCopilotに追加し、Cowork・Copilot StudioのほかWord・Excel・PowerPoint・Chatにも今後1週間程度で段階的に展開すると発表した(メッセージセンター告知MC1483844)。Microsoft 365 Copilotのユーザーサブスクリプションライセンス(USL)の範囲内で利用可能で、上限に近づくとAuto等への切り替えが案内される。
+- 注目ポイント: 8月のClaude Opus 5追加以降、本ノートでも継続的に取り上げてきた「ExcelのCopilotで選べるAIモデルが増え続ける」流れの最新回にあたる。Office Watchが早速「GPT-6.1 SolとClaude Sonnet 5.5、どちらをいつ選ぶべきか」という比較ガイド記事を公開するなど、モデル選択のノウハウそのものが実務者の関心を集め続けている。
 - 出典:
-  - [What's New in Microsoft 365 Copilot: August 2026 | A Guide to Cloud & AI](https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/)
-  - [Microsoft 365 Copilot Features: August 2026 Updates | Geeky Gadgets](https://www.geeky-gadgets.com/microsoft-365-copilot-features-august-2026/)
+  - [MC1483844 - Microsoft Copilot: GPT 6.1 Sol and Claude Sonnet 5.5 beginning to roll out today | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1483844)
+  - [GPT 6.1 Sol and Claude Sonnet 5.5 in Copilot: What to Pick and When | Office Watch](https://office-watch.com/2026/gpt-6-1-sol-vs-claude-sonnet-5-5-copilot/)
 
-## 2026-08-30
+## 2026-09-27
 
-### 1. Excelの2026年8月アップデートまとめ ― Copilotに「変更履歴要約」「Pythonスキル」「チャット履歴」を追加
+### 1. Excelに40年越しの新機能「単一セル内リスト・配列」登場 ― Slashdotでも大きな話題に
 
-- 概要: Microsoftは2026年8月25日前後、Excel公式ブログで8月の月例アップデートを公開した。Copilot in Excelに、ワークブックの変更履歴を要約し誰が何を編集したかをAIが説明する「Change Historyスキル」、Pythonコードを実行して高度なデータ分析・自動化を行える「Pythonスキル」、過去のチャットを一覧・再開できる「チャット履歴」、グラフ作成を支援する「Chart/PivotTableスキル」などが追加された。
-- 注目ポイント: Neowin・Windows Report・Technobezzなど複数の海外テックメディアが同時に取り上げ、「Excelが8月の全Microsoft 365製品中もっとも更新点が多い製品だった」と報じられている。単発の関数ではなく、変更履歴の可視化やPython連携など「ワークブック運用そのもの」を支援する方向への注力が続いており、先週報じた「=COPILOT()関数の廃止」とあわせて、MicrosoftがAI機能をセル内数式からサイドパネル型のエージェント機能へ本格的に一本化しつつある流れが鮮明になっている。
+- 概要: MicrosoftはExcel for Windows/MacのBetaチャネル(Insiderプログラム)向けに、1つのセルに複数の値を「リスト」または「配列」として格納できる新機能のプレビュー提供を2026年9月25日前後に開始した。Insert > ListまたはCtrl+Jでリストを作成し、カンマ・セミコロン区切りで値を入力すると、見た目は1セルでも内部的には個々の値が保持され、フィルタ・集計・計算にそのまま利用できる。数式の結果を波かっこ{}で囲むことで、スピル結果を1セルの配列としてそのまま保持することも可能になった。
+- 注目ポイント: 「1セルに1値」という表計算ソフトの根本的な制約に約40年ぶりに手を入れる変更として、Slashdotが「After 40 Years, Microsoft Excel Will Add Single-Cell Lists and Arrays」の見出しで取り上げ、エンジニア・パワーユーザー層で活発な議論を呼んだ。あくまでプレビュー段階の機能であり挙動が変わりうる点、CSV的な運用や他ツールとの互換性への影響を懸念する声も出ており、Excelの基本データモデルに関わる変更として今後の展開が注視されている。
 - 出典:
-  - [What's New in Excel (August 2026) | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-august-2026/4527283)
-  - [Here are all the new features Microsoft added to Excel in August 2026 | Neowin](https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-excel-in-august-2026/)
-  - [Microsoft Packs Excel's August Update With Copilot Features | Windows Report](https://windowsreport.com/microsoft-packs-excels-august-update-with-copilot-features/)
-  - [Microsoft's August Excel Update Adds Copilot Change History and Python Tools | Technobezz](https://www.technobezz.com/news/microsofts-august-excel-update-adds-copilot-change-history-and-python-tools)
+  - [Excel now supports multiple values in a single cell | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/excel-now-supports-multiple-values-in-a-single-cell/4549756)
+  - [After 40 Years, Microsoft Excel Will Add Single-Cell Lists and Arrays | Slashdot](https://slashdot.org/story/26/09/26/0227226/after-40-years-microsoft-excel-will-add-single-cell-lists-and-arrays)
+  - [Excel Multiple Values in One Cell: Microsoft 365 Testing | Geeky Gadgets](https://www.geeky-gadgets.com/multiple-values-one-excel-cell/)
 
-### 2. ExcelのExchangeコネクタが廃止へ ― 「多くのワークブックが壊れる可能性」と海外メディアが一斉警鐘
+### 2. MicrosoftがWord・Excelを「Copilotの中」へ統合する新戦略を発表
 
-- 概要: Microsoftは2026年8月25日、Excel(Power Query)のメール・カレンダー取得に使われている旧「Exchangeコネクタ」を廃止し、新しい「Exchange Mail」「Exchange Calendar」コネクタに置き換えると発表した。既存のワークブックは自動移行されず、利用者が手動で参照先を切り替える必要があり、対応しないまま2027年4月の廃止期限を過ぎると該当機能が動作しなくなる。新コネクタはMicrosoft 365および Office 2024以降のみが対象で、買い切り版の旧Officeでは代替手段がない点も指摘されている。
-- 注目ポイント: The Register・Neowin・Techzine・Petri・Windows Reportなど、通常は別々に報じる複数の主要テックメディアがほぼ同日に一斉に取り上げた点が特徴的。Neowinは「多くのワークブックを壊しかねない“大きな変更”」と表現し、IT管理者・ワークブック作成者に早期の棚卸しと移行を促す内容として、企業の情報システム部門を中心に話題になっている。
+- 概要: Microsoftは2026年9月26日、Word・Excel・PowerPointをCopilotアプリの中に直接統合し、アプリを切り替えずにファイルの作成・編集・共有を行えるようにする新戦略を発表した。個人向けMicrosoft 365サブスクライバーおよびテストプログラム参加企業向けに、今後数週間で展開が始まる予定。Copilot担当のJacob Andreou氏(EVP)は「単なる簡易ビューアではなく、フル機能のOffice」と説明している。
+- 注目ポイント: これまで「Excel側にCopilotを組み込む」形で進んできたAI統合の流れが、逆に「Copilotの中にOfficeを取り込む」方向へ転換した点が注目を集めた。TechXploreを皮切りに、The Daily Star・The Peninsula Qatar・Free Malaysia Today・Sharjah24など世界各地のメディアがほぼ同日に配信し、「AIをOfficeスイートの入り口にする」というMicrosoftの製品戦略そのものの大転換として広く報じられている。
 - 出典:
-  - [Microsoft warns that transitioning Excel workbooks to new Exchange connectors might not be smooth sailing | The Register](https://www.theregister.com/software/2026/08/25/microsoft-warns-that-transitioning-excel-workbooks-to-new-exchange-connectors-might-not-be-smooth-sailing/5292316)
-  - [Microsoft is making a "major change" in Excel which may break a lot of workbooks | Neowin](https://www.neowin.net/news/microsoft-is-making-a-major-change-in-excel-which-may-break-a-lot-of-workbooks/)
-  - [Microsoft's Excel Exchange Connector Retirement Could Disrupt Power Query Workbooks | Petri](https://petri.com/microsoft-excel-exchange-connector-retirement/)
-  - [Microsoft is discontinuing the Exchange connector in Excel | Techzine Global](https://www.techzine.eu/news/applications/143862/microsoft-is-discontinuing-the-exchange-connector-in-excel/)
+  - [Microsoft integrates Word and Excel more deeply into Copilot | TechXplore](https://techxplore.com/news/2026-09-microsoft-word-excel-deeply-copilot.html)
+  - [Microsoft integrates Word, Excel deeper into Copilot | The Daily Star](https://www.thedailystar.net/news/technology/news/microsoft-integrates-word-excel-deeper-copilot-4283131)
 
-### 3. 「Copilotがまた変わった」― 8月のMicrosoft 365 Copilot変更点を一望する非公式まとめ記事が反響
+### 3. 「コピペ破壊」問題、ついに全Office版で修正 ― 3週間越しの騒動に一区切り
 
-- 概要: Microsoft 365 Copilotの動向を追う非公式ニューズレター「M365 Copilot Connection」が、2026年8月に発表されたCopilot Chat・Word・PowerPoint・Excel・Teams・SharePoint・Notebooksなど全プロダクトの変更点を1本の記事にまとめて公開した。Excel関連では、チャット内で「@Excelエージェント」を直接メンションできる新機能や、前述のPythonスキルなどが取り上げられている。
-- 注目ポイント: 公式リリースノートが製品ごと・月ごとに分散していて追いきれないという実務者の不満を受けた「非公式まとめ」であり、タイトルの「Copilotがまた変わった」という表現自体が、AI機能の変更頻度の高さに対するユーザー側の疲労感を象徴しているとして共感を集めている。1つの記事でExcel単体ではなくOffice全体の変化を俯瞰できる点が、情報収集の効率化を求める読者に評価されている。
+- 概要: 9月のセキュリティ更新KB5002914に起因するExcelのコピー&ペースト不具合について、Microsoftは2026年9月23日、Excel 2016のMSI版に限定されていた修正範囲を広げ、Excel 2019・2021・2024およびExcel Online(Office Online Server)を含む全バージョンで問題を修正したと発表した。9月8日のPatch Tuesdayで発生してから、9月16日のKB5002665(Excel 2016 MSI版限定)を経て、ようやく全ユーザー向けの恒久対応にたどり着いた形。
+- 注目ポイント: 本ノートで9月13日・9月20日と2週連続で取り上げてきた「セキュリティ更新が基本操作を壊す」騒動の、事実上の決着編にあたる。BleepingComputerやgHacksが速報し、Redditや日本語圏のブログ・SNSでも「やっと直った」という反応が広がった。3週間にわたり実務に影響を与え続けたことで、パッチ配信後の影響範囲確認と検証の重要性を改めて浮き彫りにした事例として注目されている。
 - 出典:
-  - [Copilot just changed again — every August 2026 update, in one place | M365 Copilot Connection (Substack)](https://m365copilotconnection.substack.com/p/copilot-just-changed-again-every)
+  - [Microsoft fixes broken Excel copy and paste for all Office users | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-excel-copy-and-paste-for-all-office-users/)
+  - [Microsoft Fixes Broken Copy and Paste for Excel 2016 After September Update Bug | gHacks Tech News](https://www.ghacks.net/2026/09/21/microsoft-fixes-broken-copy-and-paste-for-excel-2016-after-september-update-bug/)
 
-## 2026-09-06
+### 4. Excel世界大会2026、オンライン予選ラウンドが開催 ― ラスベガス本戦への切符をかけ激戦
 
-### 1. Microsoft、ワークブックを対話で「見える化」する新機能「Excel Canvas」を発表 ― 9月中の本格展開へ
-
-- 概要: Microsoftは2026年9月1日前後、Microsoft 365ロードマップ(アイテム569424)にて、Copilotがワークブックのデータを解釈し、グラフ・指標・インサイトをまとめた1枚のインタラクティブなビューとして自動生成する新機能「Excel Canvas」を発表した。生成後もCopilotとのチャットでレイアウトや内容を調整でき、元データが更新されればCanvas側も自動的に反映される。デスクトップ・Web双方で9月中に広く展開される予定。
-- 注目ポイント: グラフを1つずつ手作業で組み立てる従来のダッシュボード作成に代わり、「会話するだけで完成したダッシュボードが出てくる」という体験の変化が海外テックメディア(Windows Latest、Neowinなど)で相次いで取り上げられた。8月に紹介した「テーマデザインスキル」「ブランドキットスキル」に続き、Excelの役割が「単票計算ツール」から「AIが仕上げるレポーティング基盤」へ移りつつある流れの延長として注目されている。
+- 概要: Microsoft Excel World Championship(MEWC)2026シーズンにおいて、2026年9月26日にオンラインの「Qualification Round(予選ラウンド)」が開催された。1月22日から9月24日にかけて実施された9回の月例バトル「Road to Las Vegas」で本戦出場権を得られなかった選手向けの追加ルートで、両ラウンド合わせて140名がグループステージへ進出する。
+- 注目ポイント: 本ノートで7月以降継続して取り上げてきたExcel eスポーツ(Landmark Battle、ESPN8: The Ocho、MOS World Championshipなど)の流れの最新回にあたる。1年がかりのシーズン構成・複数の予選ルートを備えた大会運営が本格的に定着しつつあり、業務ソフトであるExcelを競技として観戦・応援する文化が海外で着実に広がっている様子がうかがえる。
 - 出典:
-  - [Microsoft is adding an AI-powered Canvas to Excel that turns workbook data into interactive dashboards | Windows Latest](https://www.windowslatest.com/2026/09/05/microsoft-is-adding-an-ai-powered-canvas-to-excel-that-turns-workbook-data-into-interactive-dashboards/)
-  - [Microsoft is working on "Excel canvas," and it sounds pretty sweet | Neowin](https://www.neowin.net/news/microsoft-is-working-on-excel-canvas-and-it-sounds-pretty-sweet/)
-  - [RM569424 - Excel: Excel canvas | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM569424)
+  - [MEWC – Microsoft Excel World Championship](https://excel-esports.com/)
+  - [Inside the Excel World Championship's 2026 Season | Refonte Learning](https://www.refontelearning.com/blog/excel-world-championship-business-analyst-skills)
 
-### 2. Excelの「=COPILOT()」関数、廃止日(9月14日)が目前に迫り関心が再燃
+## 2026-09-20
 
-- 概要: 8月に予告された、セル内でAI応答を数式として返す試験機能「=COPILOT()」の廃止まで残りわずかとなり、窓の杜が改めて解説記事を配信、あわせて同記事が窓の杜のアクセスランキングでも上位に入るなど、廃止直前になって関心が再燃している。9月14日以降は新規の数式作成ができなくなり、既存の数式も動作しなくなる見込みで、代替としてはサイドパネル型のCopilotチャットの利用が案内されている。
-- 注目ポイント: 正式リリース(GA)を迎えないまま1年足らずで姿を消すという異例の展開そのものに加え、「動くうちに使い方を知っておきたい」という駆け込み需要的な関心の高まりが、締め切り直前の記事アクセス増という形で可視化された点が興味深い。AI機能を矢継ぎ早に投入しては撤回するMicrosoftの開発スタイルに対し、実務ユーザー側が振り回されている構図が改めて浮き彫りになっている。
+### 1. 「コピペが壊れる」騒動の修正版KB5002665が登場も、対象は限定的 ― 依然くすぶるユーザーの不満
+
+- 概要: 前週分で報告したセキュリティ更新KB5002914によるExcelのコピー&ペースト不具合について、Microsoftは2026年9月16日、修正プログラム「KB5002665」を公開した。しかし対象はMSIベースのOffice 2016のみで、Click-to-Run版や2019・2021・2024といった他バージョンは未対応のまま。さらにMSI版でも、条件付き書式を含むブックでは依然として貼り付けが失敗する場合があると案内されている。
+- 注目ポイント: BleepingComputerやReddit上では、更新適用後に「チーム全員がコピペ不能になり業務が止まった」といった生々しい報告が相次いでおり、Microsoftが2026年9月11日に既知の問題として正式に認めるまでの対応の遅さも批判された。今回のKB5002665はあくまで部分的な応急処置にとどまり、「セキュリティパッチが業務の根幹操作を壊す」という品質管理上の教訓が、修正後もなお完全には解消されていない点が続報として注目されている。
 - 出典:
-  - [「Excel」の「=COPILOT()」関数の廃止に注目が集まる - 記事アクセスランキング | 窓の杜](https://forest.watch.impress.co.jp/docs/serial/accessranking/2134871.html)
+  - [Microsoft fixes broken copy and paste for Excel 2016 users | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/)
+  - [Microsoft confirms it accidentally broke copy and paste in Excel with a major security update you shouldn't remove | Windows Latest](https://www.windowslatest.com/2026/09/17/microsoft-kb5002914-breaks-copy-and-paste-in-excel-and-it-doesnt-know-how-to-fix-it-right-away/)
+  - [Excel Copy Paste Bug: Is Your Office Version Fixed Yet? | Office Watch](https://office-watch.com/2026/excel-copy-paste-bug-fixed-versions/)
+  - [KB5002665 Fixes Excel 2016 Paste Only on MSI Installs | Windows Forum](https://windowsforum.com/news/kb5002665-fixes-excel-2016-paste-only-on-msi-installs.444958/)
+
+### 2. 「=COPILOT()」関数、ついに廃止 ― Frontierユーザーが試作したブックが現場に残る「置き土産」問題を指摘する声も
+
+- 概要: 8月に予告されていたExcelのセル内AI関数「=COPILOT()」が、予定どおり2026年9月14日付けで廃止された。窓の杜・PC Watch・Yahoo!ニュースなど日本メディアが改めて報じたほか、Qiitaでは廃止後の技術者目線の考察記事が複数投稿された。通常のMicrosoft 365環境では直接の影響はないとされる一方、試験提供期間中に「Frontierプログラム」に参加していた一部社員が試作した数式入りテンプレートが、いつの間にかチームの月次フォーマットとして定着してしまっているケースが現場では起こりうると指摘されている。
+- 注目ポイント: 一般提供(GA)を経ないまま1年足らずで撤回されるという経緯そのものに加え、「試験導入されたAI機能が、正式な棚卸しをされないままブックからブックへ受け継がれてしまう」というガバナンス上の盲点を指摘する声が今週新たに出てきた点が特徴的。単なる機能廃止のニュースを超え、社内で使われているExcelブックの数式を定期的に棚卸しする重要性を示す事例として、品質管理・データガバナンスの観点からも参考になる。
+- 出典:
   - [登場から約1年、「Excel」の「=COPILOT()」関数が2026年9月14日で廃止 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2134050.html)
   - [ExcelのAI関数「=COPILOT」が一般展開されないままお蔵入り | PC Watch](https://pc.watch.impress.co.jp/docs/news/2134594.html)
+  - [# Excelの `=COPILOT()` が廃止へ。わずか1年で終了 | Qiita](https://qiita.com/ChisatoMatsunami/items/238175a407743fdbd352)
 
-### 3. ロシア人ハッカーが「マクロ付きExcelファイル」を使った大規模マルウェア攻撃で起訴 ― 8万人規模の被害
+### 3. How-To Geekの週末企画、今週は「5分で直せるExcelのちょっとした不満5選(9/18-20)」
 
-- 概要: 米司法省は2026年9月、キプロスから身柄を引き渡されたロシア国籍の男(Searzhudin Tamirlanovich Aktulaev容疑者)を、フリーランス向けプラットフォーム上の約255件の偽アカウントを使い、マクロ入りのExcelファイルを約8万人に送りつけてマルウェア「TVRAT」(別名TeamSpy)に感染させた容疑で起訴したと発表した。受信者がファイル内のマクロを有効化すると、攻撃者が被害者PCへ遠隔アクセス・制御できる仕組みだったとされる。有罪となれば通信詐欺共謀罪だけで最大20年の実刑の可能性がある。
-- 注目ポイント: 「Excelのマクロを有効化させる」という古典的だが今なお有効な攻撃手法が、8万人規模・複数年にわたる大規模キャンペーンとして立件された点がセキュリティ系メディア(The Hacker News、Tom's Hardwareなど)で広く報じられた。AI機能を巡る話題が続く中でも、「不明な送信元のExcelファイルでマクロを有効化しない」という基本的な情報リテラシーの重要性を改めて示す事例として注目されている。
+- 概要: How-To Geekが9月18日、週末企画シリーズの最新回として、日常的に感じる小さなExcelの不満点を5分程度で解消する方法をまとめた記事を公開した。2つのブックを同時に開いているとCtrl+Zが意図しない方のブックを元に戻してしまう問題を「ブックごとに別インスタンスで開く」ことで回避する方法や、「A, B, C, D」のようなアルファベット連続入力にオートフィルが対応しない問題を「ユーザー設定リスト」に登録することで解決する方法などを紹介している。
+- 注目ポイント: 7月以降このノートでも継続的に取り上げてきたHow-To Geekの週末企画が今週も続いており、派手な新機能ではなく「地味に日々イラつく操作」を取り上げる切り口が定着している。KB5002914のコピペ不具合が大きな話題になった週でもあり、「Excelの基本操作まわりの小さなストレス」というテーマが図らずも今週全体の関心と重なった形。
 - 出典:
-  - [Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands | The Hacker News](https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html)
-  - [Russian Hacker Indicted for Using Excel Malware to Target 80,000 Freelancers With TVRAT and DarkVNC | Cyber Security News](https://cybersecuritynews.com/russian-hacker-using-excel-malware/)
-  - [Russian hacker faces up to 20 years in prison, following extradition and indictment over US phishing campaign that allegedly infected 80,000 PCs | Tom's Hardware](https://www.tomshardware.com/tech-industry/cyber-security/russian-hacker-faces-up-to-20-years-in-prison-following-extradition-and-indictment-over-us-phishing-campaign-that-allegedly-infected-80-000-pcs-hacker-stole-victims-data-via-remote-access)
+  - [5 common Excel annoyances you can fix in 5 minutes this weekend (September 18-20) | How-To Geek](https://www.howtogeek.com/microsoft-excel-common-annoyances-fix-this-weekend-september-18-20/)
 
 ## 2026-09-13
 
@@ -270,239 +277,231 @@ date: 2026-07-16
 - 出典:
   - [I built a dynamic Excel timeline in 10 minutes—you can too this weekend (September 11-13) | How-To Geek](https://www.howtogeek.com/microsoft-excel-build-dynamic-timeline-weekend-project-september-11-13/)
 
-## 2026-09-20
+## 2026-09-06
 
-### 1. 「コピペが壊れる」騒動の修正版KB5002665が登場も、対象は限定的 ― 依然くすぶるユーザーの不満
+### 1. Microsoft、ワークブックを対話で「見える化」する新機能「Excel Canvas」を発表 ― 9月中の本格展開へ
 
-- 概要: 前週分で報告したセキュリティ更新KB5002914によるExcelのコピー&ペースト不具合について、Microsoftは2026年9月16日、修正プログラム「KB5002665」を公開した。しかし対象はMSIベースのOffice 2016のみで、Click-to-Run版や2019・2021・2024といった他バージョンは未対応のまま。さらにMSI版でも、条件付き書式を含むブックでは依然として貼り付けが失敗する場合があると案内されている。
-- 注目ポイント: BleepingComputerやReddit上では、更新適用後に「チーム全員がコピペ不能になり業務が止まった」といった生々しい報告が相次いでおり、Microsoftが2026年9月11日に既知の問題として正式に認めるまでの対応の遅さも批判された。今回のKB5002665はあくまで部分的な応急処置にとどまり、「セキュリティパッチが業務の根幹操作を壊す」という品質管理上の教訓が、修正後もなお完全には解消されていない点が続報として注目されている。
+- 概要: Microsoftは2026年9月1日前後、Microsoft 365ロードマップ(アイテム569424)にて、Copilotがワークブックのデータを解釈し、グラフ・指標・インサイトをまとめた1枚のインタラクティブなビューとして自動生成する新機能「Excel Canvas」を発表した。生成後もCopilotとのチャットでレイアウトや内容を調整でき、元データが更新されればCanvas側も自動的に反映される。デスクトップ・Web双方で9月中に広く展開される予定。
+- 注目ポイント: グラフを1つずつ手作業で組み立てる従来のダッシュボード作成に代わり、「会話するだけで完成したダッシュボードが出てくる」という体験の変化が海外テックメディア(Windows Latest、Neowinなど)で相次いで取り上げられた。8月に紹介した「テーマデザインスキル」「ブランドキットスキル」に続き、Excelの役割が「単票計算ツール」から「AIが仕上げるレポーティング基盤」へ移りつつある流れの延長として注目されている。
 - 出典:
-  - [Microsoft fixes broken copy and paste for Excel 2016 users | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-copy-and-paste-for-excel-2016-users/)
-  - [Microsoft confirms it accidentally broke copy and paste in Excel with a major security update you shouldn't remove | Windows Latest](https://www.windowslatest.com/2026/09/17/microsoft-kb5002914-breaks-copy-and-paste-in-excel-and-it-doesnt-know-how-to-fix-it-right-away/)
-  - [Excel Copy Paste Bug: Is Your Office Version Fixed Yet? | Office Watch](https://office-watch.com/2026/excel-copy-paste-bug-fixed-versions/)
-  - [KB5002665 Fixes Excel 2016 Paste Only on MSI Installs | Windows Forum](https://windowsforum.com/news/kb5002665-fixes-excel-2016-paste-only-on-msi-installs.444958/)
+  - [Microsoft is adding an AI-powered Canvas to Excel that turns workbook data into interactive dashboards | Windows Latest](https://www.windowslatest.com/2026/09/05/microsoft-is-adding-an-ai-powered-canvas-to-excel-that-turns-workbook-data-into-interactive-dashboards/)
+  - [Microsoft is working on "Excel canvas," and it sounds pretty sweet | Neowin](https://www.neowin.net/news/microsoft-is-working-on-excel-canvas-and-it-sounds-pretty-sweet/)
+  - [RM569424 - Excel: Excel canvas | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM569424)
 
-### 2. 「=COPILOT()」関数、ついに廃止 ― Frontierユーザーが試作したブックが現場に残る「置き土産」問題を指摘する声も
+### 2. Excelの「=COPILOT()」関数、廃止日(9月14日)が目前に迫り関心が再燃
 
-- 概要: 8月に予告されていたExcelのセル内AI関数「=COPILOT()」が、予定どおり2026年9月14日付けで廃止された。窓の杜・PC Watch・Yahoo!ニュースなど日本メディアが改めて報じたほか、Qiitaでは廃止後の技術者目線の考察記事が複数投稿された。通常のMicrosoft 365環境では直接の影響はないとされる一方、試験提供期間中に「Frontierプログラム」に参加していた一部社員が試作した数式入りテンプレートが、いつの間にかチームの月次フォーマットとして定着してしまっているケースが現場では起こりうると指摘されている。
-- 注目ポイント: 一般提供(GA)を経ないまま1年足らずで撤回されるという経緯そのものに加え、「試験導入されたAI機能が、正式な棚卸しをされないままブックからブックへ受け継がれてしまう」というガバナンス上の盲点を指摘する声が今週新たに出てきた点が特徴的。単なる機能廃止のニュースを超え、社内で使われているExcelブックの数式を定期的に棚卸しする重要性を示す事例として、品質管理・データガバナンスの観点からも参考になる。
+- 概要: 8月に予告された、セル内でAI応答を数式として返す試験機能「=COPILOT()」の廃止まで残りわずかとなり、窓の杜が改めて解説記事を配信、あわせて同記事が窓の杜のアクセスランキングでも上位に入るなど、廃止直前になって関心が再燃している。9月14日以降は新規の数式作成ができなくなり、既存の数式も動作しなくなる見込みで、代替としてはサイドパネル型のCopilotチャットの利用が案内されている。
+- 注目ポイント: 正式リリース(GA)を迎えないまま1年足らずで姿を消すという異例の展開そのものに加え、「動くうちに使い方を知っておきたい」という駆け込み需要的な関心の高まりが、締め切り直前の記事アクセス増という形で可視化された点が興味深い。AI機能を矢継ぎ早に投入しては撤回するMicrosoftの開発スタイルに対し、実務ユーザー側が振り回されている構図が改めて浮き彫りになっている。
 - 出典:
+  - [「Excel」の「=COPILOT()」関数の廃止に注目が集まる - 記事アクセスランキング | 窓の杜](https://forest.watch.impress.co.jp/docs/serial/accessranking/2134871.html)
   - [登場から約1年、「Excel」の「=COPILOT()」関数が2026年9月14日で廃止 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2134050.html)
   - [ExcelのAI関数「=COPILOT」が一般展開されないままお蔵入り | PC Watch](https://pc.watch.impress.co.jp/docs/news/2134594.html)
-  - [# Excelの `=COPILOT()` が廃止へ。わずか1年で終了 | Qiita](https://qiita.com/ChisatoMatsunami/items/238175a407743fdbd352)
 
-### 3. How-To Geekの週末企画、今週は「5分で直せるExcelのちょっとした不満5選(9/18-20)」
+### 3. ロシア人ハッカーが「マクロ付きExcelファイル」を使った大規模マルウェア攻撃で起訴 ― 8万人規模の被害
 
-- 概要: How-To Geekが9月18日、週末企画シリーズの最新回として、日常的に感じる小さなExcelの不満点を5分程度で解消する方法をまとめた記事を公開した。2つのブックを同時に開いているとCtrl+Zが意図しない方のブックを元に戻してしまう問題を「ブックごとに別インスタンスで開く」ことで回避する方法や、「A, B, C, D」のようなアルファベット連続入力にオートフィルが対応しない問題を「ユーザー設定リスト」に登録することで解決する方法などを紹介している。
-- 注目ポイント: 7月以降このノートでも継続的に取り上げてきたHow-To Geekの週末企画が今週も続いており、派手な新機能ではなく「地味に日々イラつく操作」を取り上げる切り口が定着している。KB5002914のコピペ不具合が大きな話題になった週でもあり、「Excelの基本操作まわりの小さなストレス」というテーマが図らずも今週全体の関心と重なった形。
+- 概要: 米司法省は2026年9月、キプロスから身柄を引き渡されたロシア国籍の男(Searzhudin Tamirlanovich Aktulaev容疑者)を、フリーランス向けプラットフォーム上の約255件の偽アカウントを使い、マクロ入りのExcelファイルを約8万人に送りつけてマルウェア「TVRAT」(別名TeamSpy)に感染させた容疑で起訴したと発表した。受信者がファイル内のマクロを有効化すると、攻撃者が被害者PCへ遠隔アクセス・制御できる仕組みだったとされる。有罪となれば通信詐欺共謀罪だけで最大20年の実刑の可能性がある。
+- 注目ポイント: 「Excelのマクロを有効化させる」という古典的だが今なお有効な攻撃手法が、8万人規模・複数年にわたる大規模キャンペーンとして立件された点がセキュリティ系メディア(The Hacker News、Tom's Hardwareなど)で広く報じられた。AI機能を巡る話題が続く中でも、「不明な送信元のExcelファイルでマクロを有効化しない」という基本的な情報リテラシーの重要性を改めて示す事例として注目されている。
 - 出典:
-  - [5 common Excel annoyances you can fix in 5 minutes this weekend (September 18-20) | How-To Geek](https://www.howtogeek.com/microsoft-excel-common-annoyances-fix-this-weekend-september-18-20/)
+  - [Extradited Russian Hacker Faces Charges Over Excel Malware Campaign That Infected Thousands | The Hacker News](https://thehackernews.com/2026/09/extradited-russian-hacker-faces-charges.html)
+  - [Russian Hacker Indicted for Using Excel Malware to Target 80,000 Freelancers With TVRAT and DarkVNC | Cyber Security News](https://cybersecuritynews.com/russian-hacker-using-excel-malware/)
+  - [Russian hacker faces up to 20 years in prison, following extradition and indictment over US phishing campaign that allegedly infected 80,000 PCs | Tom's Hardware](https://www.tomshardware.com/tech-industry/cyber-security/russian-hacker-faces-up-to-20-years-in-prison-following-extradition-and-indictment-over-us-phishing-campaign-that-allegedly-infected-80-000-pcs-hacker-stole-victims-data-via-remote-access)
 
-## 2026-09-27
+## 2026-08-30
 
-### 1. Excelに40年越しの新機能「単一セル内リスト・配列」登場 ― Slashdotでも大きな話題に
+### 1. Excelの2026年8月アップデートまとめ ― Copilotに「変更履歴要約」「Pythonスキル」「チャット履歴」を追加
 
-- 概要: MicrosoftはExcel for Windows/MacのBetaチャネル(Insiderプログラム)向けに、1つのセルに複数の値を「リスト」または「配列」として格納できる新機能のプレビュー提供を2026年9月25日前後に開始した。Insert > ListまたはCtrl+Jでリストを作成し、カンマ・セミコロン区切りで値を入力すると、見た目は1セルでも内部的には個々の値が保持され、フィルタ・集計・計算にそのまま利用できる。数式の結果を波かっこ{}で囲むことで、スピル結果を1セルの配列としてそのまま保持することも可能になった。
-- 注目ポイント: 「1セルに1値」という表計算ソフトの根本的な制約に約40年ぶりに手を入れる変更として、Slashdotが「After 40 Years, Microsoft Excel Will Add Single-Cell Lists and Arrays」の見出しで取り上げ、エンジニア・パワーユーザー層で活発な議論を呼んだ。あくまでプレビュー段階の機能であり挙動が変わりうる点、CSV的な運用や他ツールとの互換性への影響を懸念する声も出ており、Excelの基本データモデルに関わる変更として今後の展開が注視されている。
+- 概要: Microsoftは2026年8月25日前後、Excel公式ブログで8月の月例アップデートを公開した。Copilot in Excelに、ワークブックの変更履歴を要約し誰が何を編集したかをAIが説明する「Change Historyスキル」、Pythonコードを実行して高度なデータ分析・自動化を行える「Pythonスキル」、過去のチャットを一覧・再開できる「チャット履歴」、グラフ作成を支援する「Chart/PivotTableスキル」などが追加された。
+- 注目ポイント: Neowin・Windows Report・Technobezzなど複数の海外テックメディアが同時に取り上げ、「Excelが8月の全Microsoft 365製品中もっとも更新点が多い製品だった」と報じられている。単発の関数ではなく、変更履歴の可視化やPython連携など「ワークブック運用そのもの」を支援する方向への注力が続いており、先週報じた「=COPILOT()関数の廃止」とあわせて、MicrosoftがAI機能をセル内数式からサイドパネル型のエージェント機能へ本格的に一本化しつつある流れが鮮明になっている。
 - 出典:
-  - [Excel now supports multiple values in a single cell | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/excel-now-supports-multiple-values-in-a-single-cell/4549756)
-  - [After 40 Years, Microsoft Excel Will Add Single-Cell Lists and Arrays | Slashdot](https://slashdot.org/story/26/09/26/0227226/after-40-years-microsoft-excel-will-add-single-cell-lists-and-arrays)
-  - [Excel Multiple Values in One Cell: Microsoft 365 Testing | Geeky Gadgets](https://www.geeky-gadgets.com/multiple-values-one-excel-cell/)
+  - [What's New in Excel (August 2026) | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/whats-new-in-excel-august-2026/4527283)
+  - [Here are all the new features Microsoft added to Excel in August 2026 | Neowin](https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-excel-in-august-2026/)
+  - [Microsoft Packs Excel's August Update With Copilot Features | Windows Report](https://windowsreport.com/microsoft-packs-excels-august-update-with-copilot-features/)
+  - [Microsoft's August Excel Update Adds Copilot Change History and Python Tools | Technobezz](https://www.technobezz.com/news/microsofts-august-excel-update-adds-copilot-change-history-and-python-tools)
 
-### 2. MicrosoftがWord・Excelを「Copilotの中」へ統合する新戦略を発表
+### 2. ExcelのExchangeコネクタが廃止へ ― 「多くのワークブックが壊れる可能性」と海外メディアが一斉警鐘
 
-- 概要: Microsoftは2026年9月26日、Word・Excel・PowerPointをCopilotアプリの中に直接統合し、アプリを切り替えずにファイルの作成・編集・共有を行えるようにする新戦略を発表した。個人向けMicrosoft 365サブスクライバーおよびテストプログラム参加企業向けに、今後数週間で展開が始まる予定。Copilot担当のJacob Andreou氏(EVP)は「単なる簡易ビューアではなく、フル機能のOffice」と説明している。
-- 注目ポイント: これまで「Excel側にCopilotを組み込む」形で進んできたAI統合の流れが、逆に「Copilotの中にOfficeを取り込む」方向へ転換した点が注目を集めた。TechXploreを皮切りに、The Daily Star・The Peninsula Qatar・Free Malaysia Today・Sharjah24など世界各地のメディアがほぼ同日に配信し、「AIをOfficeスイートの入り口にする」というMicrosoftの製品戦略そのものの大転換として広く報じられている。
+- 概要: Microsoftは2026年8月25日、Excel(Power Query)のメール・カレンダー取得に使われている旧「Exchangeコネクタ」を廃止し、新しい「Exchange Mail」「Exchange Calendar」コネクタに置き換えると発表した。既存のワークブックは自動移行されず、利用者が手動で参照先を切り替える必要があり、対応しないまま2027年4月の廃止期限を過ぎると該当機能が動作しなくなる。新コネクタはMicrosoft 365および Office 2024以降のみが対象で、買い切り版の旧Officeでは代替手段がない点も指摘されている。
+- 注目ポイント: The Register・Neowin・Techzine・Petri・Windows Reportなど、通常は別々に報じる複数の主要テックメディアがほぼ同日に一斉に取り上げた点が特徴的。Neowinは「多くのワークブックを壊しかねない“大きな変更”」と表現し、IT管理者・ワークブック作成者に早期の棚卸しと移行を促す内容として、企業の情報システム部門を中心に話題になっている。
 - 出典:
-  - [Microsoft integrates Word and Excel more deeply into Copilot | TechXplore](https://techxplore.com/news/2026-09-microsoft-word-excel-deeply-copilot.html)
-  - [Microsoft integrates Word, Excel deeper into Copilot | The Daily Star](https://www.thedailystar.net/news/technology/news/microsoft-integrates-word-excel-deeper-copilot-4283131)
+  - [Microsoft warns that transitioning Excel workbooks to new Exchange connectors might not be smooth sailing | The Register](https://www.theregister.com/software/2026/08/25/microsoft-warns-that-transitioning-excel-workbooks-to-new-exchange-connectors-might-not-be-smooth-sailing/5292316)
+  - [Microsoft is making a "major change" in Excel which may break a lot of workbooks | Neowin](https://www.neowin.net/news/microsoft-is-making-a-major-change-in-excel-which-may-break-a-lot-of-workbooks/)
+  - [Microsoft's Excel Exchange Connector Retirement Could Disrupt Power Query Workbooks | Petri](https://petri.com/microsoft-excel-exchange-connector-retirement/)
+  - [Microsoft is discontinuing the Exchange connector in Excel | Techzine Global](https://www.techzine.eu/news/applications/143862/microsoft-is-discontinuing-the-exchange-connector-in-excel/)
 
-### 3. 「コピペ破壊」問題、ついに全Office版で修正 ― 3週間越しの騒動に一区切り
+### 3. 「Copilotがまた変わった」― 8月のMicrosoft 365 Copilot変更点を一望する非公式まとめ記事が反響
 
-- 概要: 9月のセキュリティ更新KB5002914に起因するExcelのコピー&ペースト不具合について、Microsoftは2026年9月23日、Excel 2016のMSI版に限定されていた修正範囲を広げ、Excel 2019・2021・2024およびExcel Online(Office Online Server)を含む全バージョンで問題を修正したと発表した。9月8日のPatch Tuesdayで発生してから、9月16日のKB5002665(Excel 2016 MSI版限定)を経て、ようやく全ユーザー向けの恒久対応にたどり着いた形。
-- 注目ポイント: 本ノートで9月13日・9月20日と2週連続で取り上げてきた「セキュリティ更新が基本操作を壊す」騒動の、事実上の決着編にあたる。BleepingComputerやgHacksが速報し、Redditや日本語圏のブログ・SNSでも「やっと直った」という反応が広がった。3週間にわたり実務に影響を与え続けたことで、パッチ配信後の影響範囲確認と検証の重要性を改めて浮き彫りにした事例として注目されている。
+- 概要: Microsoft 365 Copilotの動向を追う非公式ニューズレター「M365 Copilot Connection」が、2026年8月に発表されたCopilot Chat・Word・PowerPoint・Excel・Teams・SharePoint・Notebooksなど全プロダクトの変更点を1本の記事にまとめて公開した。Excel関連では、チャット内で「@Excelエージェント」を直接メンションできる新機能や、前述のPythonスキルなどが取り上げられている。
+- 注目ポイント: 公式リリースノートが製品ごと・月ごとに分散していて追いきれないという実務者の不満を受けた「非公式まとめ」であり、タイトルの「Copilotがまた変わった」という表現自体が、AI機能の変更頻度の高さに対するユーザー側の疲労感を象徴しているとして共感を集めている。1つの記事でExcel単体ではなくOffice全体の変化を俯瞰できる点が、情報収集の効率化を求める読者に評価されている。
 - 出典:
-  - [Microsoft fixes broken Excel copy and paste for all Office users | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-broken-excel-copy-and-paste-for-all-office-users/)
-  - [Microsoft Fixes Broken Copy and Paste for Excel 2016 After September Update Bug | gHacks Tech News](https://www.ghacks.net/2026/09/21/microsoft-fixes-broken-copy-and-paste-for-excel-2016-after-september-update-bug/)
+  - [Copilot just changed again — every August 2026 update, in one place | M365 Copilot Connection (Substack)](https://m365copilotconnection.substack.com/p/copilot-just-changed-again-every)
 
-### 4. Excel世界大会2026、オンライン予選ラウンドが開催 ― ラスベガス本戦への切符をかけ激戦
+## 2026-08-23
 
-- 概要: Microsoft Excel World Championship(MEWC)2026シーズンにおいて、2026年9月26日にオンラインの「Qualification Round(予選ラウンド)」が開催された。1月22日から9月24日にかけて実施された9回の月例バトル「Road to Las Vegas」で本戦出場権を得られなかった選手向けの追加ルートで、両ラウンド合わせて140名がグループステージへ進出する。
-- 注目ポイント: 本ノートで7月以降継続して取り上げてきたExcel eスポーツ(Landmark Battle、ESPN8: The Ocho、MOS World Championshipなど)の流れの最新回にあたる。1年がかりのシーズン構成・複数の予選ルートを備えた大会運営が本格的に定着しつつあり、業務ソフトであるExcelを競技として観戦・応援する文化が海外で着実に広がっている様子がうかがえる。
+### 1. Excelの「=COPILOT関数」、正式リリースを待たずに9月14日で廃止へ ― パワーユーザーから反発の声
+
+- 概要: Microsoftは2026年8月17日前後、2025年8月からBeta ChannelおよびFrontierプログラムで試験提供してきたセル内AI関数「=COPILOT()」を、2026年9月14日をもって廃止すると発表した。Microsoft 365ロードマップには「この機能を今後展開しないことを決定した。ご不便をおかけして申し訳ない」との一文が追加され、代替としてはサイドパネル型のCopilotチャットの利用が案内されている。
+- 注目ポイント: 一般提供(GA)される前に、1年足らずで機能そのものが撤回されるという異例の展開がThe Registerをはじめ複数の海外メディアで大きく報じられた。数式としてワークブックに残り、参照セルの変更に応じて再計算・スピルされる「=COPILOT()」と、都度チャットで結果を確認・適用する必要があるサイドパネルとでは使い勝手が異なるとして、パワーユーザーから「Python in Excelとの連携やApp Skillsの代替になっていない」といった反発の声が上がっている点が議論を呼んでいる。AI機能を矢継ぎ早に投入しては引っ込めるMicrosoftの開発姿勢そのものへの不満も、業界アナリストのコメントとして紹介された。
 - 出典:
-  - [MEWC – Microsoft Excel World Championship](https://excel-esports.com/)
-  - [Inside the Excel World Championship's 2026 Season | Refonte Learning](https://www.refontelearning.com/blog/excel-world-championship-business-analyst-skills)
+  - [Excel's Copilot function is headed for the Recycle Bin | The Register](https://www.theregister.com/ai-and-ml/2026/08/17/excels-copilot-function-is-headed-for-the-recycle-bin/5288327)
+  - [Microsoft is ditching the COPILOT function in Excel before it even launches | Windows Central](https://www.windowscentral.com/artificial-intelligence/microsoft-copilot/microsoft-is-ditching-the-copilot-function-in-excel-before-it-even-launches)
+  - [Microsoft Is Retiring Excel's COPILOT() Function After Just One Year | Windows Report](https://windowsreport.com/microsoft-is-retiring-excels-copilot-function-after-just-one-year/)
+  - [MC1454373 - Frontier =COPILOT function in Excel will no longer be available | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1454373)
 
-## 2026-10-04
+### 2. Google Sheets、Excelファイルの取り込み精度を大幅強化 ― テーブル書式・ピボットテーブルもそのまま維持
 
-### 1. 「Excel Canvas」が本格展開開始 ― Copilotがデータ更新に追従する1枚レポートを自動生成
-
-- 概要: 9月に発表されていたCopilot機能「Excel Canvas」が、2026年10月2〜4日にかけて本格的にロールアウトされ始めた。ワークブックのデータをCopilotが解釈し、グラフ・指標・インサイトをまとめた1枚のインタラクティブなビューを自動生成する機能で、元データが更新されるとレポート側も自動的に追従する。
-- 注目ポイント: The Registerが「あなたのワークブックを上司向け次期レポートに変えてくれる」と紹介するなど、海外テックメディアが相次いで取り上げた。グラフを手作業で組み立てる従来のダッシュボード作成から「会話するだけで完成形が出てくる」体験への移行が、8月の「テーマデザインスキル」「ブランドキットスキル」に続く形で現実のものとなった点が注目されている。
+- 概要: Googleは2026年8月11日から、Google SheetsにおけるExcelファイル(.xlsx)インポート機能の改善を段階展開し始めた。Excel側の「テーブル」がSheets側の「テーブル」としてそのまま取り込まれるようになったほか、テーブル範囲を基にしたExcelのピボットテーブルも正しくインポートできるようになり、これまで発生していた書式崩れ・再構築の手間が大幅に減るとされる。Google Workspaceの法人・個人アカウント双方が対象。
+- 注目ポイント: Microsoft 365とGoogle Workspaceを併用する組織・現場でExcelファイルをやり取りする機会は多く、「.xlsxを開いたら体裁が崩れる」という定番の不満に直接応える改善として、gHacksやChrome Unboxed、Android Authorityなど複数のテック系メディアが好意的に取り上げた。Excel自体のアップデートではないものの、Excelとの相互運用性・データ移行の質が業務効率化に直結するテーマとして、Excel関連ニュースの文脈でも継続的に注目されている。
 - 出典:
-  - [Excel Canvas offers to turn your workbook into the boss's next report | The Register](https://www.theregister.com/software/2026/10/02/excel_canvas_offers_to_turn_your_workbooks_into_the_bosss_next_report/5300812)
-  - [Microsoft Rolls Out Excel Canvas, a Copilot Report View That Refreshes as Workbook Data Changes | gHacks Tech News](https://www.ghacks.net/2026/10/04/microsoft-rolls-out-excel-canvas-a-copilot-report-view-that-refreshes-as-workbook-data-changes/)
+  - [Google Sheets Improves Excel Imports With Native Tables and Adds Connected Sheets Upgrades for BigQuery | gHacks Tech News](https://www.ghacks.net/2026/08/13/google-sheets-improves-excel-imports-with-native-tables-and-adds-connected-sheets-upgrades-for-bigquery/)
+  - [Google Sheets makes it less of a headache to import Excel files | Android Authority](https://www.androidauthority.com/google-sheets-excel-pivot-tables-3697487/)
+  - [Improved file importing in Google Sheets with tables and linked pivot tables | Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/08/improved-file-import-google-sheets-tables.html)
 
-### 2. 「1セル1値」撤廃の詳細が判明 ― FLATTEN・HAS・HASANY・HASALLの新関数4種が同時導入
+### 3. Copilot in Excelに「テーマデザインスキル」「ブランドキットスキル」が追加 ― 2026年8月のCopilotアップデートまとめ
 
-- 概要: 前週(2026-09-27分)で取り上げた、1つのセルに複数の値を「リスト」「セル内配列」として格納できる新機能について、対応する新関数の内容が明らかになった。入れ子配列を展開する「FLATTEN」、配列内に指定した値が存在するかを判定する「HAS」「HASANY」「HASALL」の4関数が同時に追加され、現在はMicrosoft 365 InsiderのBetaチャネル限定で、Microsoftは重要なブックでの使用を推奨していないと案内されている。
-- 注目ポイント: 窓の杜・マイナビニュース・Gizmodo Japanなど日本の複数メディアが相次いで詳報し、「カンマ区切りで“ごまかしていた”運用がようやく正式機能になる」といった反応がSNSでも広がった。表計算ソフトの根幹である「1セル1値」ルールに手を入れる変更だけに、既存の数式・他ツールとの互換性への影響を懸念する声も技術者コミュニティで続いている。
+- 概要: 2026年8月のMicrosoft 365 Copilotアップデートでは、Excel・PowerPoint・Word・Chat・Cowork・管理系を合わせて59件の変更が加えられ、その中でもExcelが最も更新点の多い製品だったと報じられている。Copilot in Excelには、`@theme-design`と呼びかけるだけで配色・グラフ装飾・レイアウトを一括で整える「テーマデザインスキル」、および組織のBrand Kit(承認済みの配色・フォント・ロゴ)をワークブックに一括適用する「ブランドキットスキル」が新たに追加された。
+- 注目ポイント: セルを一つずつ手作業で装飾していた「体裁調整」という地味だが時間のかかる作業をCopilotに一括で任せられるようになった点が、資料作成・レポーティング業務の効率化という観点で注目されている。前週まとめてきたPower BI Grounding機能や、今週の「=COPILOT関数」廃止の話題とあわせて、MicrosoftがExcelのAI機能を「セル内の単発関数」から「ワークブック全体・組織のブランド基準に沿った一括操作」へとシフトさせている流れが見えてくる。
 - 出典:
-  - [「Excel」の2026年9月更新、"1セルに複数データ"以外にもちょっとした新機能2種 | 窓の杜](https://forest.watch.impress.co.jp/docs/news/2144914.html)
-  - [Excel、1セルに複数の値を格納可能に リストと配列の提供開始 | マイナビニュース](https://news.mynavi.jp/techplus/article/20260928-5040589/)
-  - [Excelのセルに40年ぶり大改革！カンマで区切ってごまかしてた人がやっと報われる… | Gizmodo Japan](https://www.gizmodo.jp/article/excel-multiple-values-one-cell/)
+  - [What's New in Microsoft 365 Copilot: August 2026 | A Guide to Cloud & AI](https://www.aguidetocloud.com/blog/microsoft-365-copilot-august-2026-updates/)
+  - [Microsoft 365 Copilot Features: August 2026 Updates | Geeky Gadgets](https://www.geeky-gadgets.com/microsoft-365-copilot-features-august-2026/)
 
-### 3. 2026年10月は「Office史上最悪の月」 ― Office 2021サポート終了・Windows 10機能フリーズ拡大・Publisher終了が重なる
+## 2026-08-16
 
-- 概要: Office Watchが、2026年10月13日にOffice 2021(LTSC含む)が全面サポート終了を迎えるのに加え、Microsoft 365の新機能・リボン変更がWindows 11版のみに限定される「機能フリーズ」の対象企業が拡大すること、長年の定番アプリPublisherが提供終了することなど、複数の節目が1か月に集中している状況を指摘する記事を公開した。
-- 注目ポイント: 「ここ数年で最悪の月」という強い見出しで、Office 2021とWindows 10を組み合わせて使う現場ほど影響が大きくなる点を具体的な日付とともに整理しており、情報システム部門の間で棚卸し・移行計画の見直しを促す記事として関心を集めている。Excelそのものの新機能ではないが、サポート切れによる脆弱性放置のリスクという観点で、本ブログの品質管理テーマとも重なる話題。
+### 1. 8月のPatch Tuesdayで、Excelだけで27件の脆弱性を修正 ― 深刻な緊急事態が2週連続に
+
+- 概要: 2026年8月11日のPatch Tuesdayで、MicrosoftはExcel向けに27件のCVEを修正した。このうちCVE-2026-68794・CVE-2026-68804・CVE-2026-68816の3件は、細工したファイルを開かせることでコード実行を許すリモートコード実行(RCE)の脆弱性で、CVSSスコアはいずれも7.8。Office関連のCVEは合計35件にのぼり、Word(17件)と並んでOfficeスイート全体の中でも今月の修正の中心となった。
+- 注目ポイント: 前週(2026-08-09分)で取り上げたCVE-2026-62870に続き、2週連続でExcelのRCE脆弱性が話題になった。Office Watchなどセキュリティ専門メディアは、今月はプレビューウィンドウ経由で発火するOffice関連の脆弱性も複数含まれていた点を強調しており、「ファイルを開くだけ/プレビューするだけ」でリスクが生じる構図が改めて注目を集めている。社外とExcelファイルを頻繁にやり取りする実務担当者にとって、継続的なパッチ適用の重要性を示す事例。
 - 出典:
-  - [October 2026 is the worst month Office users have had in years | Office Watch](https://office-watch.com/2026/october-2026-is-the-worst-month-office-users-have-had-in-years/)
-  - [October 2026 Microsoft 365 Office Changes You Need to Know | Office Watch](https://office-watch.com/2026/october-2026-office-changes/)
+  - [August 2026 Patch Tuesday: Office Bugs That Fire From the Preview Pane | Office Watch](https://office-watch.com/2026/august-patch-tuesday-hit-office-hard-and-the-preview-pane-is-a-real-risk-this-month/)
+  - [August 2026 Patch Tuesday: Updates and Analysis | CrowdStrike](https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-august-2026/)
+  - [CVE-2026-68804 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-68804)
 
-### 4. CopilotにGPT-6.1 SolとClaude Sonnet 5.5が追加 ― Excelでも段階展開が開始
+### 2. Copilot in Excel、Power BIの管理済みデータを直接根拠にできる「Power BI Grounding」が一般提供
 
-- 概要: Microsoftは2026年9月30日、新モデル「GPT-6.1 Sol」と「Claude Sonnet 5.5」をCopilotに追加し、Cowork・Copilot StudioのほかWord・Excel・PowerPoint・Chatにも今後1週間程度で段階的に展開すると発表した(メッセージセンター告知MC1483844)。Microsoft 365 Copilotのユーザーサブスクリプションライセンス(USL)の範囲内で利用可能で、上限に近づくとAuto等への切り替えが案内される。
-- 注目ポイント: 8月のClaude Opus 5追加以降、本ノートでも継続的に取り上げてきた「ExcelのCopilotで選べるAIモデルが増え続ける」流れの最新回にあたる。Office Watchが早速「GPT-6.1 SolとClaude Sonnet 5.5、どちらをいつ選ぶべきか」という比較ガイド記事を公開するなど、モデル選択のノウハウそのものが実務者の関心を集め続けている。
+- 概要: Microsoft 365メッセージセンターの告知(MC1455015、2026年8月15日更新)により、Copilot in ExcelがPower BIレポートを分析の根拠(グラウンディング)として利用できる機能が正式展開(Launched)されたことが伝えられた。ユーザーは「作業コンテンツを追加」からPower BIレポートを添付するだけで、管理者側の追加設定なしにCopilotへ質問できるようになる。行レベルセキュリティ(RLS)を含む既存のPower BI権限がそのまま尊重される点が明記されている。
+- 注目ポイント: 7月に予告されていたPower BI連携機能が8月中旬に実際に展開された形で、CIAOPSなどMicrosoft 365ウォッチャー系メディアの週次まとめでも取り上げられた。「Excelの柔軟さ」と「BI側で管理された信頼できる数値」を両立させる設計思想が、野良Excelによる集計ミスを懸念する情報システム部門・データガバナンス担当者から関心を集めている。
 - 出典:
-  - [MC1483844 - Microsoft Copilot: GPT 6.1 Sol and Claude Sonnet 5.5 beginning to roll out today | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1483844)
-  - [GPT 6.1 Sol and Claude Sonnet 5.5 in Copilot: What to Pick and When | Office Watch](https://office-watch.com/2026/gpt-6-1-sol-vs-claude-sonnet-5-5-copilot/)
+  - [MC1455015 Copilot in Excel: Power BI Grounding | pupuweb.com](https://pupuweb.com/mc1455015-copilot-in-excel-power-bi-grounding/)
+  - [Analyze Power BI reports with Copilot in Excel | Microsoft Support](https://support.microsoft.com/en-us/excel/copilot/copilot-in-excel-power-bi)
+  - [CIA Brief 20260815 | CIAOPS](https://blog.ciaops.com/2026/08/15/cia-brief-20260815/)
 
-## 2026-10-11
+## 2026-08-09
 
-### 1. Office 2021のサポート終了(10月13日)がいよいよ目前に ― 「移行先」を巡る議論が各所で再燃
+### 1. ESPN8: The Ocho、10周年記念特番でMicrosoft Excel World Championshipを5年連続放送
 
-- 概要: Office 2021(LTSC版含む)の全面サポート終了日(米国時間2026年10月13日)が目前に迫り、延長セキュリティ更新の提供もないことが改めて各メディアで確認・報道された。終了後はExcelを含む各アプリ自体は動作し続けるものの、新たに見つかった脆弱性へのセキュリティ修正・技術サポートが一切提供されなくなる。買い切り版の後継である「Office 2024」(サポートは2029年10月9日まで)への移行か、Microsoft 365への切り替えかという選択を迫られる利用者が多い。
-- 注目ポイント: 前週分(2026-10-04)で紹介した「Office史上最悪の月」という大きな枠組みの記事に続き、期限が文字通り今週に迫ったことで、個人・企業双方で「このまま使い続けるか」「Office 2024を買うか」「Microsoft 365に乗り換えるか」という具体的な意思決定を迫られる声がコミュニティサイトの掲示板などで活発化している。サポート切れ環境でExcelファイルを社外とやり取りし続けるリスクは、品質管理・情報セキュリティの観点からも軽視できないテーマ。
+- 概要: ESPNの変わり種スポーツ特番「ESPN8: The Ocho」が2026年8月6日〜9日に10周年を迎え、74時間超に及ぶ特別編成を実施した。この中でMicrosoft Excel World Championship(MEWC)が5年連続で取り上げられ、決勝は8月8日午前7時(米国東部時間)からESPN2で放送された。
+- 注目ポイント: 「世界一奇妙なスポーツ特番」として知られるThe Ochoの定番コンテンツの一つとしてExcel競技が定着しつつある点が興味深い。7月の屋外イベント「Landmark Battle」など、ここ数週このブログでも継続的に取り上げてきたExcel eスポーツ人気の流れが、地上波スポーツ専門チャンネルでの毎年恒例放送という形でさらに裏付けられた。業務ツールであるExcelが「観戦されるコンテンツ」として定着している点は、Excelというソフトウェアの社会的な位置づけの変化を示す事例として注目に値する。
 - 出典:
-  - [End of support for Office 2021 | Microsoft Support](https://support.microsoft.com/en-us/office/system-requirements/end-of-support-for-office-2021)
-  - [Microsoft Office 2021 Support Ends October 2026 | Canopytech](https://canopytech.ca/blog/microsoft-office-2021-support-ends-october-2026/)
+  - [The Microsoft Excel World Championship is back on ESPN8 The Ocho for the 5th year in a row | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/excelblog/the-microsoft-excel-world-championship-is-back-on-espn8-the-ocho-for-the-5th-yea/4527282)
+  - [ESPN8: The Ocho returns for its 10th Anniversary August 6-9 | ESPN Press Room](https://espnpressroom.com/press-release/espn8-the-ocho-returns-for-its-10th-anniversary-august-6-9/)
 
-### 2. 「1セルに複数値」機能、海外メディア・コミュニティで反響が継続 ― 「40年来のルールを破った」と評価が拡散
+### 2. Excelに深刻なRCE脆弱性「CVE-2026-62870」、CVSS 8.8のUse-After-Free問題が公表
 
-- 概要: 9月下旬にプレビュー提供が始まった「1セルに複数の値(リスト・配列)を格納できる」新機能について、TechRadarやTechRepublic(英語版・ドイツ語版・フランス語版・スペイン語版など多言語展開)、Techspotのコミュニティフォーラムなどが相次いで取り上げ、反響が尾を引く形となっている。あくまでMicrosoft 365 Insider Betaチャネル限定のプレビュー機能で、PivotTableの集計元データや、Power Queryでの読み込み・出力、グラフのデータ系列化には対応していない点も改めて注意喚起されている。
-- 注目ポイント: TechRadarが「Excelの達人たちよ、あなたの祈りはついに届いた」という見出しで紹介するなど、表計算ソフトの根幹である「1セル=1つの値」という制約への変更が、技術者コミュニティのフォーラムでも活発な意見交換を呼んでいる。本ノートで9月27日・10月4日と2週続けて取り上げてきた話題だが、英語圏の反応記事が後追いで次々に出ている点から、関心の持続力が高いテーマであることがうかがえる。
+- 概要: 2026年8月4日、Microsoft Excelにおけるメモリ解放後使用(Use-After-Free)に起因するリモートコード実行(RCE)の脆弱性CVE-2026-62870が公表された。CVSSスコアは8.8(高)で、細工されたExcelファイルを開かせることで、攻撃者が被害者の権限でコードを実行できる可能性がある。Microsoft 365 Apps for Enterprise、Excel 2016、Office 2019、Office LTSC 2021/2024など幅広いバージョン(32bit/64bit)が対象。
+- 注目ポイント: 「ファイルを開くだけ」で攻撃が成立しうる典型的なフィッシング媒介型の脆弱性であり、Excelファイルを日常的に社外とやり取りする業務フローのリスクを改めて浮き彫りにした。8月のPatch Tuesday(8月11日予定)を待たずに単独で情報が公開された点も、セキュリティ専門メディアで話題となった一因。修正済みのセキュリティ更新プログラムの速やかな適用が呼びかけられている。
 - 出典:
-  - [Microsoft Excel gurus, your prayers have been answered: more than one value can now be in a single cell | TechRadar Pro](https://www.techradar.com/pro/microsoft-excel-gurus-your-prayers-have-been-answered-more-than-one-value-can-now-be-in-a-single-cell-as-a-new-era-of-spreadsheets-dawns)
-  - [Excel Breaks a 40-Year Rule: Microsoft Lets One Cell Hold Multiple Values | TechRepublic](https://www.techrepublic.com/article/news-excel-multiple-values-one-cell-lists-arrays/)
-  - [After 40 years, Excel is breaking one of its oldest rules: one cell, one value | Techspot (community discussion)](https://www.techspot.com/community/topics/after-40-years-excel-is-breaking-one-of-its-oldest-rules-one-cell-one-value.298954/)
+  - [CVE-2026-62870 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-62870)
+  - [CVE-2026-62870 - Microsoft Excel Remote Code Execution Vulnerability | cvefeed.io](https://cvefeed.io/vuln/detail/CVE-2026-62870)
+  - [Microsoft Excel Use-After-Free RCE (CVE-2026-62870) | TheHackerWire](https://www.thehackerwire.com/microsoft-excel-use-after-free-rce-cve-2026-62870/)
 
-### 3. Excelの「Copilot」エントリーポイント統合、GCC/GCC High/DoD向けに10月展開開始
+## 2026-08-02
 
-- 概要: Microsoft 365メッセージセンターの告知(MC1282571)によると、Excel上に点在していたCopilotの呼び出し口(セル選択時の表示や右クリックメニューなど)を整理し、右側のサイドペイン「Excel Agent」とExcel内の固定位置に表示される単一のCopilotボタンに一本化する変更について、一般向け(ワールドワイド)では2026年4〜6月に展開済みだったのに対し、米国政府機関向けクラウド環境(GCC・GCC High・DoD)では2026年10月初旬から展開が始まり、10月下旬までに完了する予定であることが伝えられた。ライセンス要件や管理者側のポリシーに変更はなく、対象ユーザーには既定で有効になる。
-- 注目ポイント: 一般ユーザー向けには半年近く前に展開済みだった変更が、セキュリティ要件の厳しい政府機関向け環境ではワンテンポ遅れて今まさに展開中という点が、IT管理者向けの情報源(Message Center購読者向けサイト)で取り上げられている。Copilotのエントリーポイントが「セル単位の個別機能」から「サイドペインへの一本化」へ向かう流れは、本ノートで継続的に追ってきたExcelのAI機能統合トレンドの一環として位置づけられる。
+### 1. 英国防省のアフガン人情報流出、原因は「隠しシート付きExcelファイル」― 議会報告書が「予見可能な組織的失敗」と断定
+
+- 概要: 英国下院防衛委員会が2026年7月30日に公表した報告書で、2022年に発覚した英国防省(MoD)によるアフガン人協力者の個人情報流出について、担当者が約150人分のデータだと思って外部にメール送信したExcelファイルに、実際には18,500人以上の情報を含む「非表示シート」が隠れていたことが原因だったと指摘した。委員会は、個人のミスではなく「不適切なツール・脆弱な運用手順・不十分な研修・組織の継続性の欠如・データ保護に対する文化の欠如」が重なった「予見可能な組織的失敗」だと結論づけている。
+- 注目ポイント: Slashdotが「Excelの研修不足が招いた破局的な情報漏えい」という刺激的な見出しで取り上げ、SNS上でも「隠しシート・非表示行列の危険性」を巡る議論が広がった。命に関わる機密データをアクセス制御のないExcel+SharePointで管理していたというガバナンスの甘さ、および「非表示=削除・不可視」ではないという初歩的だが見落とされがちな品質管理上の教訓として、本ブログのテーマとも直結する事例。
 - 出典:
-  - [MC1282571 - Copilot entry point changes in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1282571)
-  - [Copilot entry point changes in Excel | Itelio](https://www.itelio.com/en/microsoft-message-center/MC1282571)
+  - [MoD Spreadsheet Exposed 18,500 Afghan Allies to Taliban: No One Will Ever Be Held Accountable For 'Foreseeable Failure' | Tech Times](https://www.techtimes.com/articles/322402/20260731/mod-spreadsheet-exposed-18500-afghan-allies-taliban-no-one-will-ever-held-accountable.htm)
+  - [Catastrophic MoD Data Breach Caused By Lack of Training On Excel | Slashdot](https://yro.slashdot.org/story/26/07/30/1748239/catastrophic-mod-data-breach-caused-by-lack-of-training-on-excel)
 
-## 2026-10-18
+### 2. Copilot in Excelの2026年7月アップデートまとめ ― インライン引用・Power BI連携に加え「Claude Opus 5」も選択可能に
 
-### 1. 「Excel Canvas」がついに本格展開 ― MVPによる「24時間使ってみたレビュー」に賛否両論
-
-- 概要: Microsoft 365メッセージセンターの告知(MC1485411)により、Copilotがワークブックデータを解釈してグラフ・指標・インサイトをまとめた1枚のインタラクティブなレポートを自動生成する「Excel Canvas」が、2026年10月中旬から本格展開を開始し、10月末までに全世界で利用可能になる予定であることが伝えられた。ドイツ語圏(borncity.com)・イタリア語圏(smartworld.it)のテックメディアもほぼ同時期に取り上げ、多言語で紹介記事が広がっている。
-- 注目ポイント: Microsoft MVPのWyn Hopkins氏が10月16日に公開した「24時間使ってみたレビュー」が特に話題を呼んだ。ツールチップやクロスフィルタ、テーマの自動切り替え、複数テーブルの自動結合・重複キーの検出といった強みを評価する一方、計算結果がハードコードされてしまう点・たまにクラッシュする点・同じ指示を出し直すと結果が変わる点・元の数式まで遡れる監査性の弱さなど、具体的な弱点を率直に指摘した点が実務者層の関心を集めた。「AIが仕上げるレポーティング基盤」路線の集大成とされる機能だけに、品質管理・監査可能性の観点からも注視したいテーマ。
+- 概要: Neowinが2026年7月28日、Excelに2026年7月中に追加された新機能をまとめた記事を公開。Copilotの回答に出典元へのリンクを表示する「インライン引用」、組織内コンテンツを取り込める「同期済みコネクタ」、Power BIの管理済みデータを分析に利用できる「Power BIグラウンディング」、AutoSaveをオフにしたブックでもCopilotが使えるようになった点などが紹介された。あわせて、Copilotのモデル選択肢にOpenAIのGPT-5.6とAnthropicのClaude Opus 5が追加されたことも大きく取り上げられている。
+- 注目ポイント: Microsoft 365公式Xアカウントも「複雑な多段階の作業や長時間タスクの推論力強化」としてClaude Opus 5の展開を告知し、拡散された。Word・Excel・PowerPoint全体で非OpenAI系フロンティアモデルが標準選択肢になったのは初めてで、「数式・VBAはGPT系、財務モデリングや文章主体のデータ分析はClaude系」といった実務者向けの使い分けガイドが複数メディアで公開されるなど、モデル選択のノウハウそのものが話題になっている。
 - 出典:
-  - [MC1485411 - Microsoft Excel: Excel canvas | Microsoft 365 Message Center Archive](https://mc.merill.net/message/MC1485411)
-  - [Canvas in Excel: 24-Hour Verdict | HubSite 365](https://www.hubsite365.com/en-ww/crm-pages/canvas-in-excel-heres-what-i-found-24-hours-later.htm)
-  - [Excel Copilot: Interactive Canvas macht aus Tabellen dynamische Berichte | Born's Tech and Windows World](https://borncity.com/news/excel-copilot-interactive-canvas-macht-aus-tabellen-dynamische-berichte/)
+  - [Here are all the new features Microsoft added to Excel in July 2026 | Neowin](https://www.neowin.net/news/here-are-all-the-new-features-microsoft-added-to-excel-in-july-2026/)
+  - [Which Copilot Model Should You Use in Excel? Auto, GPT or Claude | Office Watch](https://office-watch.com/2026/choose-copilot-model-excel/)
+  - [Microsoft 365 on X: announcing Claude Opus 5 rollout to Copilot](https://x.com/Microsoft365/status/2081817680068087898)
 
-### 2. 10月のPatch TuesdayでExcelだけで69件を修正 ― Office 2021にとって「最後の更新」と重なる
+### 3. Microsoft Office Specialist世界大会2026、Excel部門の世界王者が確定 ― 前週の話題を引き継ぐ形で決着
 
-- 概要: Office Watchが2026年10月13日のPatch Tuesdayについて報じた記事によると、今回はOffice関連だけで173件の脆弱性(うちCritical級26件)が修正され、Excel単体でも69件の修正が含まれていた。悪用が確認されたゼロデイはOffice側にはなく、修正の優先度としてはまずOutlookから適用すべきだと案内している。あわせてこの10月13日は、2021年10月にリリースされた買い切り版「Office 2021」(LTSC含む)にとって正式サポート終了日と重なり、これが同製品にとって最後のセキュリティ更新になったことも報じられた。
-- 注目ポイント: 毎月のようにExcelの脆弱性修正が話題に上る中、今回は件数の多さ(Office全体で173件)に加え、「セキュリティ更新と製品ライフサイクルの区切りが同じ日に重なった」という巡り合わせそのものが注目を集めた。Office Watchは「Microsoftの最近のパッチ品質問題を踏まえ、1〜2週間は適用を見送るのも一案」と異例の注意喚起をしており、パッチ適用の判断そのものが品質管理上の悩ましいテーマとして議論を呼んでいる。
+- 概要: Certiport(Pearson)主催の第24回Microsoft Office Specialist(MOS)World Championshipがアナハイムで開催され、2026年7月29日に結果が発表された。Excel(Office 2019)部門はマカオのZhong Tin Kin氏が優勝、Excel(Microsoft 365 Apps)部門はベトナムのNguyen Mai Chi氏が優勝するなど、36か国・135名の学生ファイナリストの成績が公表された。
+- 注目ポイント: 前週(2026-07-26分)で紹介した「準優勝の高校生Xavier Diebold氏」の話題の続報にあたり、学生の実務スキル競技という切り口が2週連続で注目を集めた形。Excel World Championship(MEWC)とは別に、学校教育・資格試験の文脈でもExcelスキルが競技化・可視化されている点が、教育関係者やHR担当者の間で引き続き関心を呼んでいる。
 - 出典:
-  - [October 2026 Patch Tuesday: 173 Office Fixes, 26 Critical Flaws, and Office 2021's Final Update | Office Watch](https://office-watch.com/?p=77946)
-  - [Microsoft Fixes Record 1,413 Vulnerabilities in October 2026 Patch Tuesday | Guru3D](https://www.guru3d.com/story/microsoft-fixes-record-1413-vulnerabilities-in-october-2026-patch-tuesday/)
+  - [World Champions Crowned at Pearson's Certiport 2026 Microsoft Office Specialist Competition | GlobeNewswire](https://www.globenewswire.com/news-release/2026/07/29/3335632/0/en/World-Champions-Crowned-at-Pearson-s-Certiport-2026-Microsoft-Office-Specialist-Competition.html)
+  - [Meet the 2026 Microsoft Office Specialist World Champions | Certiport Blog](https://certiport.pearsonvue.com/Blog/2026/July/Meet-the-2026-MOS-World-Championship.aspx)
 
-### 3. Office 2021のサポートが正式終了 ― 「サブスクへの誘導では」と買い切り派から反発の声
+## 2026-07-26
 
-- 概要: 延長サポートを持たない買い切り版「Office 2021」(Excel含む)が、2026年10月13日(米国時間)をもって正式にサポート終了となった。今後はMicrosoft Update経由の更新プログラム提供・不具合修正・セキュリティ修正・技術サポートのいずれも提供されなくなり、アプリ自体は動作し続けるもののネットに接続した状態での利用はリスクが高まると各メディアが注意喚起している。移行先としては買い切り版「Office 2024」(サポートは2029年10月まで)か、Microsoft 365への切り替えが案内されている。
-- 注目ポイント: 本ノートで10月4日・10月11日と2週連続で「目前に迫る期限」として取り上げてきた話題が、今週ついに現実のものとなった。Windows Latestが「Microsoftは10月にOffice 2021を葬り去り、あなたをMicrosoft 365へ押し込もうとしている」と評するなど、買い切り版を長年愛用してきたユーザー層からサブスクリプションへの誘導ではないかという反発の声が改めて広がっている点が、海外・日本語圏双方のメディアで共通して取り上げられている。
+### 1. xAIがExcel向け無料アドイン「Grok for Excel」を投入、Copilotに真っ向勝負
+
+- 概要: 2026年7月20日、xAIがGrok 4.5を組み込んだExcel用アドイン「Grok for Excel」を公開した。Word・PowerPoint向けアドインも同時提供し、Microsoft Marketplaceからインストール可能。サイドバーから自然言語で数式作成・ピボットテーブル構築・データクレンジング・グラフ生成・Web検索結果の取り込みなどを指示でき、分析に使ったセルを明示する「根拠の可視化」が特徴とされる。
+- 注目ポイント: Copilot in Excelと同じ土俵に競合AIが正面から乗り込んだ点が、「AIオフィス戦争」の新局面として海外メディアで大きく取り上げられた。The Registerが「なぜわざわざExcelのプラグインを作ったのか」と皮肉交じりに報じるなど話題性が高く、アドイン自体は無料でも実際の利用にはSuperGrok等の有料プランが必要な点も議論を呼んでいる。
 - 出典:
-  - [Office 2021 Support Ends October 13: Your 5 Options Before the Deadline | Office Watch](https://office-watch.com/2026/office-2021-end-of-support-october-2026/)
-  - [Office 2021のサポートが10月13日で終了。継続利用はセキュリティリスクが高まるので早めの移行を | がるまっくす](https://garumax.com/?p=274289)
-  - [Microsoft is killing Office 2021 in October to push you onto Microsoft 365 | Windows Latest](https://windowslatest.com/2026/06/20/microsoft-is-killing-office-2021-in-october-to-push-you-onto-microsoft-365-how-to-fight-back)
+  - [Grok muscles into Excel with an AI add-in of its own | The Register](https://www.theregister.com/ai-and-ml/2026/07/22/grok-muscles-into-excel-with-an-ai-add-in-of-its-own/5276138)
+  - [Grok for Excel | xAI](https://x.ai/news/introducing-excel-addin)
 
-## 2026-10-25
+### 2. MOS World Championship 2026がアナハイムで開幕、昨年準優勝の高校生の物語も再脚光
 
-### 1. Copilot in Excelに新機能5つ ― 「Interactive Canvas」本格展開に加え「Skill Builder」「Skill Recorder」「Get Data」「Clean Data」が相次ぎ発表
-
-- 概要: Microsoftは2026年10月中旬、Copilot in Excel向けに5つの新機能を発表した。自然言語の指示でワークブックのデータをレポート・ダッシュボード化する「Interactive Canvas」(10月中に全世界展開)に加え、文章・過去の操作例・サンプル出力からスキルを作成する「Skill Builder」(10月から通常版で段階展開)、実際の操作をそのまま記録してスキル化する「Skill Recorder」(10月末からInsider向け)、会話形式でデータを取り込める「Get Data」、表記揺れや重複を検出・修正提案する「Clean Data」が含まれる。台湾の中央社(cna.com.tw)による10月17日の報道を起点に、英語圏だけでなくドイツ語・イタリア語・スペイン語圏のテックメディアもほぼ同時期に取り上げた。
-- 注目ポイント: 「操作を記録してスキル化する」Skill Recorderについて、Microsoft自身が「元データの列構成が変わる(割引・通貨列の追加など)と、記録済みの手順が不完全な結果を返すことがある」と注意喚起している点が、品質管理・業務プロセスの観点から見逃せない。手作業の自動化がそのまま「ブラックボックス化したマクロ」の再来にならないよう、生成されたスキルの検証・棚卸しの重要性を示す事例としても読める。
+- 概要: 2026年7月26日から29日にかけて、Certiport主催の第24回Microsoft Office Specialist(MOS)World Championshipがカリフォルニア州アナハイムのディズニー・グランド・カリフォルニアン・ホテルで開催される。これに合わせ、2025年大会のExcel(Office 2019)部門で世界2位・賞金4,000ドルを獲得したシカゴ出身の高校生Xavier Diebold氏のサクセスストーリーを紹介する記事が公開された。
+- 注目ポイント: 前週(2026-07-19分)で紹介した屋外イベント「Landmark Battle」に続き、Excel競技(スプレッドシート・エスポーツ)への注目がこの週も継続している。学生の等身大のサクセスストーリーは拡散しやすく、Excelスキルが賞金・進学など実利益に直結する事例として教育関係者からも関心を集めている。
 - 出典:
-  - [Microsoft brings five new Copilot features to Excel | iTechGuides](https://www.itechguides.com/microsoft-brings-five-new-copilot-features-to-excel/)
-  - [Excel-Automatisierung: Copilot zeichnet Arbeitsschritte direkt auf | Born's Tech and Windows World](https://borncity.com/news/excel-automatisierung-copilot-zeichnet-arbeitsschritte-direkt-auf/)
-  - [Excel con Copilot crea report interattivi che si aggiornano da soli | Punto Informatico](https://www.punto-informatico.it/excel-copilot-crea-report-interattivi-si-aggiornano-da-soli/)
+  - [Excel Skills Earn Chicago Teen $4,000 at World Championship—Here's How to Build Your Own Office Proficiency | Windows News](https://windowsnews.ai/article/excel-skills-earn-chicago-teen-4000-at-world-championshipheres-how-to-build-your-own-office-proficie.440488)
+  - [Excel World Championship: Xavier Diebold Takes Silver, $4,000 Prize | Windows Forum](https://windowsforum.com/windows-news.4/excel-world-championship-xavier-diebold-takes-silver-4-000-prize.440488/)
 
-### 2. SCSK、ノーコード開発「CELF」にClaude Code活用の「AI開発エージェント」β版 ― 日本のExcel依存企業のDXを後押し
+### 3. How-To Geekが週末企画「時短Excel Tips 5選(7/24-26)」を公開、地味な標準機能を再評価
 
-- 概要: SCSKは2026年10月15日、ノーコード開発サービス「CELF」の新機能として、AnthropicのAIコーディングエージェント「Claude Code」(Amazon Bedrock経由)を活用した「CELF AI開発エージェント(仮称)」のβ版を発表した。10月14日から参加企業の募集を開始し、10月23日より先着30社に約1か月間無償提供する(別途Claude Codeの利用料が必要)。チャットでの自然言語指示だけで、CELFアプリの画面・テーブル・業務ロジックの設計から実装・テスト・保守までを進められるのが特徴で、CPN(CELFパートナー制度)加盟のパートナー4社によるα版での実証では、従来開発に比べ画面あたり300~800%の生産性向上が確認されたとしている。
-- 注目ポイント: 調査会社Futurum Groupは、ERP(基幹システム)導入企業の82.6%が周辺業務を依然Excelで処理しているという調査結果を引用し、本サービスを「日本のExcel依存企業をエージェント型AIで突破する試み」と位置づけて報じた。基幹システム導入後も現場に「野良Excel」が残り続けるという、このブログでも繰り返し取り上げてきた構造的課題に対し、生成AIコーディングエージェントで克服を図る動きとして、日本企業のDX動向の観点から注目される。2027年春には市民開発者向けサービスの提供も予定されている。
+- 概要: How-To Geekが7月24日、週末に試したい「時短につながるExcel機能5選」を紹介する記事を公開した。名前ボックスを使った高速ナビゲーション、「データの分析」によるピボットテーブル・グラフの自動提案、形式を選択して貼り付け(Ctrl+Shift+V)、「選択オプション」、「新しいウィンドウ」など、目立たないが実務で効く標準機能を取り上げている。
+- 注目ポイント: 前週(7/17-19分)にも同シリーズで「知られざるExcel機能5選」を紹介しており、週末読み物の定番企画として定着しつつある。新機能紹介ではなく「既存機能の使い倒し」に焦点を当てる切り口は、業務効率化・時短をテーマにする読者層から継続的に支持されている。
 - 出典:
-  - [SCSK、生成AIとの対話でExcel業務のアプリ化を推進する「CELF AI開発エージェント」β版を提供 | Impress Cloud Watch](https://cloud.watch.impress.co.jp/docs/news/2147980.html)
-  - [SCSK Bets on Agentic AI to Digitize Japan's Excel-Dependent Enterprises | Futurum Group](https://futurumgroup.com/insights/scsk-bets-on-agentic-ai-to-digitize-japans-excel-dependent-enterprises/)
+  - [5 time-saving Excel tips to put to the test this weekend (July 24-26) | How-To Geek](https://www.howtogeek.com/microsoft-excel-time-saving-tips-to-try-this-weekend-july-24-26/)
+  - [How-To Geek's Weekend Challenge: 5 Excel Tools That Could Save You Hours Every Week | Windows News](https://windowsnews.ai/article/how-to-geeks-weekend-challenge-5-excel-tools-that-could-save-you-hours-every-week.440442)
 
-## 2026-11-01
+## 2026-07-19
 
-### 1. Microsoft公式「Excelの10月更新」まとめが登場 ― 先週報じられたCopilot新機能5つを正式確認、テーブル命名機能も通常提供へ
+### 1. Excelのメモリ情報漏えい脆弱性(CVE-2026-48580)、7月のPatch Tuesdayで修正
 
-- 概要: Microsoftは2026年10月27日前後、Excel公式ブログで10月の月例アップデートをまとめた記事を公開した。前週(2026-10-25分)で台湾メディア発として紹介した「Interactive Canvas」「Skill Builder」「Skill Recorder」「Get Data」「Clean Data」というCopilotの5つの新機能について、Microsoft自身が改めて概要・提供状況を確認。あわせて、これまでInsiderプレビュー限定だった「テーブル作成時にその場で名前を付けられる」機能が、Excel for Windowsの通常チャネルでも利用可能になったことが明らかになった。Neowin・Windows Reportなど複数のテックメディアがこの公式まとめを受けて追随記事を公開している。
-- 注目ポイント: 1週間前に二次メディア経由で先行報道されていた内容を、Microsoft自身が公式ブログで追認・補足した形。地味な「テーブル名をダイアログ内で直接指定できる」という機能は見出しを飾りにくいが、従来「Table1」のまま放置され後から命名規則が崩れるという、まさに品質管理・保守性の観点で地味に効く改善であり、派手なAI機能の陰に隠れがちな基本機能の着実な改善として注目したい。
+- 概要: 2026年7月14日のPatch Tuesdayで、Excelでワークブックを開いた際にメモリ上の内容が読み取られる可能性がある情報漏えい脆弱性CVE-2026-48580が修正された。Office 2016からMicrosoft 365 Appsまで広いバージョンが対象で、今月はExcel関連の修正パッチ数(34件)が例年より多いと報じられている。
+- 注目ポイント: 「ファイルを開くだけ」で影響を受ける読み取り系の脆弱性という点、および今月のパッチがExcelに大きく偏っている点がセキュリティ専門メディアで話題になっている。業務でExcelファイルを日常的にやり取りするユーザーに向けて、即時のパッチ適用を呼びかける記事が相次いだ。
 - 出典:
-  - [What's New in Excel (October 2026) | Microsoft Community Hub](https://techcommunity.microsoft.com/blog/ExcelBlog/whats-new-in-excel-october-2026/4549758)
-  - [Microsoft Excel October 2026 Update Brings 5 New Copilot Features and Smarter Data Tools | Windows Report](https://windowsreport.com/microsoft-excel-october-2026-update-brings-5-new-copilot-features-and-smarter-data-tools/)
+  - [Stop That Spreadsheet: Microsoft Fixes Excel's Memory Leak in July 2026 Update | Windows News](https://windowsnews.ai/article/stop-that-spreadsheet-microsoft-fixes-excels-memory-leak-in-july-2026-update.438657)
+  - [July 2026 Patch Tuesday: 570 Fixes and a Critical BitLocker Flaw | Office Watch](https://office-watch.com/2026/july-2026-patch-tuesday/)
+  - [CVE-2026-48580 - Security Update Guide | Microsoft MSRC](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-48580)
 
-### 2. Excel for the Webに「Get Data」スキルが展開開始 ― 自然言語の指示でPower Queryのデータ取得・変換を代行
+### 2. Excel世界大会の新企画「Landmark Battle」が街中で開催され、SNSで拡散
 
-- 概要: MicrosoftはExcel for the Web向けに、Copilotが自然言語の指示を解釈してデータの取得・変換・読み込み(Power Query相当の処理)を代行する新スキル「Get Data」の展開を開始した。利用者が「欲しいデータ」と「どう加工したいか」を文章で伝えるだけで、Power Queryのクエリを手作業で組み立てずに済むようになる。ウェブ版ではExcelワークブック・テキスト/CSVファイル・XML・JSON・SQL Serverデータベース・SharePoint Onlineリストなど複数のデータソースに対応するとされる。
-- 注目ポイント: 前週まとめ記事でも触れられていた機能だが、実際のロールアウト開始を伝える単独記事としてNeowinが「AI対応志向のユーザーが気に入る新機能」と評して取り上げた。Power Queryは強力な反面、変換ステップの組み立てに習熟が必要なツールであり、その「入口」を自然言語化する動きは、データクレンジング・前処理の属人化を減らす方向性として、業務効率化・品質管理の両面から継続的に注視したいテーマ。
+- 概要: Microsoft Excel World Championship(MEWC)とASUSが共催する新企画「Landmark Battle」が7月10日に開催され、自由の女神やエッフェル塔など世界の名所4か所から選手が同時に30分間・7段階のデータ課題に挑戦した。前王者アイルランドのDiarmuid Earlyが終盤の逆転で優勝し、The Registerなどが7月13日に取り上げた。
+- 注目ポイント: スプレッドシート競技を屋外・観光名所という異例の舞台で開催した点が話題性を生み、選手入場や応援のクリップがTikTokやXで数十万〜100万回規模の再生数を記録するなど拡散した。業務ツールであるExcelがエンタメ・eスポーツ的コンテンツ化していく流れとして注目されている。
 - 出典:
-  - [Excel for web gets new feature that AI-ready users will love | Neowin](https://www.neowin.net/news/excel-for-web-gets-new-feature-that-ai-ready-users-will-love/)
-  - [Microsoft Brings AI-Powered Get Data Feature to Excel for the Web | Windows Report](https://windowsreport.com/microsoft-brings-ai-powered-get-data-feature-to-excel-for-the-web/)
-  - [RM577745 - Excel: Get and transform data with Copilot in Excel | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM577745)
+  - [Excel competition goes extreme, makes spreadsheet geeks compete from the street | The Register](https://www.theregister.com/offbeat/2026/07/13/excel-competition-goes-extreme-makes-spreadsheet-geeks-compete-from-the-street/5270709)
+  - [World Excel Champion Diarmuid Early Stages Last-Minute Comeback to Win First Landmark Battle | ASUS Pressroom](https://press.asus.com/news/press-releases/asus-landmark-battle-diarmuid-early-wins/)
 
-## 2026-11-08
+### 3. 週末に試したい、知られざるExcel機能5選(How-To Geek)
 
-### 1. Copilot in Excel・Cowork向け新「会計スキル」、Frontier登録不要の世界一般提供が11月13日に ― 会計士からは歓迎と慎重論が両方
-
-- 概要: Microsoftは2026年10月末、Microsoft 365メッセージセンターの告知(MC1536053)で、Copilot in ExcelおよびCopilot Cowork向けに、口座照合(リコンサイル)・仕訳入力・分析・予算管理・コンプライアンス対応を支援する新しい「会計スキル」を発表した。取引間の差異の特定や消込項目の作成、増加・減少・振替・逆仕訳・定期仕訳のドラフト作成などをCopilotが支援し、必須項目のチェックや仕訳のバランス確認も行う。これまでFrontierプログラムへの参加とCopilotライセンスが必要だったが、2026年11月13日の世界一般提供(GA)開始以降はFrontier登録が不要になる(ライセンスは引き続き必要)。オプトインで、Copilotが「何を・なぜ変更したか」をチャット履歴に記録する監査証跡(オーディットトレイル)機能も用意されている。
-- 注目ポイント: Accounting Today・CPA Practice Advisorなど会計専門メディアが広く報じ、Microsoftは限定的なInsiderトライアルの7日間で8,000人超のユニークユーザーが会計スキルを44,000回以上呼び出したという利用実績を公表している。一方でReddit上の会計士コミュニティなどからは「Copilotは幻覚(ハルシネーション)が多く、会計は本質的に“考える”仕事だ」といった慎重論も出ており、仕訳や消込のような“数字が合えば正解”に見えやすい業務ほど、AIの出力をそのまま信用せず人間がレビューする体制が欠かせないという、品質管理の観点からも示唆的な事例になっている。オプトインの監査証跡機能も、AIによる変更をあとから検証可能にするという意味で注目に値する。
+- 概要: How-To Geekが7月17〜19日の週末向けに、あまり知られていないExcelの便利機能5選を紹介する記事を公開。数式を一段階ずつ評価・可視化できる「Evaluate Formula」、Excel for the Web限定で入力例からその場で数式を自動生成する「Formula by Example」、選択範囲からグラフや条件付き書式などをその場でプレビューできる「Quick Analysis」などを取り上げている。
+- 注目ポイント: 新機能紹介ではなく「既存だが埋もれている機能の再発掘」という切り口が実務層に刺さりやすく、週末読み物として拡散しやすい構成になっている。特に「Evaluate Formula」は数式デバッグ・レビューの観点で品質管理業務にも応用しやすい機能として目を引く。
 - 出典:
-  - [MC1536053 - Microsoft 365 Copilot: New accounting capabilities in Excel and Cowork | mc.merill.net](https://mc.merill.net/message/MC1536053)
-  - [MC1536053 New accounting capabilities in Excel and Cowork | pupuweb.com](https://pupuweb.com/mc1536053-new-accounting-capabilities-in-excel-and-cowork/)
-  - [Microsoft announces Copilot capacities for audit, tax, compliance & more | Accounting Today](https://www.accountingtoday.com/news/microsoft-announces-copilot-capacities-for-audit-tax-compliance-more)
+  - [5 little-known Excel features to try this weekend (July 17-19) | How-To Geek](https://www.howtogeek.com/microsoft-excel-little-known-features-to-try-this-weekend-july-17-19/)
 
-### 2. Google Sheets、ピボットテーブルの「コンパクト形式」インポートと箱ひげ図の互換性を改善 ― Excelとの往来時の体裁崩れがまた一歩解消
+## 2026-07-16
 
-- 概要: Googleは2026年10月28日、Google Sheetsの公式更新情報ブログ(Google Workspace Updates)で、ピボットテーブルの「コンパクト形式」レイアウトへの対応を発表した。これまでコンパクト形式で作られたExcelのピボットテーブルをSheetsに取り込むと自動的に「アウトライン形式」に変換されてしまっていたが、今回の更新で元のレイアウトを保持したままインポート・エクスポートできるようになる。あわせて、Excelの箱ひげ図(Box and Whisker Chart)を含むファイルをインポートするとグラフ自体が消えてしまう不具合も修正され、参照・計算・書式を保ったままExcelへ再エクスポートできるようになった。Rapid Release向けには10月22日から、Scheduled Release(予定リリース)向けには11月6日から展開が始まっている。
-- 注目ポイント: 2026年8月分(本ノート8月23日付)で紹介した「テーブル・ピボットテーブルのインポート精度向上」の直接の続報であり、Microsoft 365とGoogle Workspaceを併用する組織における「.xlsxを開いたら体裁が崩れる/グラフが消える」という定番の不満が、地味ながら着実に解消されていく様子が見て取れる。派手な新機能ではないものの、ファイル往来時の表現保持はデータの信頼性・再現性に直結するテーマであり、品質管理・データガバナンスの観点からも継続して追いたい動き。
+### 1. Copilot in Excelに「マルチエージェントWeb検索」機能、2026年7月ロールアウトへ
+
+- 概要: Microsoftは2026年7月、Copilot in Excelに複数のAIエージェントが協調して動作する新しいWeb検索機能を導入する。Conductor(統括)・Searcher(検索)・Verifier(検証)・Synthesizer(統合)・Auditor(監査)という役割の異なるサブエージェントが並行してリサーチを行い、各回答には出典の裏付け状況を示す「Trust Score」(信頼度バッジ)が表示される仕組み。
+- 注目ポイント: 単なる機能追加ではなく、AIが生成した情報を複数ソースで相互検証し、根拠のない情報には「未検証」のフラグを立てるという設計思想が特徴。品質管理・データ検証の観点からも、生成AIの出力をどう「品質保証」するかという業界的関心と重なるテーマとして注目されている。
 - 出典:
-  - [Apply compact form layout for pivot tables in Google Sheets | Google Workspace Updates](https://workspaceupdates.googleblog.com/2026/10/apply-compact-form-layout-for-pivot-tables-in-Google-Sheets.html)
-  - [Google Sheets Gets Smarter With New Charts and Excel Support | Windows Report](https://windowsreport.com/?p=1513124)
+  - [Excel Copilot gains multi-agent web search with source citations in July 2026 | Windows News](https://windowsnews.ai/article/excel-copilot-gains-multi-agent-web-search-with-source-citations-in-july-2026.433269)
+  - [Copilot in Excel is getting improved web search this month | Neowin](https://www.neowin.net/news/copilot-in-excel-is-getting-improved-web-search-this-month/)
 
-## 2026-11-15
+### 2. Copilot in Excelでどのモデルを選ぶべきか ― Office Watchが実践ガイドを公開
 
-### 1. 11月のPatch Tuesdayが過去最大規模に ― Excelには緊急(Critical)級RCEが12件
-
-- 概要: Microsoftは2026年11月10日、Office関連を含め1,000件超(報道により1,093件〜1,252件と幅がある)という過去最大規模の脆弱性を修正するPatch Tuesdayを公開した。Excel単体ではCVE-2026-118292をはじめとする12件の緊急(Critical)級リモートコード実行(RCE)脆弱性が含まれ、CVSSスコアはいずれも8.8。悪用が確認された唯一のゼロデイはOutlookのなりすまし脆弱性(CVE-2026-124194、深刻度は中程度)で、Excel自体に悪用済みの脆弱性は確認されていない。
-- 注目ポイント: 単月の修正件数として過去最大規模という点そのものが、BleepingComputerやZero Day Initiative(ZDI)など複数のセキュリティ専門メディアで大きく報じられた。本ノートで繰り返し取り上げてきた「Excelは毎月のように緊急級RCEの修正対象になる」という傾向が今月も続いており、細工ファイルを開かせる古典的な攻撃パターンへの警戒が改めて呼びかけられている。
+- 概要: Office Watchが、Excel上のCopilotで選択可能になったAIモデル(GPT系、Claude Opus系など)の使い分けについて解説する記事を公開。長い数式チェーンの説明や矛盾点の洗い出しなど「深い推論」が必要な作業にはClaude Opus系、雑然とした指示からVBA/Office Scriptを組み立てるような作業にはGPT系が向くといった具体的な使い分けを紹介している。
+- 注目ポイント: Excel Copilotのモデル選択肢が急速に増える中、「どれを選べば良いか分からない」という実務担当者の悩みに応える内容で、Microsoft 365利用企業のCopilot活用担当者を中心に関心を集めている。
 - 出典:
-  - [Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day | BleepingComputer](https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/)
-  - [Zero Day Initiative — The November 2026 Security Update Review | ZDI](https://www.thezdi.com/blog/2026/11/10/the-november-2026-security-update-review)
-  - [November 2026 Patch Tuesday: Outlook zero-day leads 1,094 CVEs | Splashtop](https://www.splashtop.com/blog/patch-tuesday-november-2026)
+  - [Best Copilot AI Model for Excel: A Plain English Guide | Office Watch](https://office-watch.com/2026/copilot-ai-model-for-excel/)
 
-### 2. Copilot in Excelの「会計スキル」、予告どおり11月13日に一般提供(GA)開始
+### 3. Microsoft 365ロードマップ2026年7月版 ― Copilot in Excelの「Skills」機能などを整理
 
-- 概要: 前週(2026-11-08)分で紹介した、口座照合・仕訳入力・分析・予算管理・監査・税務・コンプライアンス対応をCopilotが支援する「会計スキル」について、Microsoft 365メッセージセンターの更新通知により、2026年11月13日から正式に一般提供(GA)が開始されたことが確認された。これによりFrontierプログラムへの事前登録が不要になり、Copilotライセンスのみで利用可能になる。展開は11月末までに全世界で完了する予定で、ユーザーがオプトインできる監査証跡(オーディットトレイル)機能も引き続き提供される。
-- 注目ポイント: 前週時点では「11月GA予定」という未確定情報だったものが、今週に入り実際の開始日が確定・実行された続報である点が注目される。CPA Practice Advisor・CFO Diveなど会計・財務専門メディアが相次いで取り上げており、AIが会計業務に本格的に組み込まれていく動きとして、仕訳・消込のような「数字が合えば正解に見えやすい」業務ほど人間のレビュー体制が欠かせないという、品質管理・内部統制の観点からも引き続き注視したいテーマ。
+- 概要: Level Up M365が、2026年7月分のMicrosoft 365ロードマップ更新をまとめた記事を公開。Copilot in Excelでは、繰り返し行う分析・モデリング・レポート作業を再利用可能な指示として登録できる「Skills」機能や、ワークブックごとにルールを定義できる「Workbook Rules」などが取り上げられている。
+- 注目ポイント: 個々のニュース記事だけでは追いきれないロードマップ全体の動きを俯瞰できる内容で、IT管理者・情報システム部門の担当者が月次アップデートを把握する際の定番参照先として繰り返し引用されている。
 - 出典:
-  - [Microsoft Touts New Accounting Capabilities for Copilot | CPA Practice Advisor](https://cpapracticeadvisor.com/2026/10/30/microsoft-touts-new-accounting-capabilities-in-copilot/192906)
-  - [Microsoft boosts Copilot Excel-based finance workflows | CFO Dive](https://www.cfodive.com/news/microsoft-boosts-copilot-excel-based-finance-workflows/823933/)
-  - [RM578864 - Microsoft 365 Copilot: Accounting skills | Microsoft 365 Message Center Archive](https://mc.merill.net/message/RM578864)
-
-### 3. 「Excel Canvas」、11月に入り世界的な展開が進行中と報道 ― 公式な完了発表はまだ
-
-- 概要: 2026年9月に発表され10月中旬から本格展開が始まった「Excel Canvas」(Copilotがワークブックデータを解釈し、グラフ・指標・インサイトをまとめたインタラクティブなレポートを自動生成する機能)について、2026年11月9日更新のhashout.jpの記事が、Windows Insider向けの先行展開に続き、11月に入ってから世界的な展開が進められていると報じた。ただしMicrosoftの公式ブログやMessage Centerで「世界展開完了」を明確に確認できる発表は、今回の調査時点では見つかっていない。
-- 注目ポイント: 本ノートで10月18日・10月25日・11月1日と継続的に追ってきたExcel Canvasの展開状況について、一部メディアが「今月で世界展開が進行中」とする続報を伝えた形。10月時点でMVPのWyn Hopkins氏が指摘していた「計算結果のハードコード」「監査性の弱さ」といった懸念が、より広いユーザー層に展開される中でどう扱われるかは、品質管理・監査可能性の観点から引き続き注視したい。
-- 出典:
-  - [Interactive Canvasの世界展開に関する報道 | hashout.jp](https://hashout.jp/?p=14076)
+  - [Microsoft 365 Roadmap Updates July 2026 | Level Up M365](https://levelupm365.com/2026/07/01/microsoft-365-roadmap-updates-july-2026/)
